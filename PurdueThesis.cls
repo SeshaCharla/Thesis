@@ -739,7 +739,7 @@
       \ifthen{\equal{pu-in-me}{\ZZinscampro}}
         {
           \usepackage[backend=biber, citestyle=numeric-comp, dashed=false, locallabelwidth=true, sortcites=true, style=ieee]{biblatex}
-          \addbibresource{all-biblatex.bib}
+          \addbibresource{./secs/n-back/refs.bib}
           % See
           % https://tex.stackexchange.com/questions/134191/line-breaks-of-long-urls-in-biblatex-bibliography
           \setcounter{biburllcpenalty}{7000}

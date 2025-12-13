@@ -616,9 +616,7 @@
           \usepackage[backend=\@biblatex@backend, citestyle=numeric-comp, dashed=false, locallabelwidth=true, sortcites=true, style=ieee]{biblatex}
           % ------------ END: UNOFFICIAL .CLS CHANGES ------------
 
-          \addbibresource{Part3/scr_refs.bib}
-          \addbibresource{Part1/theory_refs.bib}
-          \addbibresource{Part2/drone_refs.bib}
+          \addbibresource{./secs/n-back/refs.bib}
           % See
           % https://tex.stackexchange.com/questions/134191/line-breaks-of-long-urls-in-biblatex-bibliography
           \setcounter{biburllcpenalty}{7000}
