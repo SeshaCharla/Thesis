@@ -1,0 +1,33 @@
+% =============================================================
+% Select build mode from:
+%     quick - try to compile quickly (no extras, remove front pages)
+%     debug - add grid lines/compile times (print variables)
+%     proof - local version of "final"
+%     final - Final publishable version (calls PurdueThesis - requires LuaLaTeX)
+\def\ZZbuildmode{final}
+% ==============================================================
+% Input arguments required by PurdueThesis
+\input{./secs/0-template_options/te00-template-options.tex}
+% ==============================================================
+% Build the document this will select the document class based on :
+%    quick/debug/proof - Local simplified PurdueTheiss.cls file
+%                final - Official PurdueThesis.cls file
+\RequirePackage{ifthen}
+\ifthenelse{\equal{\ZZbuildmode}{final}}
+{\documentclass{PurdueThesis}}{\documentclass{PurdueThesisNL}}
+% ==============================================================
+% Set up the latex document w/ imports, definitions, and
+% template customizations
+\input{./secs/0-template_options/te0-template.tex}
+% ==============================================================
+\input{./ltx_core/ltx_pkgs.tex}
+\input{./ltx_core/new_cmds.tex}
+% ==============================================================
+% \bibliography{Part3/scr_refs, Part2/drone_refs, Part1/theory_refs}
+
+\begin{document}
+\maketitle
+% \input{b-front/fr0-front.tex}  % Front matter (title, acknowledgements, abstract, etc)
+% \input{Appendices/ap0-appendices.tex}   % Appendices
+% \input{d-back/bk0-end.tex}              % Back content (vita, bib settings, etc.)
+\end{document}
