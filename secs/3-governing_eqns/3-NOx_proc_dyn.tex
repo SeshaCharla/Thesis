@@ -1,0 +1,65 @@
+\section{$NO_x$ Process Dynamics}
+
+The $NO_x$ process dynamics involve only the selective catalytic reduction reaction. The gaseous $NO_x$ that enters the
+catalyst chamber reacts with the adsorbed ammonia on the surface and forms $N_2$ and $H_2O$ (Eiley-Rideal Mechanism).
+The process frees up the adsorption sites for the next cycle of gaseous ammonia. The reaction rate is proportional to
+the volumetric concentration of the gaseous $NO_x$ and the surface concentration of the adsorbed ammonia.
+\begin{align}
+    4 NH_3 ^{ads} + 4 NO + O_2 &\xrightarrow[]{k_{scr}} 4 N_2 + 6 H_2O
+\end{align}
+
+Thus, the rate of $NO_x$ reduction on the catalyst surface can be modeled as:
+\begin{align}
+    \frac{d \con{NO_x}^{scr}}{dt} &= - k_{s2v} r_{scr} \\
+    r_{scr} &= k_{scr} \con{NH_3}^{ads} \con{NO_x}^{in}\\
+    \dot{\con{NO_x}}^{scr} &= -k_{s2v} k_{scr} \con{NH_3}^{ads} \con{NO_x}^{in}
+\end{align}
+
+% ==============================================================================
+\subsection{Molar conservation at the scale of residence time}
+
+Similar to the ammonia adsorption/desorption process, at the end of every residence time, a fresh parcel of gaseous
+reactants enters the catalyst chamber. Thus, the molar conservation for the $NO_x$ reduction process can be
+correlated with the inlet and outlet molar concentrations of the $NO_x$ at the beginning and the end of residence time. Thus,
+\begin{align*}
+    \mol{NO_x}^{out} (k + \tau) &= \mol{NO_x}^{in} (k) + V \int_{0}^{\tau}  \dot{\con{NO_x}}^{scr} (k) dt\\
+    \mol{NO_x}^{out} (k + 2\tau) &= \mol{NO_x}^{in} (k + \tau) + V \int_{0}^{\tau} \dot{\con{NO_x}}^{scr} (k+\tau)  dt\\
+    \vdots &\\
+    \mol{NO_x}^{out} (k + n\tau) &= \mol{NO_x}^{in} (k + (n-1)\tau) + V \int_{0}^{\tau} \dot{\con{NO_x}}^{scr} (k+(n-1)\tau) dt
+\end{align*}
+
+The above equations show that the measurement of $NO_x$ concentration at the outlet depends only on the measurement of
+the $NO_x$ concentration at the inlet one residence time before. Thus, there is no integrating effect of the $NO_x$
+within the sample time. Writing in terms of volumetric concentrations, we have:
+
+\begin{align*}
+    \con{NO_x}^{out} (k + n\tau) &= \con{NO_x}^{in} (k + (n-1)\tau) + \int_{0}^{\tau}  \dot{\con{NO_x}}^{scr} (k + (n-1)\tau) dt
+\end{align*}
+
+Introducing the following two approximations:
+\begin{enumerate}
+    \item Zero-order-hold for the inlet concentration of $NO_x$:
+        \begin{align*}
+            \con{NO_x}^{in} (k + i \tau) &\approx \con{NO_x}^{in} (k) \qquad \forall i < n
+        \end{align*}
+    \item Using average surface concentration at the sample for the surface concentration of the adsorbed ammonia:
+        \begin{align*}
+            \con{NH_3}^{ads} (k + i \tau) &\approx \sigma(k) \qquad \forall i < n
+        \end{align*}
+\end{enumerate}
+
+Thus,
+\begin{align*}
+    \dot{\con{NO_x}}^{scr} (k + i \tau) =  \dot{\con{NO_x}}^{scr} (k) = -k_{s2v} k_{scr} \sigma(k) \con{NO_x}^{in} (k) \qquad \forall i < n
+\end{align*}
+
+
+Thus, we have the following expression for the $NO_x$ process dynamics:
+
+\begin{align*}
+    \con{NO_x}^{out} (k + n\tau) &= \con{NO_x}^{in} (k) - k_{s2v} k_{scr} \sigma(k) \con{NO_x}^{in} (k) \tau\\
+    \implies \con{NO_x}^{out} (k + 1) &= \con{NO_x}^{in} (k) \lr{1 - k_{s2v} k_{scr} \sigma(k) \tau}
+\end{align*}
+
+
+% ==============================================================================

@@ -1,0 +1,56 @@
+\section{Gaseous Ammonia Process Dynamics}
+The gaseous ammonia process dynamics involve the adsorption and desorption dynamics. The gaseous ammonia that enters the
+catalyst chamber gets adsorbed on the free sites on the catalyst surface at a rate proportional to the volumetric
+concentration of the gaseous ammonia and the surface concentration of the free sites. A part of adsorbed ammonia then
+desorbs back to the gas phase at a rate that is proportional to the surface concentrations of the adsorbed ammonia.
+\begin{align*}
+    NH_3 + \Theta_{free} &\xrightleftharpoons[k_{des}]{k_{ads}} NH_3^{ads}
+\end{align*}
+
+Thus, the rate of change of gaseous $NH_3$ on the catalyst surface can be modeled as:
+\begin{align*}
+    \frac{d \con{NH_3}^{scr}}{dt} &= k_{s2v} (-r_{ads} + r_{des}) \\
+    r_{ads} &= k_{ads} \con{NH_3}^{in} \lr{\Gamma - \con{NH_3}^{ads}}\\
+    r_{des} &= k_{des} \con{NH_3}^{ads}\\
+    \dot{\con{NH_3}}^{scr} &= -k_{s2v}k_{ads} \con{NH_3}^{in} \lr{\Gamma - \con{NH_3}^{ads}} + k_{s2v} k_{des} \con{NH_3}^{ads}\\
+\end{align*}
+
+% ==============================================================================
+\subsection{Molar conservation at the scale of residence time}
+
+Similar to the ammonia adsorption/desorption process, at the end of every residence time, a fresh parcel of gaseous
+reactants enters the catalyst chamber. Thus, the molar conservation for the gaseous $NH_3$ adsorption/desorption process
+can be correlated with the inlet and outlet molar concentrations of the $NH_3$ at the beginning and the end of residence
+time. Similar to the $NO_x$ process dynamics the measurement of $NH_3$ concentration at the outlet depends only on the
+measurement of the $NH_3$ concentration at the inlet one residence time before. That is, there is no integrating effect
+of the $NH_3$ within the sample time either. Writing in terms of volumetric concentrations, we have:
+
+\begin{align*}
+    \con{NH_3}^{out} (k + n\tau) &= \con{NH_3}^{in} (k + (n-1)\tau) + \int_{0}^{\tau}  \dot{\con{NH_3}}^{scr} (k + (n-1)\tau) dt
+\end{align*}
+
+Introducing the following two approximations:
+\begin{enumerate}
+    \item Zero-order-hold for the inlet concentration of $NH_3$:
+        \begin{align*}
+            \con{NH_3}^{in} (k + i \tau) &\approx \con{NH_3}^{in} (k) \qquad \forall i < n
+        \end{align*}
+    \item Using average surface concentration at the sample for the surface concentration of the adsorbed ammonia:
+        \begin{align*}
+            \con{NH_3}^{ads} (k + i \tau) &\approx \sigma(k) \qquad \forall i < n
+        \end{align*}
+\end{enumerate}
+
+Thus,
+\begin{align*}
+    \dot{\con{NH_3}}^{scr} (k + i \tau) &= -k_{s2v}k_{ads} \con{NH_3}^{in} \lr{\Gamma - \sigma(k)} + k_{s2v} k_{des} \sigma(k)
+    \qquad \forall i < n
+\end{align*}
+
+
+Thus, we have the following expression for the $NH_3$ process dynamics:
+
+\begin{align*}
+    \con{NH_3}^{out} (k + n\tau) &= \con{NH_3}^{in} (k) - \tau k_{s2v}k_{ads} \con{NH_3}^{in}(k) \lr{\Gamma - \sigma(k)} + \tau k_{s2v} k_{des} \sigma(k)\\
+    \con{NH_3}^{out} (k + 1) &= \con{NH_3}^{in}(k) \lr{1 - \tau k_{s2v}k_{ads} \lr{\Gamma - \sigma(k)}} + \tau k_{s2v} k_{des} \sigma(k)
+\end{align*}

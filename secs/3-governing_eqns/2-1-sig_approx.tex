@@ -1,0 +1,50 @@
+\subsection{Approximation of $\sigma(k)$ as $NH_3^{ads}(k)$ (Zero-order hold)}
+\itbf{Note:} $\sigma(k)$ can be approximated as the surface concentration at the beginning of the sample time.
+
+The average surface concentration $\sigma(k)$ in the sample time is approximated as the surface concentration at the
+beginning of the sample time. This approximation will introduce an error in the model whose effects will be analyzed in
+sequential sections. Thus,
+\begin{align}
+    \Omega(k) &\approx n \tau \lr{\Gamma \gamma_{ads} (k) - \con{NH_3}^{ads}(k) \gamma_{des} (k)}
+\end{align}
+%===
+Thus, we have the approximate ammonia adsorption/desorption process dynamics model as:
+\begin{align*}
+    \con{NH_3}^{ads}(k + 1) &= \con{NH_3}^{ads} (k) + n \tau \lr{\Gamma \gamma_{ads} (k) - \con{NH_3}^{ads}(k) \gamma_{des} (k)}\\
+    &= n \tau \Gamma \gamma_{ads} (k) + \con{NH_3}^{ads} (k) \lr{1 - n \tau \gamma_{des} (k)}\\
+    &= n \tau \Gamma k_{ads} \con{NH_3}^{in}(k)  + \con{NH_3}^{ads} (k) \lr{1 - n \tau \lr{k_{ads} \con{NH_3}^{in}(k) + k_{des} + k_{scr} \con{NO_x}^{in}(k) + k_{oxi}}}
+\end{align*}
+\begin{multline}
+    \con{NH_3}^{ads}(k + 1) = n \tau \Gamma k_{ads} \con{NH_3}^{in}(k)  + \con{NH_3}^{ads} (k) \lr{1 - n \tau \lr{k_{ads} \con{NH_3}^{in}(k) + k_{des} + k_{scr} \con{NO_x}^{in}(k) + k_{oxi}}}
+\end{multline}
+%===
+Examining the individual terms:
+\begin{align*}
+    \con{NH_3}^{ads}(k + 1) =& \con{NH_3}^{ads}(k)\\
+        &+ n\tau k_{ads} \con{NH_3}^{in} \lr{\Gamma - \con{NH_3}^{ads}(k)} \\
+        &- n \tau \lr{k_{oxi} + k_{des}} \con{NH_3}^{ads} (k)\\
+        &- n \tau k_{scr} \con{NO_x}^{in}(k) \con{NH_3}^{ads}(k)
+\end{align*}
+%===
+The above equation is nothing but multiplying the rate equation with the sampling interval to get the measurement
+update.
+
+Similarly, if we flip the approximation, that is if,
+\begin{align*}
+    \con{NH_3}^{ads}(k) &\approx \sigma(k)
+\end{align*}
+then,
+\begin{align*}
+    \sigma(k + 1) =& \sigma(k)\\
+        &+ n\tau k_{ads} \con{NH_3}^{in} \lr{\Gamma - \sigma(k)} \\
+        &- n \tau \lr{k_{oxi} + k_{des}} \sigma(k)\\
+        &- n \tau k_{scr} \con{NO_x}^{in}(k) \sigma(k)
+\end{align*}
+
+as, $n\tau = t_s$ is a constant for the process, the above equation can be rewritten as:
+\begin{align*}
+    \sigma(k + 1) =& \sigma(k)\\
+        &+ t_s k_{ads} \con{NH_3}^{in} (k) \lr{\Gamma - \sigma(k)} \\
+        &- t_s \lr{k_{oxi} + k_{des}} \sigma(k)\\
+        &- t_s k_{scr} \con{NO_x}^{in}(k) \sigma(k)
+\end{align*}

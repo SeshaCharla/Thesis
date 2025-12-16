@@ -1,0 +1,72 @@
+\section{Urea Dosing Process Dynamics}
+The urea dosing dynamics involve the following reactions:
+\begin{align*}
+    NH_2 - CO - NH_2 (liquid) &\longrightarrow NH_2 - CO - NH_2^* + x H_2 O
+                & &[\text{AdBlue evaporation}] \\
+    NH_2 - CO - NH_2^*  &\longrightarrow  HNCO + NH_3
+                & &[\text{Urea decomposition}] \\
+    HNCO + H_2O &\longrightarrow NH_3 + CO_2
+                & &[\text{Isocynic acid hydrolysis}] \\
+\end{align*}
+
+The above reactions can be aggregated into:
+\begin{align*}
+    NH_2 - CO - NH_2 (liquid) &\longrightarrow 2 NH_3 + CO_2 + x H_2 O
+\end{align*}
+
+The rate of ammonia production is twice the rate of decomposition of the urea in the solution (AdBlue). Thus,
+\begin{align*}
+    \frac{d \con{NH_3}^{in}}{dt} &= 2 r_{u}\\
+    r_{u} &= k_{u} \con{NH_2 - CO - NH_2} \qquad (constant)
+\end{align*}
+
+As the concentration of urea in the solution is constant, the above rate becomes a constant. Thus, the total moles of
+ammonia produced at the inlet within a sample time would be:
+\begin{align*}
+    \mol{NH_3}^{in} (k) &= t_s \times \underbrace{2 r_{u}}_{\text{Rate of decomposition}} \times \underbrace{t_s u_{inj} (k)}_{\text{Volume injected}}
+\end{align*}
+where $u_{inj}$ is urea-solution injection rate in $ml/s$.
+
+This is the total moles of ammonia produced in $n$ residence times during the reaction process. Thus, the number of moles of ammonia in the chamber at a given residence time would be $\mol{NH_3}^{in}(k)/n$.
+Thus, we have the inlet volumetric concentration of ammonia as:
+\begin{align*}
+    \con{NH_3}^{in} (k) &= \frac{\mol{NH_3}^{in} (k)}{nV}
+                          = \frac{2 r_u \tau}{t_s V} \times t_s^2 \times u_{inj} (k)
+                          = \frac{2 r_u t_s}{V} \times \tau \times u_{inj} (k)
+\end{align*}
+Thus the ammonia concentration at the inlet is a function of urea dosing rate and the residence time of the reaction.
+
+Substituting, $\tau = \frac{V \rho_0}{F}$, we get:
+\begin{align}
+    \con{NH_3}^{in} (k) &= 2r_u t_s \rho_0 \times \frac{u_{inj}(k)}{F}
+\end{align}
+
+The above reciprocal relationship breaks down at zero flow rate which makes sense physically.
+
+% ======================================================================================================================
+The sensitivity of change in ammonia to the change residence time (due to change in flow-rate) or change in urea dosing rate can be calculated as follows:
+\begin{align*}
+    \frac{\partial \con{NH_3}^{in} }{\partial F} &= -2 r_u t_s \rho_0 \times \frac{u_{inj}}{F^2} \\
+    \implies \frac{\delta \con{NH_3}^{in}}{\con{NH_3}^{in}} &= \frac{-\delta F}{F}
+    \qquad \text{at constant } u_{inj}
+\end{align*}
+Similarly,
+\begin{align*}
+    \frac{\partial \con{NH_3}^{in} }{\partial u_{inj}} &= \frac{2 r_u t_s \rho_0}{F} \\
+    \implies \frac{\delta \con{NH_3}^{in}}{\con{NH_3}^{in}} &= \frac{ \delta u_{inj}}{u_{inj}} \qquad \text{at constant } F
+\end{align*}
+
+From practical range of changes in data for $F$ and $u_{inj}$,
+\begin{align*}
+    \frac{ \delta u_{inj}}{u_{inj}}, \qquad \frac{\delta F}{F} \qquad \text{have the same order of magnitude.}
+\end{align*}
+Thus, the effect of change in the urea dosing is as prominent on inlet ammonia concentration as the changes in residence time due to flow rate changes. Thus, the effects of changes in residence time on ammonia generation can be neglected for the approximate model, resulting in:
+\begin{align}
+    \con{NH_3}^{in}(k) &= \nu_u \frac{u_{inj}}{F}    \label{eqn::urea_inj}
+\end{align}
+where,
+\begin{align*}
+    \nu_u &= 2 r_u t_s \rho_0\\
+    T_{min} &\leq T \leq T_{max}\\
+    F_{min} &\leq F \leq F_{max}
+\end{align*}
