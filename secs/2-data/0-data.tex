@@ -84,17 +84,46 @@ V\_SCM\_PPM\_SCR\_OUT\_NOX	   & ppm       & SCR-out NOx (cross-sensitive)
 % ==============================================================================
 
 \section{Test-Cell Data Preprocessing}
-\input{./secs/2-data/tst_filt/sig_ranges.tex}
+% \input{./secs/2-data/tst_filt/sig_ranges.tex}
+
 %==============================================================================
-\subsection{Signal Processing Steps}
-The signal processing steps for getting the viable data used for model validation are summarized bellow.
-\begin{figure}[H]
-        \centering
-        \includegraphics[width = \textwidth]{}
-        \caption{Summary of Signal Processing Steps for Test Cell Data}
-\end{figure}
+
+% \subsection{Signal Processing Steps}
+\input{./secs/2-data/pipeline.tex}
+
 % ==============================================================================
 
 \section{Truck Data Preprocessing}
-\input{./secs/2-data/trk_filt/sig_ranges.tex}
-\subsection{Signal Processing Steps}
+% \input{./secs/2-data/trk_filt/sig_ranges.tex}
+
+% =============================================================================
+
+% \subsection{Signal Processing Steps}
+The road data was collected from trucks operating in the United States  for two days separated by a few years
+(Table~\ref{tab::truck_data_summary}) during which the catalyst has aged based on the existing performance measures. The
+data contains measurements of $NO_x$ sensors before and after the catalyst, as well as other required variables
+including flow rate, temperature and urea injection rate. The data preporcessing includes,
+\begin{enumerate}
+        \item removing the rows with missing values,
+        \item removing the rows whose operating temperature range is beyond range of $200-300 \,^0C$,
+        \item interpolating the missing data if the data breaks are smaller than a minute, and finally,
+        \item smooting the data using non-causal chebyshev filter.
+\end{enumerate}
+The preprocessed data is than partitioned into drive segments with no breaks which correspond to a continuous driving
+period from engine start to engine stop.
+%===
+\begin{table}[H]
+        \centering
+        \caption{Truck Data Set Years and Mileage Difference}
+        \label{tab::truck_data_summary}
+        \begin{tabular}{l l l r}
+        \hline \hline
+               & Earlier Data & Latter Data & Milage \\
+         Truck &  Year            & Year    & Difference\\ \hline \hline
+        AD Transport (adt) & $2015$ & $2017$ & $2.79 \times 10^5$\\
+        Mesilla Valley (mes) & $2015$ & $2018$ & $11.87 \times 10^5$\\
+        Werner (wer) & $2015$ & $2017$ & $5.89 \times 10^5$\\
+        Transwest (trw) & $2015$ & $2016$ & $6.56 \times 10^5$ \\
+        \hline \hline
+        \end{tabular}
+\end{table}
