@@ -1,1 +1,100 @@
 \chapter{Data Characteristics}
+The available test and truck data for testing the model structure needs to be put into common units. The following table
+lists the units used for each of the physical properties.
+\begin{table}[H]
+   \centering
+   \begin{tabular}{l l}
+       \hline \hline
+        \itbf{Property} & \itbf{Unit}\\
+        \hline \hline
+        Concentration   & $ 10^{-3} \, mol/m^{3}$ \\
+        Temperature     & $ \times 10 + 200\lx{^o}{C}$ \\
+        Flow Rate       & $\times 10 \, g/s$ \\
+        Urea Injection  & $\times 10^{-1}\, ml/s$ \\
+        Time            & $s$ \\
+        \hline \hline
+   \end{tabular}
+   \caption{Table of Units used in the Model}
+\end{table}
+
+The available data and corresponding units are listed in the following table.
+\begin{table}[H]
+\centering
+\begin{tabular}{l l l }
+\hline \hline
+Model Variable & Road Data Variable &Units\\
+\hline \hline
+$t$   & tod & $s$
+\\
+$T$   & pSCRBedTemp & $\lx{^o}{C}$
+\\
+$F$   & pExhMF & $g/s$
+\\
+$u_2$ & pUreaDosing & $ml/sec$
+\\
+$y_1 $ & pNOxOutppm & $ppm$
+\\
+$u_1$ & pNOxInppm & $ppm$
+\\
+ $y_1$ sensor status & V\_ATP\_ppm\_SCR\_Out\_NOx\_Status &
+\\
+ $u_1$ sensor status & V\_ATP\_ppm\_SCR\_In\_NOx\_Status or EONOx\_Sensor\_Status &
+\\
+\hline
+\end{tabular}
+\caption{Road data variables}
+\end{table}
+
+
+\begin{table}[H]
+\centering
+\begin{tabular}{l l l c}
+   \hline \hline
+   Variable Name              & Units     & Description & Variable from Model \\ \hline \hline
+   LOG\_TM	                  & sec & Time
+                                          & $t$\\
+   EXHAUST\_FLOW	            & kg/min    & Exhaust Flow Rate
+                                          & $F$\\
+   V\_AIM\_TRC\_DPF\_OUT	   & $\lx{^o}{C}$ & DPF Out Gas Temperature
+                                             & $T_{in}$\\
+   V\_AIM\_TRC\_SCR\_OUT	   & $\lx{^o}{C}$ & SCR/ASC Out Gas Temperature
+                                          & $T_{out}$\\
+   V\_UIM\_FLM\_ESTUREAINJRATE& ml/s      & DEF (Urea Sol.) Dosing Rate
+                                          & $u_2$\\
+   ENG\_CW\_NOX\_FTIR\_COR\_U2& ppm       & Engine-Out NOx
+                                          & $u_1$\\
+   EXH\_CW\_NOX\_COR\_U1	   & ppm       & Tailpipe NOx
+                                          & $x_1$\\
+   EXH\_CW\_AMMONIA\_MEA	   & ppm       & Tailpipe NH3
+                                          & $x_2$\\
+EONOX\_COMP\_VALUE	         & ppm       & Engine-out NOx (corss-sensitive)
+                                          & $u_1$\\
+V\_SCM\_PPM\_SCR\_OUT\_NOX	   & ppm       & SCR-out NOx (cross-sensitive)
+                                          & $y_1$\\
+   \hline \hline
+\end{tabular}
+\caption{Test Cell Data Variables}
+\end{table}
+
+
+% ==============================================================================
+\input{./secs/2-data/1-density.tex}
+\input{./secs/2-data/2-ppm.tex}
+\input{./secs/2-data/3-flow_rate.tex}
+% ==============================================================================
+
+\section{Test-Cell Data Preprocessing}
+\input{./secs/2-data/tst_filt/sig_ranges.tex}
+%==============================================================================
+\subsection{Signal Processing Steps}
+The signal processing steps for getting the viable data used for model validation are summarized bellow.
+\begin{figure}[H]
+        \centering
+        \includegraphics[width = \textwidth]{}
+        \caption{Summary of Signal Processing Steps for Test Cell Data}
+\end{figure}
+% ==============================================================================
+
+\section{Truck Data Preprocessing}
+\input{./secs/2-data/trk_filt/sig_ranges.tex}
+\subsection{Signal Processing Steps}

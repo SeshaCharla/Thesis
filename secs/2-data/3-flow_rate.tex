@@ -1,0 +1,28 @@
+\section{Mass flow rate to volumetric flow rate}
+The density of the exhaust gas is used to convert the mass flow rate of the exhaust gas to the volumetric flow rate of the exhaust gas.
+\begin{align}
+    f_v &= \frac{F}{\rho} = \frac{F}{\rho_0}  \label{eqn::fv_approx}
+\end{align}
+The effect of change of $f_v$ due to temperature change's effect on density is neglected as change in mass flow rate will be more significant.
+
+\subsection{Approximate model for residence time}
+We have the residence time of the exhaust gas in the SCR-ASC system within the operating limits of temperature and flow-rate:
+\begin{align}
+    \tau &= \frac{V}{f_v} = \frac{V \rho_0}{F} \label{eqn::res_time}
+\end{align}
+% Thus we have the linear approximation of the residence time:
+% \begin{align*}
+%     \tau &= \tau_0 + \delta \tau
+%           = \tau_0 - \frac{V}{\bar{f_v} ^2} \delta f_v\\
+%          &= \tau_0 - \frac{V}{\bar{f_v} ^2}  \frac{1}{\mu} \lr{F_0 \delta T + T_0 \delta F}
+%           = \tau_0 - \tau_T \delta T - \tau_F \delta F
+% \end{align*}
+% dropping $\delta$ for notational convenience, we have the linear model for residence time:
+% \begin{align}
+%     \tau &= \tau_0 - \tau_T T - \tau_F F        \label{eqn::res_time}
+% \end{align}
+where,
+\begin{align*}
+    F_{min} &\leq F \leq F_{max}\\
+    T_{min} &\leq T \leq T_{max}
+\end{align*}

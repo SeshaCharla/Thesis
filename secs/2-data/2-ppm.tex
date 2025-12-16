@@ -1,0 +1,41 @@
+\section{Parts-per-million to mol/m$^3$}
+
+The commercial and FTIR sensors use ppm (parts per million) in terms of the mole-fraction for concentration
+measurements.
+%===
+\begin{align}
+    1 \, ppm^{\lr{mol}} &= \frac{1 \, mol \text{ of gas}}{10^6 \, mol \text{ of air }}
+\end{align}
+%===
+Thus, this measurement when converted into $mol/m^3$, the temperature of the gas will be essential to get the right
+value as the volume of 1 mole of air changes with temperature. Assuming ideal gas behaviour,
+%===
+\begin{align}
+    V_{air} &= n_{air} T_{air} \times \frac{V_0}{T_0}
+    \label{eqn::V_air}
+\end{align}
+%===
+where, $V_0, T_0$ are the volume and temperature of one mole of air under STP conditions. From literature,
+$V_0 = 22.4 L = 22.4 \times 10^{-3} m^3$ and $T_0 = 273.15 K$.
+%===
+\begin{align*}
+    T_{air} &= 273.15 + T\\
+    n_{air} &= 10^6
+\end{align*}
+%===
+Thus, volume of $10^6$ moles of air at temperature T,
+%===
+\begin{align}
+    V_{air} &= 10^6 \times \frac{273.15 + T}{273.15} \times 22.4 \times 10^{-3} m^3
+            = 22.4 \times 10^{3} \times \frac{273.15 + T}{273.15}
+    \qquad \lrb{\because \ref{eqn::V_air}}
+\end{align}
+%===
+Thus, we have the conversion between ppm and $mol/m^3$:
+%===
+\begin{align}
+    x \text{ in } mol/m^3 &= \frac{x \text{ in } ppm }{\text{Volume of } 10^6 \text{ moles of air}}
+                            = \frac{x \text{ in } ppm}{22.4 \times \lr{\frac{273.15 + T}{273.15}}}
+                                \times 10^{-3} \, mol/m^3
+\end{align}
+%===
