@@ -1,0 +1,37 @@
+\section{Complete Process Dynamics Model for SCR-ASC System}
+
+From previous derivations, we have the complete process dynamics of SCR-ASC dynamics with urea dosing as:
+
+\begin{enumerate}
+    \item Urea dosing dynamics:
+    \begin{align*}
+    \con{NH_3}^{in} (k) &= 2r_u t_s \rho_0 \times \frac{u_{inj}(k)}{F}
+    \end{align*}
+
+    \item $NO_x$ reduction dynamics:
+    \begin{align*}
+    \con{NO_x}^{out} (k + 1) &= \con{NO_x}^{in} (k) \lr{1 - k_{s2v} k_{scr} \sigma(k) \tau}
+    \end{align*}
+
+    \item Gaseous ammonia dynamics:
+    \begin{align*}
+    \con{NH_3}^{out} (k + 1) &= \con{NH_3}^{in}(k) \lr{1 - \tau k_{s2v}k_{ads} \lr{\Gamma - \sigma(k)}} + \tau k_{s2v} k_{des} \sigma(k)
+    \end{align*}
+
+    \item Ammonia adsorption/desorption dynamics:
+ \begin{align*}
+        \sigma(k + 1) &= \sigma(k)
+        + t_s  k_{ads} \con{NH_3}^{in}(k) \lr{\Gamma - \sigma(k)}
+        - t_s \lr{k_{oxi} + k_{des}} \sigma(k)
+        - t_s k_{scr} \con{NO_x}^{in}(k) \sigma(k)
+    \end{align*}
+\end{enumerate}
+
+The above four equations are the complete process dynamics of SCR-ASC dynamics with urea dosing. The above equations are
+nonlinear and coupled with implicit dependence on temperature and flow rate. In this section the above equations are
+rewritten in a parametric form with standard state-space representation. For convenience and clarity '(k)' is dropped
+from the variables.
+
+Note that the tailpip (gaseous) ammonia dynamics don't effect the $NO_x$ reduction dynamics and we don't have the
+necessary measurements for trucks for model paramter estiamtion. Moreover, we only need the models for $NO_x$ reduction
+and Ammonia adsorption for characterizing the I/O dynamics of the system using the measurements.
