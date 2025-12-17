@@ -1965,7 +1965,7 @@
                         {\ZZdegreefont\ZZdegree}\\
                         \vspace*{35pt}
                         % Use the improved vector Purdue seal from Ting-Wei Liu.
-                        \hbox to\textwidth{\hss\includegraphics[width=7.9cm]{gr-pu-seal-vector.pdf}\hss}
+                        \hbox to\textwidth{\hss\includegraphics[width=7.9cm]{./figs/template/gr-pu-seal-vector.pdf}\hss}
                         \vspace*{25pt}
                         \ZZwholename\ZZatinformation\\
                         \ZZcampus,~Indiana\\
