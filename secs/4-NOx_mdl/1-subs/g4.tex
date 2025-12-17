@@ -1,0 +1,10 @@
+\begin{align*}
+        g_{scr} &= \lrb{\frac{\tau(k)}{\tau(k-1)}}
+                t_s k_{scr}(k) u_1(k)\\
+                &= \lrb{\frac{F(k-1)}{F(k)}} u_1(k) \pmb \phi^T(k) \pmb \theta_{scr} t_s
+                \qquad \bm{\because \ref{eqn::residence_time_mdl}, \ref{eqn::k_mdl}}
+\end{align*}
+\begin{align}
+        g_{scr} &= \lrf{\lrb{\frac{u_1(k)}{F(k)}} F(k-1) \pmb \phi^T(k)}
+                \times \lrf{ t_s \pmb \theta_{scr} }
+\end{align}

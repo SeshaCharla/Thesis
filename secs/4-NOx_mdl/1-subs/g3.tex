@@ -1,0 +1,13 @@
+\begin{align*}
+        g_{od} &= \lrb{\frac{\tau(k)}{\tau(k-1)}}
+                                \lrb{\frac{u_1(k)}{u_1(k-1)}}
+                t_s k_{od}(k-1)\\
+                &= \lrb{\frac{F(k-1)}{F(k)}}
+                                \lrb{\frac{u_1(k)}{u_1(k-1)}}
+                t_s \phi^T(k-1) \pmb \theta_{od}
+                \qquad \bm{\because \ref{eqn::residence_time_mdl}, \ref{eqn::k_mdl}}
+\end{align*}
+\begin{align}
+        g_{od} &= \lrf{ \lrb{\frac{u_1(k)}{F(k)}} \lrb{\frac{F(k-1)}{u_1(k-1)}} \phi^T(k-1) }
+                \times \lrf{t_s \pmb \theta_{od}}
+\end{align}

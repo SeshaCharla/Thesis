@@ -1,0 +1,37 @@
+\subsection{Physical Interpretation of the Model}
+We have the tailpipe $NO_x$ dynamics (\ref{eqn::nox_sim_mdl}):
+\begin{align}
+        x(k+1) &= u_1(k) - \eta(k) \lrb{\frac{u_1(k)}{F(k)}} \lrb{\frac{F(k-1)}{u_1(k-1)}}
+                        - \lrb{\frac{u_1(k)}{F(k)}} \pmb \phi_{NO_x}^T(k) \pmb \theta_{NO_x}
+        \label{eqn::NOx_simulation}
+\end{align}
+\begin{multline}
+        \implies \underbrace{x(k+1)}_{\bm{\text{tailpipe (outlet) $NO_x$}\\ \text{at next time step}}}
+        % ===
+        = \underbrace{u_1(k)}_{\bm{\text{engine-out (inlet) concentration}\\
+                                   \text{at current time step}}}
+                - \underbrace{ \eta(k) \lrb{\frac{u_1(k)}{F(k)}} \lrb{\frac{F(k-1)}{u_1(k-1)}}}
+                                _{\bm{\text{$NO_x$ reduction }\\
+                                        \text{from previous step}\\
+                                        \text{corrected for current flow-rate}}}
+                                \\+ \underbrace{ \lrb{\frac{u_1(k)}{F(k)}}
+                                \bm{\lrb{1 - \frac{x_1(k)}{u_1(k-1)}} u_2(k-1) \pmb \phi^T(k-1) \\
+                                     \lrb{1 - \frac{x_1(k)}{u_1(k-1)}}   F(k-1) \pmb \phi^T(k-1)     \\
+                                         \eta(k) F(k-1) \pmb \phi^T(k) \\
+                                         - \lrb{ \frac{u_2(k-1)}{F(k-1)}} \pmb \phi(k-1)}
+                                \bm{\nu_u t_s \pmb \theta_{ads}\\
+                                        t_s \pmb \theta_{od} \\
+                                        t_s \pmb \theta_{scr} \\
+                                        t_s k_{s2v} \nu_u \Gamma \tau_0 \pmb \theta_{scr/ads}}
+                                }_{
+                                        \bm{\text{change in $NO_x$ reduction due to} \\
+                                                \text{change in adsorbed ammonia from} \\
+                                                \text{oxidation, urea-injection and}\\
+                                                \text{change in void concentration}
+                                        }
+                                }
+\end{multline}
+
+The model predicts the tailpipe $NO_x$ from the engine-out $NO_x$ and the previous change in concentration due to
+reduction. The change in adsorbed ammonia concentration due to oxidation, SCR reaction and change in void concentration
+is implicitly considered.
