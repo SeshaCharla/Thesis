@@ -1,27 +1,25 @@
 \begin{abstract}%
-The existing approach to modelling the reaction flows of diesel engine Selective Catalytic Reduction
-after-treatment (SCR-ASC) system uses a sequence of Continuously Stirred Tank Reactors (CSTRs) (n-cell models) to
-approximate the PDE's that arise from the plug-flow reactions by discretizing in space. This model introduces a
-causality reversal in computation of reaction rates in each cell as they become function of outlet concentrations, i.e,
-the concentrations of the products after the reaction. This approximation breaks down when the n-cell model is reduced
-down to a single-cell in order to have minimal realization of the dynamics. Thus, the CSTR modelling approach requires
-multiple cells to appropriately capture the reaction dynamics, increasing the number of states and parameters that need
-estimation. Further, it is observed that the sampling time for the measurement signals is larger than the actual
-residence time of the reactants in the chamber. Thus, the measurement signals only capture the averaged effects of the
-reactions happening in multiple residence times.
+        A primary function of diesel engine after-treatment systems is to eliminate engine-out (EO) NOx through
+        catalytic reduction. NOx reduction occurs in the Selective Catalytic Reduction (SCR) system, which utilizes
+        ammonia generated from urea dosing. Excess ammonia is catalytically oxidized in the downstream Ammonia Slip
+        Catalysis (ASC) section of the SCR-ASC system. Catalyst degradation, or aging, diminishes NOx reduction
+        effectiveness and may result in exhaust gas concentrations that exceed regulatory limits. Therefore, an on-board
+        diagnostics (OBD) tool capable of monitoring catalyst aging using only available sensor data would enhance
+        reliability in regulatory compliance.
 
-Considering these insights, the present work aims to develop a reduced-order nonlinear discrete model from first
-principles that can be parametrized into an identifiable model. Instead of discretizing the plug-flow reaction in space,
-we first discretize the system in time considering the interplay between the residence time and sampling time. Then the
-reaction process dynamics in the SCR chamber is lumped and reduced to a few significant reactions whose effect on
-the time evolution of the measurement signals at the inlet and outlet of the chamber is modelled as a set of difference
-equations based on the molar conservation of species. These equations are parametrized as the function of inputs and
-states using approximate models for physical properties such as rate constant and density based on the operating
-conditions of the system. Finally, an identifiable model for the $NO_x$ process dynamics is developed and validated with
-the test-cell data.
+        The present work develops a robust, model-based, and non-intrusive on-board diagnostics algorithm that can
+        detect catalyst aging under the real-world limitations of observability, sampling, and NOx sensor
+        cross-sensitivity. The algorithm is based on a discrete nonlinear model that switches between catalyst
+        saturation and unsaturation, developed from first principles. This model captures the reacting flow dynamics
+        observed in the sensor data by explicitly accounting for the correlation between the residence time and sampling
+        frequency. A novel parameter estimation algorithm is introduced that first detects regions of the data where the
+        catalyst is close to saturation, and then uses the classified data to estimate saturated and unsaturated model
+        parameters. The model's validity is demonstrated using the test-cell (experimental) data provided by Cummins.
 
-Further, the model parameters are shown to be sensitive to the catalyst's aging state. Using the paramter estimates and
-their statistics, a hypothesis-testing framework based on the Wald test is developed to detect catalyst aging.
-The performance of the proposed aging detector is demonstrated using both test-cell data at different aging
-levels and real-world data from four long-haul trucks.
+        Based on the physical interpretation of model parameters and the hypothesis that catalyst aging reduces the
+        concentration of adsorption sites, a parameter estimation-based hypothesis-testing framework for aging detection
+        is proposed. The detector based on saturated model parameters demonstrated greater effectiveness and robustness
+        to NOx sensor cross-sensitivity. The detector's performance is validated using both test-cell data and data from
+        four long-haul trucks. Truck data, spanning a day, was collected at two different times: first, when the
+        catalyst was de-greened (new), and second, when it was confirmed to be aged in accordance with existing metrics.
 \end{abstract}
