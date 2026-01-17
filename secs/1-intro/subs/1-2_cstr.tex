@@ -31,7 +31,7 @@ limitations.
 
 \subsection{Continuous Stirred Tank Reactor Model}
 
-\begin{figure}[H]
+\begin{figure}[!ht]
     \centering
     \includegraphics[width=0.5\textwidth]{./figs/1-intro/CSTR.png}
     \caption{Schematic of CSTR model for SCR-ASC System}
@@ -51,7 +51,7 @@ oxidation is assumed for both SCR and ASC (\cite{jain2023diagnostics}). Furtherm
 depend solely on the gas-phase concentrations of $NO_x$, $NH_3$, the adsorbed ammonia, and the available adsorption
 sites.
 
-\begin{table}[H]
+\begin{table}[!ht]
     \begin{center}
     \caption{SCR-ASC Reactions and Rates Considerd for Model Development}
     \label{tab::react_rates}
@@ -92,7 +92,8 @@ One additonal consideration is the saturation of adsorption sites on the catalys
 \begin{align}
     \Gamma \geq \con{NH_3}^{ads} \geq 0
 \end{align}
-Thus, the system dynamics are conditions on the saturation state of the catalyst. This phenomenon is captured in the model through the following switching function:
+Thus, the system dynamics are conditioned on the saturation state of the catalyst. This phenomenon is captured in the model through the following switching function:
+
 \begin{align}
     g_{sat} (\sigma) = \begin{cases}
         \sigma & \text{if } 0 \leq \sigma \leq \Gamma \\
@@ -100,7 +101,6 @@ Thus, the system dynamics are conditions on the saturation state of the catalyst
         0 & \text{if } \sigma < 0
     \end{cases}
 \end{align}
-
 We have dynamics of the concentration of reactants from the mass balance for the CSTR:
 \begin{align}
     V_{scr} \dot{\con{NO_x}}^{out} &= F_{vol} \lr{\con{NO_x}^{in}-\con{NO_x}^{out}} - V_{scr} \lr{k_{scr} \con{NO_x}^{out} g_{sat}\lr{\con{NH_3}^{ads}}} \label{eqn::nox_mass_bal}\\
@@ -136,7 +136,7 @@ as the time constant. For effective sampling of such a system, the sampling freq
 Thus, the CSTR model is valid only for high sampling frequencies. If we plot the residence time on the y-axis and the
 sampling time on the x-axis, the valid region for the CSTR model lies in the shaded area of
 Figure~\ref{fig::cstr_validity}.
-\begin{figure}[H]
+\begin{figure}[!ht]
     \centering
     \includegraphics[width=0.6\textwidth]{./figs/1-intro/cstr_valid.png}
     \caption{Validity Region for CSTR Model On $\tau - t_s$ Plane}
