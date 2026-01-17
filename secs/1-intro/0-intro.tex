@@ -71,3 +71,18 @@ unavailability of ammonia sensors, the unobservability of catalyst state, and NO
 
 % ============================================================
 \input{./secs/1-intro/subs/1-1_OBD.tex}
+\input{./secs/1-intro/subs/1-2_cstr.tex}
+%===========================================================
+
+\section{Approach and Thesis Outline}
+This research conceptualizes catalyst aging detection as a parameter estimation-based hypothesis testing problem,
+employing the NOx reduction dynamics of the system. This framework leads to several sub-problems, which are addressed in
+the subsequent chapters:
+\begin{enumerate}
+    \item Chapter 2 analyzes the limitations of sensor data and characterizes the associated noise.
+
+    \item Chapters 3 and 4 present the development of a dynamic model for NOx reduction in the SCR-ASC system, with parameters that are both identifiable and validatable using experimental data.
+
+    \item Chapter 5 identifies the subset of parameters sensitive to aging, develops estimators and detectors for aging diagnostics, and validates these methods using test-cell and truck data.
+\end{enumerate}
+The thesis concludes with a summary of contributions, an outline of future work, and a proposal for implementing the developed detector.

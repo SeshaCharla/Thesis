@@ -1,0 +1,29 @@
+\section{SCR-ASC Modelling: State of the Art}
+
+A deductive approach to aging diagnostics models the dynamics of the signal-generating system, specifically the SCR-ASC
+system, and incorporates aging effects by tracking changes in selected model parameters. Numerous studies have addressed
+the modeling and control of SCR-ASC systems \cite{yuan2015diesel}. A common modeling strategy involves approximating the
+partial differential equation (PDE) model for the plug flow reaction as a set of ordinary differential equations (ODEs)
+using a series of Continuously Stirred Tank Reactors (CSTRs) (\cite{hsieh2011development}; \cite{nova2014urea}). The
+number of CSTRs implemented often serves as an indicator of model fidelity. For instance, \cite{chen2016estimation},
+\cite{ma2017observer}, \cite{devarakonda2009model}, \cite{hsieh2011development} employ four-cell CSTR models,
+\cite{hu2018failure},  \cite{hu2017improving}, \cite{stadlbauer2015adaptive}, \cite{schar2004control} utilize three-cell
+models, and \cite{jiang2019hydrothermal}, \cite{upadhyay2002modeling}, \cite{devarakonda2008adequacy} adopt two-cell
+models. The single CSTR approach was initially justified in \cite{devarakonda2008adequacy}, where a nonlinear model was
+developed based on these assumptions and subsequently linearized for feedback control design
+(\cite{devarakonda2009model}). Observers have been developed to estimate the states associated with catalyst storage
+(\cite{ma2017observer}; \cite{jain2020term}). A method for detecting catalyst aging by observing changes in the
+catalyst's maximum storage capacity, modeled as an exponential function of temperature, was also introduced in
+\cite{ma2017observer} and \cite{jiang2019hydrothermal}. Additionally, an on-board diagnostics (OBD) approach for
+catalyst aging, utilizing tailpipe $NO_x$ and ammonia measurements, was proposed in \cite{matsumoto2016model}. This
+method is based on the hypothesis of reduced adsorption sites and has been demonstrated on real-world trucks.
+
+A persistent challenge in these studies is that system identification leads to a nonconvex, nonlinear parameter
+estimation problem. Moreover, many approaches assume the availability of all gaseous states at the tailpipe for state
+estimation and to mitigate cross-sensitivity effects in $NO_x$ sensors. This assumption is not valid in practical
+applications, as tailpipe ammonia measurements are generally unavailable in commercial vehicles. Another notable
+limitation of the CSTR model, regarding sensor sampling, is that its discretization does not consider reactant residence
+time, which results in impractically high sampling frequencies. Furthermore, accurate discretization requires at least
+two CSTRs to adequately capture system dynamics and causality \cite{charla2024reduced}, thereby increasing the model
+order. The remainder of the section derives the CSTR model based on the three principal reactions and examines its
+limitations.
