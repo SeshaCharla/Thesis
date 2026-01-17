@@ -1,0 +1,112 @@
+\section{Data Units}
+The available test and truck data used for evaluating the model structure must be converted to common units. The
+following table lists the units used for each of the physical properties.
+\begin{table}[!ht]
+   \centering
+   \caption{Measuremnt Units used in the Model}
+   \begin{tabular}{l l}
+       \hline \hline
+        \itbf{Property} & \itbf{Unit}\\
+        \hline \hline
+        Concentration   & $ 10^{-3} \, mol/m^{3}$ \\
+        Temperature     & $ \times 10 + 200\lx{^o}{C}$ \\
+        Flow Rate   & $\times 10 \, g/s$ \\
+        Urea Injection  & $\times 10^{-1}\, ml/s$ \\
+        Time            & $s$ \\
+        \hline \hline
+   \end{tabular}
+\end{table}
+
+\subsection{Density of the exhaust gas}
+The density of the exhaust flow is assumed to be the density of air at that temperature and ambient atmospheric
+pressure. Using the ideal gas law:
+\begin{align}
+    \rho &= \frac{PM}{R T} = \frac{\mu}{T}
+\end{align}
+\begin{align*}
+    \text{where, } &\\
+    P &= \text{Pressure of the exhaust gas (ambient pressure)} = 101.325 \: kPa\\
+    M &= \text{Molecular weight of the exhaust gas} = 28.9652 \: g/mol\\
+    T &= \text{Temperature of the exhaust gas in Kelvin}\\
+    R &= \text{Universal gas constant} = 8.314 \: J/(mol.K)
+\end{align*}
+\itbf{Note}: $P$ and $M$ are replaced with $(P_1 M_1 + P_2 M_2)$ when humidity of the exhaust gas is considered.
+\subsubsection{$\%$ Change in density for the temperature range of operation}
+We have,
+\begin{align*}
+    \frac{\delta \rho}{\rho} &= -\frac{\delta T}{T}
+\end{align*}
+In general the operating temperature is very high ($250 \,^0 C \approx 500 K$), and most of the data lies in $\pm 100 \, ^0 C$ region. Thus, the maximum change in density is less than $10\%$, whose effect on flow rate is far smaller compared to the change in mass flow rate itself. Thus, density can be assumed to be a constant for this process.
+\begin{align}
+    \rho &= \rho_0
+\end{align}
+%%==================
+\subsubsection{Sensitivity of density to change in $NO_x$ concentrations}
+Let, $P_{NO_x}$ be the partial pressure of $NO_x$ and $P_0$ be the total pressure. Assuming the rest of the gas constitutions are similar to that of air. We have the density as:
+\begin{align*}
+    \rho &= \frac{1}{RT} \lr{ P_{NO_x} M_{NO_x} + (P_0 - P_{NO_x}) M_{air}} = \frac{1}{RT} \lr{ P_{NO_x} \lr{M_{NO_x} - M_{air}} + P_0 M_{air}}\\
+    \implies \frac{\partial \rho}{\partial P_{NO_x}} &= \frac{1}{RT} \lr{\lr{M_{NO_x} - M_{air}}}\\
+    \implies \frac{\delta \rho}{\rho} &= \frac{\lr{\lr{M_{NO_x} - M_{air}} \delta P_{NO_x}}}{\lr{ P_{NO_x} \lr{M_{NO_x} - M_{air}} + P_0 M_{air}}} \qquad \text{at constant temperature}
+\end{align*}
+Also,
+\begin{align*}
+    P_{NO_x} &= P_0 \times \frac{n_{NO_x}}{n_{NO_x} + n_{air}} = P_0 \times \frac{\con{NO_x}}{\frac{n_{NO_x} + n_{air}}{V}} = P_0 \times \frac{\con{NO_x}}{N_a (=1)} \qquad \lrb{\because 1 \, mole = n_{tot}/V}
+\end{align*}
+Thus,
+\begin{align*}
+    \frac{\delta \rho}{\rho} &= \frac{\lr{\lr{M_{NO_x} - M_{air}} \delta \con{NO_x}}}{\lr{ \con{NO_x}
+ \lr{M_{NO_x} - M_{air}} + M_{air}}}
+    \qquad \text{at constant temperature}
+\end{align*}
+We have,
+\begin{align*}
+    &M_{NO_x} \approx 46 \, g/mol, \qquad M_{air} \approx 29 \, g/mol
+\end{align*}
+\begin{align*}
+    \implies \frac{\delta \rho}{\rho} &= \frac{\lr{ 17 \delta \con{NO_x}}}{17 \con{NO_x} + 29}
+    \qquad \text{at constant temperature}
+\end{align*}
+The above equation demonstrates that the relative change in density due to relative change in $NO_x$ concentration is insignificant. As the molarity of $NO_x$ itself is small.
+
+% ====
+
+\subsection{Parts-per-million to mol/m$^3$}
+The commercial and FTIR sensors use ppm (parts per million) in terms of the mole-fraction for concentration
+measurements.
+%===
+\begin{align}
+    1 \, ppm^{\lr{mol}} &= \frac{1 \, mol \text{ of gas}}{10^6 \, mol \text{ of air }}
+\end{align}
+%===
+Thus, this measurement when converted into $mol/m^3$, the temperature of the gas will be essential to get the right
+value as the volume of 1 mole of air changes with temperature. Assuming ideal gas behaviour,
+%===
+\begin{align}
+    V_{air} &= n_{air} T_{air} \times \frac{V_0}{T_0}
+    \label{eqn::V_air}
+\end{align}
+%===
+where, $V_0, T_0$ are the volume and temperature of one mole of air under STP conditions. From literature,
+$V_0 = 22.4 L = 22.4 \times 10^{-3} m^3$ and $T_0 = 273.15 K$.
+%===
+\begin{align*}
+    T_{air} &= 273.15 + T\\
+    n_{air} &= 10^6
+\end{align*}
+%===
+Thus, volume of $10^6$ moles of air at temperature T,
+%===
+\begin{align}
+    V_{air} &= 10^6 \times \frac{273.15 + T}{273.15} \times 22.4 \times 10^{-3} m^3
+            = 22.4 \times 10^{3} \times \frac{273.15 + T}{273.15}
+    \qquad \lrb{\because \ref{eqn::V_air}}
+\end{align}
+%===
+Thus, we have the conversion between ppm and $mol/m^3$:
+%===
+\begin{align}
+    x \text{ in } mol/m^3 &= \frac{x \text{ in } ppm }{\text{Volume of } 10^6 \text{ moles of air}}
+                            = \frac{x \text{ in } ppm}{22.4 \times \lr{\frac{273.15 + T}{273.15}}}
+                                \times 10^{-3} \, mol/m^3
+\end{align}
+%===

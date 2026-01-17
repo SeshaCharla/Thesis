@@ -9,22 +9,16 @@ A critical criterion for assessing the validity of a developed model or diagnost
 %==============================================================================
 \input{./secs/2-data/2-data_units.tex}
 % =============================================================================
+\input{./secs/2-data/3-cross.tex}
+% =============================================================================
 
 
 
 
-\section{$NO_x$ Sensor Crosssensitivity}
 
 \section{Data Preprocessing in Test-Cell and Truck Data}
 
 
-The available data and corresponding units are listed in the following table.
-
-% ==============================================================================
-\input{./secs/2-data/1-density.tex}
-\input{./secs/2-data/2-ppm.tex}
-\input{./secs/2-data/3-flow_rate.tex}
-% ==============================================================================
 
 \section{Test-Cell Data Preprocessing}
 % \input{./secs/2-data/tst_filt/sig_ranges.tex}
@@ -55,23 +49,3 @@ including flow rate, temperature and urea injection rate. The data preporcessing
 The preprocessed data is than partitioned into drive segments with no breaks which correspond to a continuous driving
 period from engine start to engine stop.
 %===
-\begin{table}[H]
-        \centering
-        \caption{Truck Data Set Years and Mileage Difference}
-        \label{tab::truck_data_summary}
-        \begin{tabular}{l l l r}
-        \hline \hline
-               & Earlier Data & Latter Data & Milage \\
-         Truck &  Year            & Year    & Difference\\ \hline \hline
-        AD Transport (adt) & $2015$ & $2017$ & $2.79 \times 10^5$\\
-        Mesilla Valley (mes) & $2015$ & $2018$ & $11.87 \times 10^5$\\
-        Werner (wer) & $2015$ & $2017$ & $5.89 \times 10^5$\\
-        Transwest (trw) & $2015$ & $2016$ & $6.56 \times 10^5$ \\
-        \hline \hline
-        \end{tabular}
-\end{table}
-
-
-% ==============================================================================
-\input{./secs/2-data/n-res_time.tex}
-\input{secs/5-sat_detect/paper/2-subs/2-4-NOx_crosssensitivity.tex}
