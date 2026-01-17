@@ -1,0 +1,90 @@
+Test-cell data were collected for both aged and degreened catalysts under three established drive cycles:
+\begin{enumerate}
+        \item Hot Federal Test Procedure (hFTP)
+        \item Cold Federal Test Procedure (cFTP)
+        \item Ramped Mode Cycle (RMC)
+\end{enumerate}
+The main distinction among these three cycles is the operating temperature during the drive cycles (Figure~\ref{fig::test_cell_temp_profiles}). The RMC test operates at higher temperatures than the FTP tests. Although hFTP and cFTP have overlapping temperature ranges, cFTP starts at a much lower temperature. Table~\ref{tab::test_cell_data_vars} summarizes the variables included in the test-cell data.
+%==
+\begin{figure}[!ht]
+        \centering
+        \includegraphics[width=0.7\textwidth]{./figs/2-data/test_cell_temp_range.png}
+        \caption{Drive Cycle Temperature Profiles of Test Cell Data}
+        \label{fig::test_cell_temp_profiles}
+\end{figure}
+%==
+\begin{table}[!ht]
+\centering
+\caption{Test Cell Data Variables}
+\label{tab::test_cell_data_vars}
+\begin{tabular}{l l l l}
+   \hline \hline
+   Data Name &
+   Units &
+   Variable &
+   Description \\ \hline \hline
+   %==========================================================================
+   LOG\_TM &
+   sec &
+   $t$ &
+   Time
+   \\
+   %==========================================================================
+   EXHAUST\_FLOW &
+   kg/min &
+   $F$ &
+   Exhaust Flow Rate
+   \\
+   %==========================================================================
+   V\_AIM\_TRC\_DPF\_OOUT &
+   $\lx{^o}{C}$ &
+   $T_{in}$ &
+   DPF-out (SCR-in) Gas Temperature
+   \\
+   % =========================================================================
+   V\_AIM\_TRC\_SCR\_OUT &
+   $\lx{^o}{C}$ &
+   $T_{out}$ &
+   SCR/ASC out Gas Temperature
+   \\
+   % ==========================================================================
+   V\_UIM\_FLM\_ESTUREAINJRATE &
+   ml/s &
+   $u_{inj}$ &
+   DEF (Urea Sol.) Dosing Rate
+   \\
+   % ==========================================================================
+   ENG\_CW\_NOX\_FTIR\_COR\_U2 &
+   ppm &
+   $\con{NO_x}^{out}$ &
+   Engine-Out $NO_x$
+   \\
+   % ==========================================================================
+   EXH\_CW\_NOX\_COR\_U1 &
+   ppm &
+   $\con{NO_x}^{in}$ &
+   Tailpipe $NO_x$
+   \\
+   % ==========================================================================
+   EXH\_CW\_AMMONIA\_MEA &
+   ppm &
+   $\con{NH_3}^{out}$ &
+   Tailpipe $NH_3$
+   \\
+   % ==========================================================================
+   EONOX\_COMP\_VALUE &
+   ppm &
+   $\con{NO_x}^{in}$ &
+   Engine-out $NO_x$
+   \\
+   % ==========================================================================
+   V\_SCM\_PPM\_SCR\_OUT\_NOX &
+   ppm &
+   $\con{NO_x}^{out}_{\chi}$ &
+   SCR-out $NO_x$ (cross-sensitive)
+   \\
+   \hline \hline
+\end{tabular}
+\end{table}
+% =====
+A key advantage of test-cell data is the inclusion of FTIR (Fourier Transform Infrared Spectroscopy) sensor measurements, which can estimate both NOx and NH3 gas concentrations. In contrast, the commercial NOx sensor is cross-sensitive to ammonia, whereas FTIR measurements do not exhibit this limitation. The sensor sampling frequency for the test-cell data is 5 Hz (ts = 0.2 s).
