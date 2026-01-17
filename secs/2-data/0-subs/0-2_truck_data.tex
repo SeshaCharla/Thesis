@@ -1,8 +1,8 @@
-In contrast, the truck data comprise on-board sensor measurements from four long-haul trucks collected during the study period. FTIR sensor measurements for species concentrations and tailpipe ammonia measurements are not available. The data sampling frequency is 1 Hz. The operating temperatures recorded in the truck data range from 200 to 300 $^oC$, which is similar to the hFTP drive cycles of the test-cell data. However, the inlet and outlet $NO_x$ concentrations and urea dosing dynamics more closely resemble those observed in the RMC cycles. The truck data variables are summarized in Table~\ref{tab::truck_data_variables}.
 % =============================================================
 \begin{table}[!ht]
 \centering
 \caption{Truck Data Variables}
+\label{tab::truck_data_variables}
 \begin{tabular}{l l l l}
 \hline \hline
 Data Name & Units & Variable & Description \\ \hline \hline
@@ -18,6 +18,16 @@ pNOxInppm & ppm & $\con{NO_x}^{in}$ & Engine-Out $NO_x$\\
 \end{tabular}
 \end{table}
 % =============================================================
+
+In contrast, the truck data comprise on-board sensor measurements from four long-haul trucks collected during the study period. FTIR sensor measurements for species concentrations and tailpipe ammonia measurements are not available. The data sampling frequency is 1 Hz. The operating temperatures (Figure~\ref{fig::truck_data_temp_profiles}) recorded in the truck data range from 200 to 300 $^oC$, which is similar to the hFTP drive cycles of the test-cell data. However, the inlet and outlet $NO_x$ concentrations and urea dosing dynamics more closely resemble those observed in the RMC cycles. The truck data variables are summarized in Table~\ref{tab::truck_data_variables}.
+%===
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.8\textwidth]{./figs/2-data/truck_temperature_range.png}
+    \caption{Temperature Profiles of Truck Data}
+    \label{fig::truck_data_temp_profiles}
+\end{figure}
+%====
 
 The low sampling frequency and absence of ammonia measurements present significant challenges for developing a model of
 the reacting flow dynamics and for identifying model parameters. Furthermore, the model's nonlinearity results in the
