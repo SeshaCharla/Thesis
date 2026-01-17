@@ -1,77 +1,70 @@
-\cleardoublepage
 \chapter{Introduction}
 
-Diesel engine after-treatment systems reduce the concentrations of harmful gases such as $NO_x$ and $CO$ from exhaust
-emissions. The Selective Catalytic Reduction (SCR) system reduces the engine-out $NO_x$ into $N_2$ and $H_2O$, using
-ammonia from urea dosing in the presence of a catalyst. This catalytic conversion process is regulated to decrease the
-levels of ammonia in the exhaust (ammonia slip), through two methods. The first is feedback control, which adjusts the
-urea injection rate based on the exhaust $NO_x$ concentrations. The second method involves an additional catalytic
-reaction, the Ammonia Slip Catalysis(ASC), which is designed to oxidize any excess ammonia at the end of the SCR bed.
-Figure-\ref{fig:exhaust_scheme} shows a schematic of the SCR-ASC system. It is found that $NO_x$-reduction capacity of
-the catalyst reduces with time due to hydro-thermal aging and deposition of contaminants such as excess urea, platinum,
-sulfur and phosphorous \cite{matsumoto2016model}. The aging of the catalyst leads to increased emissions of $NO_x$ and
-ammonia slip, which can result in non-compliance with environmental regulations. A fault detection system for the aging
-of the catalyst would provide better control over the maintenance of the system and improve the overall reduction in
-emissions.
+Diesel engines offer several practical benefits, such as lower operating costs and higher fuel efficiency. However,
+alongside these advantages, their combustion process produces emissions including unburnt hydrocarbons, carbon monoxide,
+nitrogen oxides, and particulate matter, which are hazardous to health and the environment. Some of these pollutants
+result from incomplete fuel combustion, combustion of engine lubricating oils and other non-hydrocarbon components,
+while others are unavoidable byproducts of the combustion process.
 
+To mitigate these pollutants, an aftertreatment system is installed between the engine outlet and the tailpipe. The
+diesel engine aftertreatment system comprises several subsystems, each designed to target specific exhaust pollutants.
+These subsystems include:
+\begin{enumerate}
+    \item Diesel Oxidation Catalyst (DOC): This component oxidizes unburnt hydrocarbons and carbon monoxide. It also converts NO to NO2, adjusting the NO/NO2 ratio from approximately 9:1 to 1:1 to enhance Selective Catalytic Reduction (SCR) performance \cite{hiremath2015development}.
+
+    \item Diesel Particulate Filter (DPF): This filter removes particulate matter from the exhaust stream. It is positioned downstream of the DOC to utilize the oxidation heat for regeneration.
+
+    \item Selective Catalytic Reduction (SCR) and Ammonia Slip Catalysis (ASC) System: This subsystem catalytically reduces nitrogen oxides (NOx) to nitrogen and water vapor.
+\end{enumerate}
+%============================================================
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{./figs/1-intro/SCR-ASC_Exhaust_Flow.png}
+    \caption{Diesel Aftertreatment System Exhaust Flow Path and Sensor Locations \cite{jain2023model}}
+    \label{fig:exhaust_flow}
+\end{figure}
+%============================================================
+Figure~\ref{fig:exhaust_flow} illustrates the exhaust flow path and sensor locations within the aftertreatment system.
+Both SCR and ASC are constructed as cylindrical bricks, with catalyst coated on the inner surfaces of hollow channels.
+These channels are densely arranged to form the brick structure. Multiple SCR catalyst bricks are stacked within a metal
+canister (Figure~\ref{fig:aftertreatment_system}), with the ASC brick positioned downstream. The placement and flow
+distribution of these components are key design variables.
+%============================================================
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{./figs/1-intro/SCR-ASC_chamber.png}
+    \caption{Diesel Aftertreatment System}
+    \label{fig:aftertreatment_system}
+\end{figure}
+% ============================================================
+The primary function of the SCR system is to convert engine-out NOx into nitrogen and water using ammonia derived from
+urea dosing, which is adsorbed onto the catalyst. Regulation of this catalytic reduction process aims to minimize
+ammonia slip in tailpipe exhaust by two approaches. The first approach employs feedback control, adjusting urea dosing
+based on NOx concentrations at the SCR inlet and tailpipe. The second approach utilizes Ammonia Slip Catalysis, which
+oxidizes excess ammonia at the end of the SCR bed (Figure~\ref{fig:exhaust_scheme}).
+% ============================================================
 \begin{figure}[H]
         \centering
         \includegraphics[width=0.75\textwidth]{./figs/1-intro/SCR-ASC_model.png}
         \caption{Schematic of the SCR-ASC system}
         \label{fig:exhaust_scheme}
 \end{figure}
+% ============================================================
+The NOx reduction capacity of the catalyst diminishes over time due to hydrothermal aging and the accumulation of
+contaminants, including excess urea, platinum, sulfur, and phosphorus \cite{matsumoto2016model}. While a robust
+urea-dosing controller may attempt to offset catalyst degradation
+\cite{chen2016estimation},\cite{herman2010diagnostic},\cite{hu2018failure} by increasing urea dosing, this strategy can
+accelerate aging and further elevate NOx and ammonia emissions. This has severe environmental and financial
+implications. Cummins Inc. had to recall 500,000 medium and heavy-duty trucks in 2018 due to faster SCR catalyst
+degradation, resulting in excessive NOx emissions \cite{jain2023model}. On-board diagnosis (OBD) of SCR catalyst aging
+under real-world conditions would help meet increasingly stringent regulations. Some real-world limitations include the
+unavailability of ammonia sensors, the unobservability of catalyst state, and NOx sensor cross-sensitivity to ammonia.
 
-Thus, modern diesel after-treatment systems, particularly those that integrate Selective Catalytic Reduction (SCR) with
-Ammonia Slip Catalyst (ASC), necessitate advanced on-board diagnostics (OBD) tools for accurate assessment of catalyst
-aging. However, the effectiveness of traditional OBD approaches for this purpose has been impeded by the absence of
-model validation with real-world catalyst degradation data, the limitations imposed by existing commercial $NO_x$
-sensors' cross-sensitivity to ammonia and the absence of ammonia sensors in commercial vehicles.
+\noindent Accordingly, the principal contributions of this research are as follows:
+\begin{enumerate}
+    \item Development of a new discrete nonlinear switching model that describes the temporal evolution of sensor signals based on control volume and molar conservation principles.
 
-Numerous studies have been conducted on modeling the SCR-ASC systems and their control \cite{yuan2015diesel}. A
-prevalent modeling approach is to approximate the PDE model for the plug flow reaction into a set of ODEs using sequence
-of Continuously Stirred Tank Reactors (CSTRs) approximation (\cite{hsieh2011development} , and \cite{nova2014urea}). The
-single CSTR approach was first justified in \cite{devarakonda2008adequacy} and a nonlinear model was developed using
-these assumptions, which was then linearized for feedback control design (\cite{devarakonda2009model}). With this model,
-observers were designed to estimate the states corresponding to the catalyst's storage (\cite{ma2017observer},
-\cite{jain2020term}). A method for detecting the catalyst's aging using an observer for the the change in the maximum
-storage capacity of the catalyst, modeled as an exponential function of temperature, was also proposed in
-\cite{ma2017observer} and \cite{jiang2019hydrothermal}. Alternatively, an onboad diagnostics (OBD) logic for catalyst
-aging based on the tailpipe $NO_x$ and ammonia is proposed in \cite{matsumoto2016model} based on the hypthesis of
-reduction in adsorption cites and demonstrated on real world trucks. A common theme in these studies is that the system
-identification results in a non-convex, nonlinear parameter estimation problem. Moreover, these studies assume the
-availability of all the gaseous states at the tail-pipe for state estimation and to eliminate the effects of
-cross-sensitivity of the $NO_x$ sensors, which is not always the case in real-world applications as tailpipe ammonia
-measurements are not generally available in commercial vehicles. One other fundamental issue with the CSTR model in the
-context of sensor sampling is that the discretization of the continuous model does not account for the resisdance time
-of the reactants resulting in high sampling frequency requirements that are not feasible in practice. Additionally, the
-discretization requires at least two CSTRs to capture the system dynamics and causality \cite{charla2024reduced},
-thereby increasing the model order.
+    \item Transformation of the developed model into an identifiable framework for NOx reduction dynamics. Development of a novel parameter estimation algorithm for the switched nonlinear model. Validation of the model using test-cell data.
 
-An alternative approach to the problem would be discarding the CSTR assumption and modelling the time evolution of the
-sensor signals when a "plug" or "parcel" of the exhaust gases flows through the chamber in discrete time considering the
-interplay between sampling and residence time of the reactants.
-
-Such a time evolution introduces constraints on the model due to sampling limitations. To capture the transient
-dynamics, the sampling time should be significantly smaller than the "residence time" of the reactants inside the
-SCR-ASC chamber. If that is not the case, as is the situation with the present available test and truck data, time
-integrated states assuming zero-order holds during the transients need to be introduced into the model and the
-input-output model can be derived from the resulting state-space model.
-
-The catalyst saturation that is inherently considered in the CSTR approach needs to be explicitly included as separate
-mode of the system. The present work developed such a model under catalyst saturation which becomes one of the modes of
-the complete switched nonlinear model. Following the model development we present the parameter estimation algorithm
-that estimates the parameters of the saturated catalyst model using the real-world data whose operating mode is unknown
-and has additional uncertainties due to $NO_x$ sensor's cross-sensitivity to ammonia.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width = 0.9\textwidth]{./figs/1-intro/ModellingApproach.png}
-    \caption{Summary of Modelling Approach}
-\end{figure}
-
-Finally, we develope a statistical test for detecting the catalyst aging based on the estimated parameters of the
-saturated catalyst model. The performance of the proposed aging detector is demonstrated using both test-cell and
-real-world truck data.
-
-
-\input{secs/1-intro/3-cstr/0-cstr.tex}
+    \item Identification of parameters sensitive to aging within the nonlinear model. Development of a parameter estimation-based detector using statistical hypothesis testing for the saturated catalyst dynamic model. Validation of detector performance using both test-cell and real-world truck data.
+\end{enumerate}
