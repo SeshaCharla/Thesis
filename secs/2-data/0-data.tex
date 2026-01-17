@@ -1,9 +1,10 @@
 \chapter{Data Characteristics}
 A critical criterion for assessing the validity of a developed model or diagnostic algorithm is its performance on real-world data, whether sourced from controlled experiments or operational vehicles. For this study, Cummins supplied both test-cell and truck data. Test-cell data were obtained by operating the test cell using established standard drive cycles. Truck data were collected from four long-haul trucks over a one-day period, first with fresh (degreened) catalysts and later after catalyst aging.
 %===============================================================================
-\input{./secs/2-data/subs/0-1_test_cell_data.tex}
+\input{./secs/2-data/0-subs/0-1_test_cell_data.tex}
 %===============================================================================
-\input{./secs/2-data/subs/0-2_truck_data.tex}
+\input{./secs/2-data/0-subs/0-2_truck_data.tex}
+% ===============================================================================
 
 
 
@@ -26,33 +27,6 @@ lists the units used for each of the physical properties.
 \end{table}
 
 The available data and corresponding units are listed in the following table.
-\begin{table}[H]
-\centering
-\begin{tabular}{l l l }
-\hline \hline
-Model Variable & Road Data Variable &Units\\
-\hline \hline
-$t$   & tod & $s$
-\\
-$T$   & pSCRBedTemp & $\lx{^o}{C}$
-\\
-$F$   & pExhMF & $g/s$
-\\
-$u_2$ & pUreaDosing & $ml/sec$
-\\
-$y_1 $ & pNOxOutppm & $ppm$
-\\
-$u_1$ & pNOxInppm & $ppm$
-\\
- $y_1$ sensor status & V\_ATP\_ppm\_SCR\_Out\_NOx\_Status &
-\\
- $u_1$ sensor status & V\_ATP\_ppm\_SCR\_In\_NOx\_Status or EONOx\_Sensor\_Status &
-\\
-\hline
-\end{tabular}
-\caption{Road data variables}
-\end{table}
-
 
 % ==============================================================================
 \input{./secs/2-data/1-density.tex}

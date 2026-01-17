@@ -1,0 +1,27 @@
+In contrast, the truck data comprise on-board sensor measurements from four long-haul trucks collected during the study period. FTIR sensor measurements for species concentrations and tailpipe ammonia measurements are not available. The data sampling frequency is 1 Hz. The operating temperatures recorded in the truck data range from 200 to 300 $^oC$, which is similar to the hFTP drive cycles of the test-cell data. However, the inlet and outlet $NO_x$ concentrations and urea dosing dynamics more closely resemble those observed in the RMC cycles. The truck data variables are summarized in Table~\ref{tab::truck_data_variables}.
+% =============================================================
+\begin{table}[!ht]
+\centering
+\caption{Truck Data Variables}
+\begin{tabular}{l l l l}
+\hline \hline
+Data Name & Units & Variable & Description \\ \hline \hline
+\hline \hline
+tod & s & $t$ & Time\\
+pSCRBedTemp & $\lx{^o}{C}$ & $T$ & SCR-in Gas Temperature\\
+pExhMF & g/s & $F$ & Exhaust Flow Rate\\
+pUreaDosing & ml/sec & $u_{inj}$ & DEF (Urea Sol.) Dosing Rate\\
+pNOxOutppm & ppm & $\con{NO_x}^{out}_{\chi}$ & Tailpipe $NO_x$ (cross-sensitive)\\
+pNOxInppm & ppm & $\con{NO_x}^{in}$ & Engine-Out $NO_x$\\
+\hline
+\hline
+\end{tabular}
+\end{table}
+% =============================================================
+
+The low sampling frequency and absence of ammonia measurements present significant challenges for developing a model of
+the reacting flow dynamics and for identifying model parameters. Furthermore, the model's nonlinearity results in the
+capture of dynamics at different frequencies due to discrepancies in sampling rates between truck and test-cell data.
+This issue can be mitigated by downsampling the test-cell data to 1 Hz, leading to the loss of high-frequency dynamic
+information. Conversely, upsampling the truck data is not feasible because the missing high-frequency information cannot
+be recovered through interpolation.
