@@ -1,4 +1,18 @@
-\chapter{SCR-ASC Reacting Flow Dynamics: Governing Equations}
+\chapter{SCR-ASC Reacting Flow Dynamics: State Space Model}
+
+The sensor limitations and identifiability requirements outlined in previous chapters necessitate the development of a dynamic model for the SCR-ASC system. This model must possess parameters that are identifiable from sensor data and exhibit dynamics within the frequency range captured by the sensors. Accordingly, the model's validity region in the $\tau-t_s$ (residence time versus sampling time) plane should encompass the decimated test-cell and truck data residence times [Figure]. Therefore, this chapter proposes a discrete nonlinear state-space model for the SCR-ASC dynamics that alternates between catalyst saturation and unsaturation states.
+
+\begin{figure}[!ht]
+        \centering
+        \includegraphics[width=0.8\textwidth]{./figs/3-governing_eqns/mdl_valid.png}
+        \caption{Validity region of the discrete nonlinear switched model for SCR-ASC dynamics}
+\end{figure}
+
+The model development employs a control volume approach, formulating molar conservation equations for the reacting species between the inlet and outlet. The primary innovation involves integrating these conservation equations over the residence time and summing them telescopically according to the number of residence times occurring within a single sampling period. This methodology explicitly incorporates both residence time and sampling time into the model.
+
+The chapter begins by detailing the reactions occurring within the SCR-ASC system and outlining the assumptions adopted to reduce model order while maintaining identifiability, causality, and parsimony. Dynamic equations for each reacting species are then derived using this approach, with all assumptions explicitly stated and justified. The resulting nonlinear state-space model for the SCR-ASC system is subsequently presented. The transformation of this nonlinear model into an identifiable input-output model, along with the parameter estimation algorithm and model validation, is addressed in the following chapter.
+
+% =============================================================
 
 \input{./secs/3-governing_eqns/1-reactions.tex}
 \input{./secs/3-governing_eqns/2-NH3ads_proc_dyn.tex}

@@ -11,7 +11,7 @@ that enters the catalyst chamber gets adsorbed onto the free sites on the cataly
 volumetric concentration of the gaseous ammonia and the surface concentration of the free sites. The adsorbed ammonia
 then either reacts with the gaseous $NO_x$ (Eiley-Rideal Mechanism) releasing $N_2$ and $H_2O$ or decomposes to form
 $N_2$ and $H_2O$ (Surface Decomposition). In either case, the process frees up the adsorption sites for the next cycle
-of gaseous ammonia.
+of gaseous ammonia. We first derive the dynamics of the adsorption/desorption process when the catalyst remains unsaturated and the extend it to the saturated case later in Section \ref{sec::sat_cat}.
 %===
 \begin{align*}
     4 NH_3 ^{ads} + 4 NO + O_2 &\xrightarrow[]{k_{scr}} 4 N_2 + 6 H_2O \\
@@ -132,7 +132,8 @@ $\con{NH_3}^{ads}(k + 1)$:
 
 \begin{align*}
     \con{NH_3}^{ads}(k + 1) &= \con{NH_3}^{ads} (k) + n \tau \lr{\Gamma \gamma_{ads} (k) - \sigma(k) \gamma_{des} (k)}\\
-    &= \con{NH_3}^{ads}(k) + n \tau \Gamma k_{ads} \con{NH_3}^{in}(k) - n \tau \sigma(k) \lr{k_{ads} \con{NH_3}^{in}(k) + k_{des} + k_{scr} \con{NO_x}^{in}(k) + k_{oxi}}
+    &= \con{NH_3}^{ads}(k) + n \tau \Gamma k_{ads} \con{NH_3}^{in}(k) \notag\\
+    &\qquad - n \tau \sigma(k) \lr{k_{ads} \con{NH_3}^{in}(k) + k_{des} + k_{scr} \con{NO_x}^{in}(k) + k_{oxi}}
 \end{align*}
 
 \input{./secs/3-governing_eqns/2-1-sig_approx.tex}

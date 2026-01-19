@@ -3,16 +3,24 @@
 \begin{symbols}
         $\con{\bullet}$ \ampeq  Concentration of species $\bullet$ (e.g., $[NO_x]$ is concentration of NOx)\\
         $\mol{\bullet}$ \ampeq  Moles of species $\bullet$ (e.g., $\mol{NO_x}$ is moles of NOx)\\
-        $\Gamma$ \ampeq  Catalyst adsorption site concentration $(moles/m^2)$\\
+        $T$ \ampeq  Temperature of the exhaust gas\\
+        $F$ \ampeq  Mass flow rate of the exhaust gas\\
+        $u_1$, $\con{NO_x}^{in}$ \ampeq  Inlet NOx concentration\\
+        $u_2$, $u_{inj}$ \ampeq  Urea injection rate\\
+        $x_1$, $\con{NO_x}^{out}$ \ampeq  Outlet NOx concentration\\
+        $x_2$, $\con{NH_3}^{out}$ \ampeq  Outlet ammonia concentration\\
+        $\sigma$, $\con{NH_3}^{ads}$ \ampeq  Surface concentration of adsorbed ammonia\\
+        $\eta$ \ampeq  NOx reduction in a time step\\
+        $\eta_F$ \ampeq  Flow-scaled NOx reduction efficiency\\
+        $u_{1F}$ \ampeq  Flow-normalized inlet NOx concentration\\
+        $u_{2F}$ \ampeq  Flow-normalized urea dosing\\
+        $\Gamma$ \ampeq  Catalyst adsorption site concentration\\
         $g_{sat}$ \ampeq Switching function used for capturing the catalyst saturation state switching \\
-        $V_{scr}$ \ampeq  Volume of the SCR-ASC catalyst chamber $(m^3)$\\
-        $A_{scr}$ \ampeq  Surface area of the SCR catalyst coating $(m^2)$\\
-        $\rho$ \ampeq  Density of the exhaust gas $g/ml$\\
-        $T$ \ampeq  Temperature of the exhaust gas $^oC$\\
-        $F$ \ampeq  Mass flow rate of the exhaust gas $g/s$\\
-        $u_{inj}$ \ampeq  Urea injection rate $ml/s$\\
-        $\tau$ \ampeq  Residence time of the exhaust gas in the SCR-ASC chamber $s$\\
-        $t_s$ \ampeq  Sampling time of the data $s$\\
+        $V_{scr}$ \ampeq  Volume of the SCR-ASC catalyst chamber \\
+        $A_{scr}$ \ampeq  Surface area of the SCR catalyst coating \\
+        $\rho$ \ampeq  Density of the exhaust gas\\
+        $\tau$ \ampeq  Residence time of the exhaust gas in the SCR-ASC chamber \\
+        $t_s$ \ampeq  Sampling time of the data \\
 \end{symbols}
 
 % =============================================================
@@ -37,7 +45,11 @@
 % Names of the things I created
 \begin{nomenclature}
         $\tau-t_s$ Plot \ampeq  Plot of Residence Time vs Sampling Time.\\
-        Drive Segment   \ampeq  Segment of the truck data that is contiguous in time.\\
-        Saturated Catalyst \ampeq  A catalyst in which all adsorption sites are occupied with ammonia.\\
+        Drive Segment   \ampeq  Truck data that is contiguous in time.\\
+        Saturated Catalyst \ampeq  A catalyst with adsorption sites are occupied.\\
         Unsaturated Catalyst \ampeq  A catalyst in which some adsorption sites are free.\\
+        $NO_x$ reduction in a time step \ampeq $\eta(k) = u_1(k-1) - x_1(k)$ \\
+        Flow-normalized urea dosing \ampeq $u_{2F}(k) = \sfrac{u_{2}(k)}{F(k)}$ \\
+        Flow-normalized inlet $NO_x$ concentration \ampeq $u_{1F}(k) = \sfrac{u_{1}(k)}{F(k)}$ \\
+        Flow-scaled $NO_x$ reduction efficiency \ampeq $\eta_F(k) = \sfrac{\eta(k)}{u_{1F}(k)}$ \\
 \end{nomenclature}

@@ -12,10 +12,12 @@ Thus, we have the approximate ammonia adsorption/desorption process dynamics mod
 \begin{align*}
     \con{NH_3}^{ads}(k + 1) &= \con{NH_3}^{ads} (k) + n \tau \lr{\Gamma \gamma_{ads} (k) - \con{NH_3}^{ads}(k) \gamma_{des} (k)}\\
     &= n \tau \Gamma \gamma_{ads} (k) + \con{NH_3}^{ads} (k) \lr{1 - n \tau \gamma_{des} (k)}\\
-    &= n \tau \Gamma k_{ads} \con{NH_3}^{in}(k)  + \con{NH_3}^{ads} (k) \lr{1 - n \tau \lr{k_{ads} \con{NH_3}^{in}(k) + k_{des} + k_{scr} \con{NO_x}^{in}(k) + k_{oxi}}}
+    &= n \tau \Gamma k_{ads} \con{NH_3}^{in}(k) \notag\\
+    &\qquad  + \con{NH_3}^{ads} (k) \lr{1 - n \tau \lr{k_{ads} \con{NH_3}^{in}(k) + k_{des} + k_{scr} \con{NO_x}^{in}(k) + k_{oxi}}}
 \end{align*}
 \begin{multline}
-    \con{NH_3}^{ads}(k + 1) = n \tau \Gamma k_{ads} \con{NH_3}^{in}(k)  + \con{NH_3}^{ads} (k) \lr{1 - n \tau \lr{k_{ads} \con{NH_3}^{in}(k) + k_{des} + k_{scr} \con{NO_x}^{in}(k) + k_{oxi}}}
+    \con{NH_3}^{ads}(k + 1) = n \tau \Gamma k_{ads} \con{NH_3}^{in}(k)  \\
+        + \con{NH_3}^{ads} (k) \lr{1 - n \tau \lr{k_{ads} \con{NH_3}^{in}(k) + k_{des} + k_{scr} \con{NO_x}^{in}(k) + k_{oxi}}}
 \end{multline}
 %===
 Examining the individual terms:
@@ -48,3 +50,25 @@ as, $n\tau = t_s$ is a constant for the process, the above equation can be rewri
         &- t_s \lr{k_{oxi} + k_{des}} \sigma(k)\\
         &- t_s k_{scr} \con{NO_x}^{in}(k) \sigma(k)
 \end{align*}
+
+% ==============================================================================
+
+\subsection{Introducing catalyst saturation \label{sec::sat_cat}}
+ The model developed so far assumes the catalyst remains unsaturated at all times. It does not account for cases where
+ the catalyst becomes saturated or depleted during the sampling period. These effects can be incorporated using the
+ switching function $g_{sat}$, defined as:
+ \begin{align}
+    g_{sat} (\sigma) = \begin{cases}
+        \sigma & \text{if } 0 \leq \sigma \leq \Gamma \\
+        \Gamma & \text{if } \sigma > \Gamma \\
+        0 & \text{if } \sigma < 0
+    \end{cases}
+    \label{eqn::g_sat_func}
+\end{align}
+Introducing the catalyst saturation effect using the switching function $g_{sat}$, we have the following two equations
+describing the ammonia adsorption/desorption process dynamics:
+\begin{align}
+    \sigma^{ub}(k+1) &= \sigma(k) + t_s k_{ads} \con{NH_3}^{in} (k) \lr{\Gamma - \sigma(k)} \notag\\
+        & \qquad - t_s \lr{k_{oxi} + k_{des}} \sigma(k) - t_s k_{scr} \con{NO_x}^{in}(k) \sigma(k) \\
+    \sigma(k) &= g_{sat} \lr{\sigma^{ub}(k)}
+\end{align}

@@ -19,11 +19,16 @@ From previous derivations, we have the complete process dynamics of SCR-ASC dyna
     \end{align*}
 
     \item Ammonia adsorption/desorption dynamics:
- \begin{align*}
-        \sigma(k + 1) &= \sigma(k)
-        + t_s  k_{ads} \con{NH_3}^{in}(k) \lr{\Gamma - \sigma(k)}
-        - t_s \lr{k_{oxi} + k_{des}} \sigma(k)
-        - t_s k_{scr} \con{NO_x}^{in}(k) \sigma(k)
+    \begin{align*}
+        \sigma^{ub}(k+1) &= \sigma(k) + t_s k_{ads} \con{NH_3}^{in} (k) \lr{\Gamma - \sigma(k)}
+                - t_s \lr{k_{oxi} + k_{des}} \sigma(k) - t_s k_{scr} \con{NO_x}^{in}(k) \sigma(k) \\
+        \sigma(k) &= g_{sat} \lr{\sigma^{ub}(k)}
+        \text{where, }\qquad &\\
+        g_{sat} (\sigma) &= \begin{cases}
+        \sigma & \text{if } 0 \leq \sigma \leq \Gamma \\
+        \Gamma & \text{if } \sigma > \Gamma \\
+        0 & \text{if } \sigma < 0
+    \end{cases}
     \end{align*}
 \end{enumerate}
 
