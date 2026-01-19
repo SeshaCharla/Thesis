@@ -2,38 +2,38 @@
 The parametric model presented previously can be converted to a regression form with minimal noise amplification as follows:
 let,
 \begin{align}
-        \phi_{\eta r}(k) &= \bm{\lrb{1 - \frac{x_1(k)}{u_1(k-1)}} u_2(k-1) \pmb \phi^T(k-1) \\
-                                     \lrb{1 - \frac{x_1(k)}{u_1(k-1)}}   F(k-1) \pmb \phi^T(k-1)     \\
-                                        \eta(k) F(k-1) \pmb \phi^T(k)
+        \phi_{\eta r}(k) &= \bm{\lrb{1 - \frac{x_1(k)}{u_1(k-1)}} u_2(k-1) \phi^T(k-1) \\
+                                     \lrb{1 - \frac{x_1(k)}{u_1(k-1)}}   F(k-1) \phi^T(k-1)     \\
+                                        \eta(k) F(k-1) \phi^T(k)
                                                 }\\
-        \phi_{\Gamma r}(k) &= \lrb{ \frac{u_2(k-1)}{F(k-1)}} \pmb \phi(k-1)
+        \phi_{\Gamma r}(k) &= \lrb{ \frac{u_2(k-1)}{F(k-1)}} \phi(k-1)
 \end{align}
 Thus, rewriting equation (\ref{eqn::eta_parm}):
 \begin{align*}
         \lrb{\frac{F(k)}{u_1(k)}} \eta(k+1) &= \eta(k) \lrb{\frac{F(k-1)}{u_1(k-1)}}
-                    - \pmb \phi^T_{\eta r}(k) \pmb \theta_{\eta}  + \pmb \phi_{\Gamma r}^T(k) \pmb \theta_{\Gamma}
+                    -  \phi^T_{\eta r}(k) \theta_{\eta}  + \phi_{\Gamma r}^T(k) \theta_{\Gamma}
 \end{align*}
 Let,
 \begin{align}
         y_{NO_x}(k) &= \lrb{\frac{F(k)}{u_1(k)}} \eta(k+1) - \eta(k) \lrb{\frac{F(k-1)}{u_1(k-1)}} \\
         %====
-        \pmb \phi_{NO_x}(k) &= \bm{- \pmb \phi_{\eta r}(k) \\
-                          \pmb \phi_{\Gamma r}(k)}
-                        = \bm{\lrb{\frac{x_1(k)}{u_1(k-1)} - 1} u_2(k-1) \pmb \phi^T(k-1) \\
-                                     \lrb{\frac{x_1(k)}{u_1(k-1)} - 1}   F(k-1) \pmb \phi^T(k-1)     \\
-                                        - \eta(k) F(k-1) \pmb \phi^T(k) \\
-                                                \lrb{ \frac{u_2(k-1)}{F(k-1)}} \pmb \phi(k-1)}
+        \phi_{NO_x}(k) &= \bm{-  \phi_{\eta r}(k) \\
+                           \phi_{\Gamma r}(k)}
+                        = \bm{\lrb{\frac{x_1(k)}{u_1(k-1)} - 1} u_2(k-1)  \phi^T(k-1) \\
+                                     \lrb{\frac{x_1(k)}{u_1(k-1)} - 1}   F(k-1)  \phi^T(k-1)     \\
+                                        - \eta(k) F(k-1)  \phi^T(k) \\
+                                                \lrb{ \frac{u_2(k-1)}{F(k-1)}}  \phi(k-1)}
         \label{eqn::phi_NOx}\\
         %===
-        \pmb \theta_{NO_x} &= \bm{\pmb \theta_{\eta} \\
-                                  \pmb \theta_{\Gamma}}
-                            = \bm{\nu_u t_s \pmb \theta_{ads}\\
-                                        t_s \pmb \theta_{od} \\
-                                        t_s \pmb \theta_{scr} \\
-                                        t_s k_{s2v} \nu_u \Gamma \tau_0 \pmb \theta_{scr/ads}}
+         \theta_{NO_x} &= \bm{ \theta_{\eta} \\
+                                   \theta_{\Gamma}}
+                            = \bm{\nu_u t_s  \theta_{ads}\\
+                                        t_s  \theta_{od} \\
+                                        t_s  \theta_{scr} \\
+                                        t_s k_{s2v} \nu_u \Gamma \tau_0  \theta_{scr/ads}}
 \end{align}
 Thus, we have the regression model,
 \begin{align}
-        y_{NO_x}(k) &= \pmb \phi_{NO_x}^T \pmb \theta_{NO_x}
+        y_{NO_x}(k) &=  \phi_{NO_x}^T  \theta_{NO_x}
         \label{eqn::ident_form}
 \end{align}
