@@ -1,0 +1,109 @@
+\section{Switching Condition Parametrization for the $NO_x$ Reduction Model}
+An alternative and concise derivation of the above model provides greater insight into the parametric switching conditions. We have the following equations describing the $NO_x$ reduction and ammonia adsorption in SCR-ASC system:
+\begin{align}
+        \eta(k+1) &= \frac{u_1(k)}{F(k)}\underbrace{\lr{k_{s2v}\tau_0 k_{scr}(T(k))}}_{Q(k)} \sigma(k)\\
+        \sigma(k+1)&= \sigma(k) + t_s k_{ads} \nu_0 \frac{u_2(k)}{F(k)} \lrb{\Gamma - \sigma(k)}
+                        - t_s k_{od} \sigma(k)
+                        - t_s k_{scr} u_1(k) \sigma(k)\\
+        [NH_3]^{in}(k) &= \nu_0 \frac{u_2(k)}{F(k)}
+\end{align}
+Let,
+\begin{align*}
+        u_{1F}(k) &= \frac{u_1(k)}{F(k)} \\
+        u_{2F}(k) &= \frac{u_2(k)}{F(K)}
+\end{align*}
+We have,
+\begin{align*}
+        Q(k) \sigma(k) &=  \frac{\eta(k+1)}{u_{1F}(k)} \\
+\end{align*}
+Multimplying both sides of the $\sigma(k+1)$ equation by $Q(k+1)$, we get
+\begin{align*}
+        \frac{Q(k)}{Q(k+1)} Q(k+1) \sigma(k+1) &= Q(k) \sigma(k) + t_s k_{ads} \nu_0 \frac{u_2(k)}{F(k)} \lrb{Q(k)\Gamma - Q(k)\sigma(k)} \\
+        % ==
+        & - t_s k_{od} Q(k) \sigma(k)\\
+        & - t_s k_{scr} u_1(k) Q(k) \sigma(k)
+\end{align*}
+\itbf{Assumption 1:} $T(k) \approx T(k+1)$, which implies $Q(k) \approx Q(k+1)$.
+\begin{align*}
+        \frac{\eta(k+2)}{u_{1F}(k+1)} &= \frac{\eta(k+1)}{u_{1F}(k)} + t_s k_{ads} \nu_0 u_{2F}(k) \lrb{Q(k) \Gamma - \frac{\eta(k+1)}{u_{1F}(k)}} \\
+        % ==
+        & - t_s k_{od} \frac{\eta(k+1)}{u_{1F}(k)} \\
+        & - t_s k_{scr} u_1(k) \frac{\eta(k+1)}{u_{1F}(k)}
+\end{align*}
+\itbf{Definition:} We have, the \itbf{flow-scaled fractional $NO_x$ reduction} defined as,
+\begin{align*}
+        \bar \eta_F (k) = \frac{\eta(k)}{u_{1F}(k-1)} = \frac{F(k-1)}{u_1(k-1)} \eta(k)
+\end{align*}
+\begin{align*}
+        \bar \eta_F (k+2) = \bar \eta_F (k+1) &+ t_s k_{ads}(k) \nu_0 u_{2F}(k) \lrb{Q(k) \Gamma - \bar \eta_F (k+1)} \\
+        % ===
+        & - t_s k_{od}(k) \bar \eta_F (k+1) \\
+        & - t_s k_{scr}(k) u_1(k) \bar \eta_F (k+1)
+\end{align*}
+Moving the time back by one step, we have
+\begin{align*}
+        \bar \eta_F (k+1) = \bar \eta_F (k) &+ t_s \nu_0 k_{ads}(k-1)  u_{2F}(k-1) \lrb{Q(k-1) \Gamma - \bar \eta_F (k)} \\
+        % ===
+        & - t_s k_{od}(k-1) \bar \eta_F (k) \\
+        & - t_s k_{scr}(k-1) u_1(k-1) \bar \eta_F (k)
+\end{align*}
+\begin{align*}
+        \bar \eta_F (k+1) = \bar \eta_F (k) &+ t_s k_{ads}(k-1) \nu_0 u_{2F}(k-1) Q(k-1) \Gamma(k-1) \\
+        & - t_s k_{ads}(k-1) \nu_0 u_{2F}(k-1) \bar \eta_F (k) \\
+        & - t_s k_{od}(k-1) \bar \eta_F (k) \\
+        & - t_s k_{scr}(k-1) u_1(k-1) \bar \eta_F (k)
+\end{align*}
+Expanding Q(k):
+\begin{align*}
+        \bar \eta_F (k+1) = \bar \eta_F (k) &+ t_s  k_{s2v}\tau_0 \nu_0 k_{ads}(k-1) k_{scr}(k-1) u_{2F}(k-1) \Gamma(k-1) \\
+        & - t_s \nu_0 u_{2F}(k-1) k_{ads}(k-1) \bar \eta_F (k) \\
+        & - t_s k_{od}(k-1) \bar \eta_F (k) \\
+        & - t_s k_{scr}(k-1) u_1(k-1) \bar \eta_F (k)
+\end{align*}
+Parametrizing the above equation, with a chebushev basis polynomial temperature model for the rate constants (linear) and product of rate constants and $\Gamma$ (quadratic), we have the following:
+\begin{align}
+        \bar \eta_F (k+1) = \bar \eta_F (k) &+ u_{2F}(k-1)\phi_2(k-1) \theta_\Gamma \label{eqn::t2}\\
+        & - u_{2F}(k-1) \bar \eta_F (k) \phi_1(k-1) \theta_{ads} \label{eqn::t3}\\
+        & - \bar \eta_F (k) \phi_1(k-1) \theta_{od} \label{eqn::t4}\\
+        & - u_1(k-1) \bar \eta_F (k) \phi_1(k-1) \theta_{scr} \label{eqn::t5}\\
+        \text{where,} \qquad  & \notag\\
+        \phi_2(k) &= \bm{2\lr{\frac{T-T_0}{T_r}}^2-1 & \frac{T-T_0}{T_r} & 1} \notag\\
+        \phi_1(k) &= \bm{\frac{T-T_0}{T_r} & 1} \notag\\
+        T_r &= \frac{T_{max} - T_{min}}{2} \quad \text{and} \quad
+        T_0 = \frac{T_{max} + T_{min}}{2} \notag
+\end{align}
+Terms, (\ref{eqn::t2}) and (\ref{eqn::t3}) of the right hand side form the adsorption dynamics, term (\ref{eqn::t4})
+forms the oxidation dynamics and term (\ref{eqn::t5}) forms the SCR dynamics. The adsorption dynamics are constrained
+and switch based on the surface coverage $\sigma$ as follows:
+\begin{align*}
+        \Gamma \geq \sigma(k) \geq 0
+\end{align*}
+\begin{align*}
+        u_{2F}(k-1)\phi_2(k-1) \theta_\Gamma - u_{2F}(k-1) \bar \eta_F (k) \phi_1(k-1) \theta_{ads} \geq 0
+\end{align*}
+\begin{align*}
+        \implies  \bm{- \phi_2^T(k-1) &  \bar \eta_F(k) \phi_1^T(k-1)} \bm{\theta_\Gamma \\ \theta_{ads}} \leq 0
+\end{align*}
+\begin{align}
+        \implies  \underbrace{\bm{- \phi_2^T(k-1) &  \bar \eta_F(k) \phi_1^T(k-1)
+                        & \pmb 0 & \pmb 0}}_{\phi_g(k)^T} \underbrace{\bm{\theta_\Gamma \\ \theta_{ads} \\ \theta_{od} \\ \theta_{scr}}}_{\theta_{NO_x}} \leq 0
+        \label{eqn::gaurd_condition}
+\end{align}
+The above condition is the condition for normal operation of the catalyst. When this condition is violated, the
+adsorption dynamics switch to zero, and the dynamics switch to saturated catalyst mode. Thus, we end up with a switching condition that is parametrized linearly in terms of the model parameters reuslting in a \itbf{self-excited threshold nonlinear autoregressive with exogenous input} \cite{hansen1991institutional} model structure.
+% =========================================
+
+Also, $NO_x$ reduction reduction in a given time-step is always positive, i.e.,
+\begin{align*}
+        \bar \eta_F (k) \geq 0 \qquad \forall \quad k
+\end{align*}
+This condition is implicitly satisfied.
+% =========================================
+Incorporating the switching condition and the saturated and unsaturated $NO_x$ reduction dyanamics, we have the state-diagriam for the $NO_x$ reduction dyanimics as shown in Figure \ref{fig::no_x_swtiching}.
+
+\begin{figure}[!ht]
+        \centering
+        \includegraphics[width=\textwidth]{./figs/4-NOx_mdl/hybrid_model.png}
+        \caption{State Diagram for the $NO_x$ Reduction Model with Switching Conditions}
+        \label{fig::no_x_swtiching}
+\end{figure}

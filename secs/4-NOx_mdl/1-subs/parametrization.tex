@@ -6,24 +6,9 @@ The equation (\ref{eqn::nox_govern}) can be written in the following structure, 
 The individual terms are parametrized based on the following relevant set of assumptions:
 \begin{itemize}
         \item[$A3.$] The rate constant is linear or (quadratic) for a given operating range of temperature.
-        \begin{align}
-                k_i &= m_i T + c_i = \underbrace{\bm{T & 1}}_{\pmb \phi^T} \underbrace{\bm{m_i \\ c_i}}_{\pmb \theta_i}
-                        = \pmb \phi^{T} \pmb \theta_i
-                \qquad \forall \quad T \in \lrb{T_0, T_0 + \Delta T}
-                \label{eqn::k_mdl}
-        \end{align}
-        (or)
-        \begin{align}
-                k_i &= q_iT^2 + m_i T + c_i = \underbrace{\bm{T^2 & T & 1}}_{\pmb \phi^T} \underbrace{\bm{q_i \\ m_i \\ c_i}}_{\pmb \theta_i}
-                        = \pmb \phi^{T} \pmb \theta_i
-                \qquad \forall \quad T \in \lrb{T_0, T_0 + \Delta T}
-        \end{align}
         %===
         \item[$A4.$] $\Gamma$ is a constant for a given operating range of temperature and only changes with aging.
-        \begin{align}
-                \Gamma = \text{constant} \quad \forall T \in \lrb{T_0, T_0 + \Delta T}
-                \label{eqn::gamma_mdl}
-        \end{align}
+        % ===
         %===
         \item[$A5.$] The model for $\con{NH_3}^{in}$ based on urea injection is given by equation (\ref{eqn::urea_inj}), i.e., $\con{NH_3}^{in}$ depends only on the flow-rate and urea injection but not the temperature (as the urea is preheated).
         \begin{align}
@@ -36,6 +21,16 @@ The individual terms are parametrized based on the following relevant set of ass
                 \label{eqn::residence_time_mdl}
         \end{align}
 \end{itemize}
+
+Further, for numerical stability \cite{press2003numerical}, the given temperature range in mapped to $[-1,1]$ and chebyshev polynomial basis \cite{trefethen2019approximation} are used instead of standard polynomials. We have the first and second order chebyshev basis as follows:
+\begin{align}
+    \phi_1 (k) &= \bm{ \frac{T-T_0}{T_r} & 1}
+    \label{eqn::phi_1} \\
+    \phi_2 (k) &= \bm{2\lr{\frac{T-T_0}{T_r}}^2-1 & \frac{T-T_0}{T_r} & 1}
+    \label{eqn::phi_2} \\
+    %===
+    \text{Where, } \quad T_0 &= \frac{T_{max} + T_{min}}{2}, \quad T_r = \frac{T_{max} - T_{min}}{2} \notag
+\end{align}
 
 Using the above assumptions, we have the parametrization of individual terms
 \begin{enumerate}
@@ -50,36 +45,36 @@ Thus, we have the parametric form of the $NO_x$ reduction dynamics:
 
 \begin{align}
         \eta(k+1) &= \eta(k) \lrb{\frac{u_1(k)}{F(k)}} \lrb{\frac{F(k-1)}{u_1(k-1)}}
-                    - \pmb \phi^T_{\eta}(k) \pmb \theta_{\eta}  + \pmb \phi_{\Gamma}^T(k) \pmb \theta_{\Gamma}
+                    - \phi^T_{\eta}(k) \theta_{\eta}  +  \phi_{\Gamma}^T(k)  \theta_{\Gamma}
         \label{eqn::eta_parm}
 \end{align}
 where,
 
 \begin{minipage}{0.49\textwidth}
         \begin{align}
-                \pmb \phi_{\eta}(k) &= \eta(k) \lrb{\frac{u_1(k)}{F(k)}}
-                                \bm{\lrb{\frac{u_2(k-1)}{u_1(k-1)}} \pmb \phi^T(k-1) \\
-                                         \lrb{\frac{F(k-1)}{u_1(k-1)}} \pmb \phi^T(k-1)     \\
-                                                 F(k-1) \pmb \phi^T(k)
+                \phi_{\eta}(k) &= \eta(k) \lrb{\frac{u_1(k)}{F(k)}}
+                                \bm{\lrb{\frac{u_2(k-1)}{u_1(k-1)}}  \phi^T(k-1) \\
+                                         \lrb{\frac{F(k-1)}{u_1(k-1)}} \phi^T(k-1)     \\
+                                                 F(k-1) \phi^T(k)
                                                 }
         \end{align}
 \end{minipage}
 \begin{minipage}{0.49\textwidth}
         \begin{align}
-        \pmb \theta_{\eta} &= \bm{\nu_u t_s \pmb \theta_{ads}\\
-                                        t_s \pmb \theta_{od} \\
-                                        t_s \pmb \theta_{scr}}
+        \theta_{\eta} &= \bm{\nu_u t_s  \theta_{ads}\\
+                                        t_s  \theta_{od} \\
+                                        t_s  \theta_{scr}}
         \end{align}
 \end{minipage}
 
 \begin{minipage}{0.49\textwidth}
         \begin{align}
-                \pmb \phi_{\Gamma} (k) &= \lrb{\frac{u_1(k)}{F(k)} } \lrb{ \frac{u_2(k-1)}{F(k-1)}} \pmb \phi(k-1)
+                \phi_{\Gamma} (k) &= \lrb{\frac{u_1(k)}{F(k)} } \lrb{ \frac{u_2(k-1)}{F(k-1)}} \phi(k-1)
         \end{align}
 \end{minipage}
 \begin{minipage}{0.49\textwidth}
         \begin{align}
-                \pmb \theta_{\Gamma} (k) &= \bm{ t_s k_{s2v} \nu_u \Gamma \tau_0 \pmb \theta_{scr/ads} }
+                \theta_{\Gamma} (k) &= \bm{ t_s k_{s2v} \nu_u \Gamma \tau_0 \theta_{scr/ads} }
         \end{align}
 \end{minipage}
 
@@ -88,22 +83,22 @@ where,
 Hence, we have the $NO_x$ dynamics:
 \begin{align}
         x(k+1) &= u_1(k) - \eta(k) \lrb{\frac{u_1(k)}{F(k)}} \lrb{\frac{F(k-1)}{u_1(k-1)}}
-                        + \pmb \phi^T_{\eta}(k) \pmb \theta_{\eta}  - \pmb \phi_{\Gamma}^T(k) \pmb \theta_{\Gamma}
+                        + \phi^T_{\eta}(k) \theta_{\eta}  - \phi_{\Gamma}^T(k) \theta_{\Gamma}
         \label{eqn::nox_sim_mdl}\\
 %===
         x(k+1) &= u_1(k) - \lrf{1 - \frac{x_1(k)}{u_1(k-1)}} \lrb{\frac{u_1(k)}{F(k)}} F(k-1)
-                        + \pmb \phi^T_{\eta}(k) \pmb \theta_{\eta}  - \pmb \phi_{\Gamma}^T(k) \pmb \theta_{\Gamma}
+                        + \phi^T_{\eta}(k) \theta_{\eta}  - \phi_{\Gamma}^T(k) \theta_{\Gamma}
 \end{align}
 
 %==============
 
-$\pmb \phi_\eta$ can be further simplified to avoid the multiplication and division of the same signals that results in noise amplification as follows:
+$ \phi_\eta$ can be further simplified to avoid the multiplication and division of the same signals that results in noise amplification as follows:
 
 \begin{align}
-     \pmb \phi_{\eta}(k)
+     \phi_{\eta}(k)
                         &= \lrb{\frac{u_1(k)}{F(k)}}
-                                \bm{\lrb{1 - \frac{x_1(k)}{u_1(k-1)}} u_2(k-1) \pmb \phi^T(k-1) \\
-                                     \lrb{1 - \frac{x_1(k)}{u_1(k-1)}}   F(k-1) \pmb \phi^T(k-1)     \\
-                                        \eta(k) F(k-1) \pmb \phi^T(k)
+                                \bm{\lrb{1 - \frac{x_1(k)}{u_1(k-1)}} u_2(k-1) \phi^T(k-1) \\
+                                     \lrb{1 - \frac{x_1(k)}{u_1(k-1)}}   F(k-1) \phi^T(k-1)     \\
+                                        \eta(k) F(k-1) \phi^T(k)
                                                 }
 \end{align}
