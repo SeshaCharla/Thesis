@@ -1,0 +1,65 @@
+\chapter{Conclusion and Future Work}
+
+This work developed a uniquely identifiable parametric switched nonlinear model structure for SCR-ASC dynamics based on
+first principles. Rather than relying on spatial discretization with multiple CSTR cells, the approach focused on modeling the temporal evolution of key species concentrations using molar conservation principles. The model explicitly accounts for:
+
+\begin{enumerate}
+        \item Interplay between residence time and sampling time, ensuring the model captures dynamic effects within observable time scales.
+        \item Higher-order polynomial and reciprocal models for physical properties, including residence time and temperature-dependent rate constants, improving model accuracy. A detailed sensitivity analysis w.r.t the relative changes in the quantities validating the assumptions is also presented wherever possible.
+        \item Catalyst saturation and desaturation dynamics, by explicitly modeling $NO_x$ reduction dynamics under each condition, and implementing a switching mechanism between these states.
+\end{enumerate}
+
+The parameters of the developed nonlinear model are uniquely identifiable from data using convex optimization
+techniques. Specifically, the parameters of the saturated model are estimated by solving a linear programming problem
+that minimizes the area under the "$NO_x$ reduction per time step under saturation" curve, with a lower bound set by
+actual $NO_x$ reduction observed in the data. The identified saturated model is then used to detect catalyst
+desaturation segments, which are then used for parameter estimation of the desaturated model.
+
+Finally, validation against test data demonstrates a significant improvement in capturing system dynamics compared to
+traditional linear CSTR models from the literature. The enhanced model accuracy confirms the effectiveness of the
+proposed approach in representing SCR-ASC dynamics and provides a strong foundation for improved diagnostics in diesel
+after-treatment systems.
+
+% ======================================================================================================================
+\begin{figure}[H]
+        \centering
+        \includegraphics[width = 0.9\textwidth]{./figs/n-conclusion/problems_solved.png}
+        \caption{Review of Model Developemnt}
+\end{figure}
+
+During the model development, several issues were identified and addressed. The primary motivation stemmed from the
+causality reversal observed when reducing a multi-cell CSTR model to a single cell and linearizing it around operating
+conditions. Another significant issue was the strong dependence of the nonlinear model's frequency response on sampling
+time, which caused a loss of information when using direct Euler discretization. These issues were resolved by deriving
+molar conservation equations from first principles, which revealed the critical relationship between residence time and
+sampling time. The final model explicitly incorporates this relationship, ensuring a more accurate and physically
+consistent representation of SCR-ASC dynamics.
+
+Another issue involved the parameter estimation. The nonlinear CSTR model not only involved a large number of parameters
+but also resulted in a non-convex estimation problem. In contrast, the linearized CSTR model simplified the problem by
+producing convex lumped parameters, but its validity was limited to lower frequency region. The discrete model developed
+in this work, however, uses polynomial approximations for exponential terms, making the system linear in parameters and
+ensuring a more parsimonious and identifiable model.
+
+The initial parametrization approach of the model included states that were not directly measurable, particularly the
+surface concentration of adsorbed ammonia. The first approach to address this was through a multi-rate estimation
+method. However, it was later discovered that the surface concentration state could be algebraically eliminated by
+introducing recursion into the model. This led to the definition of a new state, $\eta(k) = u_1(k-1) - x_1(k)$, which
+represents the change in $NO_x$ concentration due to reduction over a given time step. This recursive dynamic model's
+parameters were identifiable using the available measurements.
+
+Finally, catalyst saturation was explicitly introduced, and its model parameters were identified using a linear
+programming approach, resulting in a switched nonlinear model that switches between saturation and desaturation. Then,
+the dynamics of $NO_x$ reduction in diesel engine SCR systems under catalyst saturation were used to develop an aging
+detector based on the hypothesis that the model parameters associated with catalyst storage capacity change as the
+catalyst ages. A dynamic model for $NO_x$ reduction under saturation was formulated from molar conservation while
+explicitly accounting for the interplay between the residence time of the reacting flow and the sampling time of the
+sensors. A maximum-likelihood parameter estimation algorithm was proposed using the bounding condition between the
+actual system response and the response under catalyst saturation. The algorithm was validated using experimental data
+from test-cell under RMC and hot-FTP conditions. The $NO_x$-sensor's ammonia cross-sensitivity was shown to introduce a
+bias in the parameter estimates, reducing the separation between the estimates for degreened and aged catalysts. A
+hypothesis-testing framework based on the Wald test was then developed for catalyst aging detection using the estimated
+parameters. The detector's performance was demonstrated using test-cell data at different aging levels and real-world
+data from four long-haul trucks. The results indicate that the proposed framework can reliably identify catalyst aging
+even in the presence of sensor cross-sensitivity and varying operating conditions, provided that the data include a
+sufficient number of samples near the saturation regime, which forms a necessary condition for aging detection.
