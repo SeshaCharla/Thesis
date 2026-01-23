@@ -75,10 +75,17 @@ $T$).The simulation results for the $NO_x$ reduction prediction per time step fo
         model.
 \end{table}
 
-Thus, the switched nonlinear model consistently fits the data with a goodness of fit value greater than $50\%$ for all
-the test-cases. While the linearized CSTR model, though identifiable, has no further room for improvement in terms of
-model refinement, the proposed hybrid nonlinear model has further potential for refinement resulting in lower prediction
-errors than presented. Specifically, further work needs to be done in the development of appropriate switching
-conditions between the saturated and desaturated models. Moreover, the model offers the flexibility of incorporating
-more complex models of underlying physical properties (rate-constants, residence time, etc.) relaxing or reworking the
-assumptions to better fit the operating conditions.
+\begin{table}[!ht]
+        \centering
+        \caption{Cross Validation of Model Paramters on Additional Test Data from Degreened Catalyst}
+        \label{tab::cross_valid}
+        \includegraphics[width=0.37\textwidth]{./figs/4-NOx_mdl/3_figs/cross_valid.png}
+\end{table}
+
+Further the parameter estimates are cross-validated on additional test data from the degreened catalyst
+(Table~\ref{tab::cross_valid}). Thus, the switched nonlinear model consistently fits the data with a goodness of fit
+value greater than $50\%$ for all the test-cases. While the linearized CSTR model, though identifiable, has no further
+room for improvement in terms of model refinement, the proposed hybrid nonlinear model has further potential for
+refinement resulting in lower prediction errors than presented. Moreover, the model offers the flexibility of
+incorporating more complex models of underlying physical properties (rate-constants, residence time, etc.) relaxing or
+reworking the assumptions to better fit the operating conditions.

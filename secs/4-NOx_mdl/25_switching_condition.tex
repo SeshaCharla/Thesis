@@ -63,9 +63,9 @@ Expanding Q(k):
 Parametrizing the above equation, with a chebushev basis polynomial temperature model for the rate constants (linear) and product of rate constants and $\Gamma$ (quadratic), we have the following:
 \begin{align}
         \bar \eta_F (k+1) = \bar \eta_F (k) &+ u_{2F}(k-1)\phi_2(k-1) \theta_\Gamma \label{eqn::t2}\\
-        & - u_{2F}(k-1) \bar \eta_F (k) \phi_1(k-1) \theta_{ads} \label{eqn::t3}\\
-        & - \bar \eta_F (k) \phi_1(k-1) \theta_{od} \label{eqn::t4}\\
-        & - u_1(k-1) \bar \eta_F (k) \phi_1(k-1) \theta_{scr} \label{eqn::t5}\\
+        & - u_{2F}(k-1) \bar \eta_F (k) \phi_1(k-1) \theta_{\eta_{ads}} \label{eqn::t3}\\
+        & - \bar \eta_F (k) \phi_1(k-1) \theta_{\eta_{od}} \label{eqn::t4}\\
+        & - u_1(k-1) \bar \eta_F (k) \phi_1(k-1) \theta_{\eta_{scr}} \label{eqn::t5}\\
         \text{where,} \qquad  & \notag\\
         \phi_2(k) &= \bm{2\lr{\frac{T-T_0}{T_r}}^2-1 & \frac{T-T_0}{T_r} & 1} \notag\\
         \phi_1(k) &= \bm{\frac{T-T_0}{T_r} & 1} \notag\\
@@ -79,14 +79,14 @@ and switch based on the surface coverage $\sigma$ as follows:
         \Gamma \geq \sigma(k) \geq 0
 \end{align*}
 \begin{align*}
-        u_{2F}(k-1)\phi_2(k-1) \theta_\Gamma - u_{2F}(k-1) \bar \eta_F (k) \phi_1(k-1) \theta_{ads} \geq 0
+        u_{2F}(k-1)\phi_2(k-1) \theta_\Gamma - u_{2F}(k-1) \bar \eta_F (k) \phi_1(k-1) \theta_{\eta_{ads}} \geq 0
 \end{align*}
 \begin{align*}
-        \implies  \bm{- \phi_2^T(k-1) &  \bar \eta_F(k) \phi_1^T(k-1)} \bm{\theta_\Gamma \\ \theta_{ads}} \leq 0
+        \implies  \bm{- \phi_2^T(k-1) &  \bar \eta_F(k) \phi_1^T(k-1)} \bm{\theta_\Gamma \\ \theta_{\eta_{ads}}} \leq 0
 \end{align*}
 \begin{align}
-        \implies  \underbrace{\bm{- \phi_2^T(k-1) &  \bar \eta_F(k) \phi_1^T(k-1)
-                        & \pmb 0 & \pmb 0}}_{\phi_g(k)^T} \underbrace{\bm{\theta_\Gamma \\ \theta_{ads} \\ \theta_{od} \\ \theta_{scr}}}_{\theta_{NO_x}} \leq 0
+        \implies  \underbrace{\bm{ \bar \eta_F(k) \phi_1^T(k-1)
+                        & \pmb 0 & \pmb 0 & - \phi_2^T(k-1) }}_{\phi_g(k)^T} \underbrace{\bm{\theta_{\eta_{ads}} \\ \theta_{\eta_{od}} \\ \theta_{\eta_{scr}} \\ \theta_\Gamma }}_{\theta_{NO_x}} \leq 0
         \label{eqn::gaurd_condition}
 \end{align}
 The above condition is the condition for normal operation of the catalyst. When this condition is violated, the

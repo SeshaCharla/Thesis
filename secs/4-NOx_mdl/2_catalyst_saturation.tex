@@ -51,14 +51,14 @@ From, the derivation and the parametrization in the last section, specifically, 
 %===
 Similarly, the second case can be parametrized using the same set of approximations ($Ai$'s) and models of physical quantities (\ref{eqn::residence_time_mdl}, \ref{eqn::k_mdl}),
 \begin{align*}
-        \lrf{\tau(k) k_{s2v} k_{scr}(k) u_1(k)} \Gamma  &= \frac{\tau_0}{F(k)} \times k_{s2v} \times \phi(k)^T \theta_{scr} \times u_1(k) \times \Gamma\\
+        \lrf{\tau(k) k_{s2v} k_{scr}(k) u_1(k)} \Gamma  &= \frac{\tau_0}{F(k)} \times k_{s2v} \times \phi_2(k)^T \theta_{scr} \times u_1(k) \times \Gamma\\
         % ==
-        &= \lrf{\lrb{\frac{u_1(k)}{F(k)}} \phi^T(k) } \lrf{\Gamma \tau_0 k_{s2v} \theta_{scr}}
+        &= \lrf{\lrb{\frac{u_1(k)}{F(k)}} \phi_2^T(k) } \lrf{\Gamma \tau_0 k_{s2v} \theta_{scr}}
 \end{align*}
 \begin{align}
-        Let, \qquad  \Gamma \tau_0 k_{s2v} \theta_{scr} &= \theta_{\Gamma scr}\\
+        Let, \qquad  \Gamma \tau_0 k_{s2v} \theta_{scr} &= \theta_{sat}\\
         \lrf{\tau(k) k_{s2v} k_{scr}(k) u_1(k)} \Gamma  &=
-        \lrb{\frac{u_1(k)}{F(k)}} \phi^T(k)  \theta_{\Gamma scr}
+        \lrb{\frac{u_1(k)}{F(k)}} \phi_2^T(k)  \theta_{sat} = \phi^T_{sat} \theta_{sat}
         \label{eqn::gamma_scr}
 \end{align}
 %===
@@ -69,7 +69,7 @@ Let,
         f_{\sigma}(k) &= \eta(k) \lrb{\frac{u_1(k)}{F(k)}} \lrb{\frac{F(k-1)}{u_1(k-1)}}
         +\lrb{\frac{u_1(k)}{F(k)}} \phi_{NO_x}^T \theta_{NO_x}\\
         %===
-        f_{\Gamma}(k) &= \lrb{\frac{u_1(k)}{F(k)}} \phi^T(k)  \theta_{\Gamma scr}
+        f_{\Gamma}(k) &= \lrb{\frac{u_1(k)}{F(k)}} \phi_2^T(k)  \theta_{sat}
 \end{align}
 
 Substituting the above parametrization into equation (\ref{eqn::eta_cases}):
@@ -95,14 +95,14 @@ Thus, the $NO_x$ reduction dynamics are bounded by:
 % ====
 The above equation can be interpreted as follows: $\eta$ at any given time step is bounded by the change in concentration due to $NO_x$ reduction when the catalyst is saturated $\lr{\eta_{sat}}$ under the same conditions of flow-rate and inlet $NO_x$ concentration. This relationship can be used to find the optimal values of the parameter $\pmb \theta_{\Gamma scr}$ by solving the following constrained linear programming problem:
 \begin{align*}
-        \text{Minimize:}& \qquad    \lrb{ \sum_{k = 0}^{N-2} \lrb{\frac{u_1(k)}{F(k)}} \phi^T(k) } \theta_{\Gamma scr}\\
+        \text{Minimize:}& \qquad    \lrb{ \sum_{k = 0}^{N-2} \lrb{\frac{u_1(k)}{F(k)}} \phi_2^T(k) } \theta_{sat}\\
         \text{Subject to:}& \qquad
-                \bm{\lrb{\frac{u_1(0)}{F(0)}} \phi^T(0) \\
-                    \lrb{\frac{u_1(1)}{F(1)}} \phi^T(1) \\
+                \bm{\lrb{\frac{u_1(0)}{F(0)}} \phi_2^T(0) \\
+                    \lrb{\frac{u_1(1)}{F(1)}} \phi_2^T(1) \\
                     \vdots \\
-                    \lrb{\frac{u_1(N-2)}{F(N-2)}} \phi^T(N-2) \\
+                    \lrb{\frac{u_1(N-2)}{F(N-2)}} \phi_2^T(N-2) \\
                 }
-                \theta_{\Gamma scr}
+                \theta_{sat}
                 \geq
                 \bm{\eta(1) \\
                     \eta(2)\\
