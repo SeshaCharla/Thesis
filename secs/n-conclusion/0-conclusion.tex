@@ -5,7 +5,7 @@ first principles. Rather than relying on spatial discretization with multiple CS
 
 \begin{enumerate}
         \item Interplay between residence time and sampling time, ensuring the model captures dynamic effects within observable time scales.
-        \item Higher-order polynomial and reciprocal models for physical properties, including residence time and temperature-dependent rate constants, improving model accuracy. A detailed sensitivity analysis w.r.t the relative changes in the quantities validating the assumptions is also presented wherever possible.
+        \item Nonlinear approximation for physical properties, including residence time and temperature-dependent rate constants, improving model accuracy. A detailed sensitivity analysis w.r.t the relative changes in the quantities validating the assumptions is also presented wherever possible.
         \item Catalyst saturation and desaturation dynamics, by explicitly modeling $NO_x$ reduction dynamics under each condition, and implementing a switching mechanism between these states.
 \end{enumerate}
 
@@ -15,7 +15,7 @@ that minimizes the area under the "$NO_x$ reduction per time step under saturati
 actual $NO_x$ reduction observed in the data. The identified saturated model is then used to detect catalyst
 desaturation segments, which are then used for parameter estimation of the desaturated model.
 
-Finally, validation against test data demonstrates a significant improvement in capturing system dynamics compared to
+Finally, the model is validated  against test data demonstrates a significant improvement in capturing system dynamics compared to
 traditional linear CSTR models from the literature. The enhanced model accuracy confirms the effectiveness of the
 proposed approach in representing SCR-ASC dynamics and provides a strong foundation for improved diagnostics in diesel
 after-treatment systems.

@@ -107,12 +107,12 @@ We have dynamics of the concentration of reactants from the mass balance for the
     V_{scr} \dot{\con{NO_x}}^{out} &= F_{vol} \lr{\con{NO_x}^{in}-\con{NO_x}^{out}} - V_{scr} \lr{k_{scr} \con{NO_x}^{out} g_{sat}\lr{\con{NH_3}^{ads}}} \label{eqn::nox_mass_bal}\\
     % ====
     V_{scr} \dot{\con{NH_3}}^{out} &= F_{vol} \lr{\con{NH_3}^{in}-\con{NH_3}^{out}} \notag \\
-    & \quad  + V_{scr}\lr{ - k_{ads} \con{NH_3}^{out} \lr{\Gamma - g_{sat}\lr{\con{NH_3}^{ads}}} + k_{des} \con{NH_3}^{ads}} \label{eqn::nh3_mass_bal}
+    & \quad  + V_{scr}\lr{ - k_{ads} \con{NH_3}^{out} \lr{\Gamma - g_{sat}\lr{\con{NH_3}^{ads}}} + k_{des} g_{sat}\lr{{\con{NH_3}^{ads}}}} \label{eqn::nh3_mass_bal}
     \\
     % ====
     \dot{\con{NH_3}}^{ads} &= k_{ads} \con{NH_3}^{out} \lr{\Gamma - g_{sat}\lr{\con{NH_3}^{ads}}}
-                            - k_{des} \con{NH_3}^{ads}
-                            - k_{scr} \con{NO_x}^{out} \con{NH_3}^{ads} \label{eqn::nh3_ads_mass_bal}
+                            - k_{des} g_{sat}\lr{{\con{NH_3}^{ads}}} \notag \\
+                            & \qquad - k_{scr} \con{NO_x}^{out} g_{sat}\lr{\con{NH_3}^{ads}} \label{eqn::nh3_ads_mass_bal}
 \end{align}
 
 The actual input to the system is urea (AdBlue ($32.5\%$ aqueous urea solution) (\cite{nova2014urea}))
