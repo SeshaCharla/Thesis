@@ -1,6 +1,6 @@
 \section{Residence Time}
-A significant challenge posed by low sampling rates is their impact on the residence time of the reacting flow.
-Residence time is defined as the total duration a fluid parcel remains within a control volume, such as the SCR-ASC
+A significant challenge posed by low sampling rates is their interaction with the residence time of the reacting flow.
+Residence time is defined as the total duration of time that a fluid parcel remains within a control volume, such as the SCR-ASC
 chamber. For a group of parcels, the frequency distribution of their residence times, known as the residence time
 distribution (RTD), characterizes this parameter. In both truck and test-cell datasets, the mode of the residence time
 distribution serves as a more appropriate measure of central tendency due to substantial variations in flow rate. The
@@ -8,7 +8,7 @@ residence time ($\tau_{mode}$) can be approximated by the formula:
 \begin{align}
         \tau_{mode} = \frac{\rho V_{scr}}{F_{mode}}
 \end{align}
-Where, $\rho$ is the density of the exhaust gas, $V_{scr}$ is the volume of the SCR-ASC chamber, and $F_{mode}$ is the
+where, $\rho$ is the density of the exhaust gas, $V_{scr}$ is the volume of the SCR-ASC chamber, and $F_{mode}$ is the
 mode of the mass flow rate of the exhaust gas. We have the dimensions of the SCR-ASC chamber tabulated in
 Table~\ref{tab::scr_asc_dimensions} \cite{jain2023model}.
 \begin{table}[!ht]
@@ -27,7 +27,7 @@ Table~\ref{tab::scr_asc_dimensions} \cite{jain2023model}.
     \end{tabular}
 \end{table}
 An additional approximation assumes constant exhaust gas density across the dataset to estimate residence time. The
-purpose of this analysis is to demonstrate that the mode residence time is substantially lower than the sampling
+purpose of this analysis is to demonstrate that the mode of the residence time is substantially lower than the sampling
 interval, despite computational inaccuracies.
 \begin{align}
         \rho \approx 1.2 e-3 \, g/cm^3 \quad \text{at} \quad 250 \lx{^o}{C} \\
