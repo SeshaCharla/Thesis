@@ -1,8 +1,8 @@
 \section{Catalyst Saturation}
 
 The model developed up until now considers the situation where the urea-dosing is such that the catalyst is neither
-saturated nor empty. The ideal case which is also an assumption in the linearized CSTR model. The dynamic model for
-catalyst's surface concentration, when considering the saturation and zero concentration limit will be
+saturated nor empty. This ideal case is also an assumption in the linearized CSTR model. The dynamic model for the
+catalyst surface concentration, when considering saturation and the zero concentration limit, is
 ($\gamma_{proc}(k)$ is defined in \ref{eqn::gamma_proc}):
 %=====
 \begin{align}
@@ -16,7 +16,7 @@ catalyst's surface concentration, when considering the saturation and zero conce
         \label{eqn::actual_sigma_mdl}
 \end{align}
 
-Thus substituting equation \ref{eqn::sigma_elim} into above equations \ref{eqn::unbounded_sigma_mdl} and \ref{eqn::actual_sigma_mdl}:
+Thus, substituting equation \ref{eqn::sigma_elim} into the above equations \ref{eqn::unbounded_sigma_mdl} and \ref{eqn::actual_sigma_mdl}:
 %===
 \begin{align}
         &\sigma^{ub}(k) = \lrf{\frac{\eta(k)}{\tau(k-1) k_{s2v} k_{scr}(k-1) u_1(k-1)}} \gamma_{proc}(k-1) + t_s \Gamma k_{ads}(k-1) \con{NH_3}^{in}(k-1)\\
@@ -40,7 +40,7 @@ Thus substituting equation \ref{eqn::sigma_elim} into above equations \ref{eqn::
         \label{eqn::eta_cases}
 \end{align}
 %====
-From, the derivation and the parametrization in the last section, specifically, equations \ref{eqn::eta_parm} and
+From the derivation and the parametrization in the last section, specifically, equations \ref{eqn::eta_parm} and
 \ref{eqn::phi_NOx}:
 \begin{align}
         \lrf{\tau(k) k_{s2v} k_{scr}(k) u_1(k)}\sigma^{ub}(k) &=
@@ -49,7 +49,7 @@ From, the derivation and the parametrization in the last section, specifically, 
         \label{eqn::sigma_ub_param}
 \end{align}
 %===
-Similarly, the second case can be parametrized using the same set of approximations ($Ai$'s) and models of physical quantities (\ref{eqn::residence_time_mdl}, \ref{eqn::k_mdl}),
+Similarly, the second case can be parametrized using the same set of approximations ($Ai$'s) and models of physical quantities (\ref{eqn::residence_time_mdl}, \ref{eqn::phi_2}):
 \begin{align*}
         \lrf{\tau(k) k_{s2v} k_{scr}(k) u_1(k)} \Gamma  &= \frac{\tau_0}{F(k)} \times k_{s2v} \times \phi_2(k)^T \theta_{scr} \times u_1(k) \times \Gamma\\
         % ==
@@ -62,7 +62,7 @@ Similarly, the second case can be parametrized using the same set of approximati
         \label{eqn::gamma_scr}
 \end{align}
 %===
-The conditions for case switching can also be parametrized to the same expressions as (\ref{eqn::sigma_ub_param}) and (\ref{eqn::gamma_scr}) by multiplying both sides of the inequalities by $\lrf{\tau(k) k_{s2v} k_{scr}(k) u_1(k)} (>0)$ which is always positive.
+The conditions for case switching can also be parametrized using the same expressions as (\ref{eqn::sigma_ub_param}) and (\ref{eqn::gamma_scr}) by multiplying both sides of the inequalities by $\lrf{\tau(k) k_{s2v} k_{scr}(k) u_1(k)} (>0)$, which is always positive.
 
 Let,
 \begin{align}
@@ -93,7 +93,7 @@ Thus, the $NO_x$ reduction dynamics are bounded by:
         0 \leq \eta(k+1) \leq f_\Gamma(k)
 \end{align}
 % ====
-The above equation can be interpreted as follows: $\eta$ at any given time step is bounded by the change in concentration due to $NO_x$ reduction when the catalyst is saturated $\lr{\eta_{sat}}$ under the same conditions of flow-rate and inlet $NO_x$ concentration. This relationship can be used to find the optimal values of the parameter $\pmb \theta_{\Gamma scr}$ by solving the following constrained linear programming problem:
+The above equation can be interpreted as follows: $\eta$ at any given time step is bounded by the change in concentration due to $NO_x$ reduction when the catalyst is saturated $\lr{\eta_{sat}}$ under the same conditions of flow-rate and inlet $NO_x$ concentration. This relationship can be used to find the optimal values of the parameters $\pmb \theta_{\Gamma scr}$ by solving the following constrained linear programming problem:
 \begin{align*}
         \text{Minimize:}& \qquad    \lrb{ \sum_{k = 0}^{N-2} \lrb{\frac{u_1(k)}{F(k)}} \phi_2^T(k) } \theta_{sat}\\
         \text{Subject to:}& \qquad
@@ -112,14 +112,14 @@ The above equation can be interpreted as follows: $\eta$ at any given time step 
 \begin{align}
         \label{eqn::optimization_prob}
 \end{align}
-Effectively we are minimizing the area under the curve of the parametrized saturated system dynamics under the
-constraints of the actual system dynamics. This results in the tightly upper bound curve that describes the dynamics of
-the system which is always saturated.
+Effectively, we minimize the area under the curve of the parametrized saturated system dynamics under the
+constraints of the actual system dynamics. This yields the tight upper-bound curve that describes the dynamics of
+the system when it is always saturated.
 
 The upper bound of the actual change in concentration due to $NO_x$ reduction $(\eta(k))$ is the inlet concentration of $NO_x$ $(u_1(k-1))$.
 
 %===
-Writing the equation (\ref{eqn::eta_max_min}) in terms of the tail-pipe $NO_x$ concentration,
+Writing the equation (\ref{eqn::eta_max_min}) in terms of the tailpipe $NO_x$ concentration,
 \begin{align}
         x_1(k+1) &= \max \lrf{0, u_1(k) - \max \lrf{ 0, \min \lrf{f_{\sigma}(k), f_{\Gamma}(k)}}}
 \end{align}

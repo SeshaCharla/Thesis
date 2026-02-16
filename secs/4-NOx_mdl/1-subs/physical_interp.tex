@@ -1,12 +1,12 @@
 \subsection{Physical Interpretation of the Model}
-The model predicts the tailpipe $NO_x$ from the engine-out $NO_x$ and the previous change in concentration due to
+The model predicts the tailpipe $NO_x$ from the engine-out $NO_x$ and the previous change in $NO_x$ concentration due to
 reduction. The change in adsorbed ammonia concentration due to oxidation, SCR reaction and change in void concentration
 is implicitly considered.
 \begin{multline}
         \underbrace{x(k+1)}_{\bm{\text{tailpipe (outlet) $NO_x$}\\ \text{at next time step}}}
         % ===
-        = \underbrace{u_1(k)}_{\bm{\text{engine-out (inlet) concentration}\\
-                                   \text{at current time step}}}
+        = \underbrace{u_1(k)}_{\bm{\text{engine-out (inlet) $NO_x$ }\\
+                                   \text{concentration at current time step}}}
                 - \underbrace{ \eta(k) \lrb{\frac{u_1(k)}{F(k)}} \lrb{\frac{F(k-1)}{u_1(k-1)}}}
                                 _{\bm{\text{$NO_x$ reduction }\\
                                         \text{from previous step}\\

@@ -1,8 +1,10 @@
-The discrete nonlinear recursive model that is linear in parameters can be derived from the molar conservation equations directly. The model derivation involves three main steps:
-\begin{figure}[H]
+The discrete nonlinear recursive model that is linear in parameters can be derived from the molar conservation equations
+directly using control volume (Figure~\ref{fig::ctrl_vol}). The model derivation involves three main steps:
+\begin{figure}[!ht]
         \centering
         \includegraphics[width = 0.5\textwidth]{./figs/4-NOx_mdl/plug_flow_discrete.png}
         \caption{SCR-ASC system abstraction}
+        \label{fig::ctrl_vol}
 \end{figure}
 \begin{enumerate}
         \item We have the molar-conservation equations across the control volume within one residence time.
@@ -53,7 +55,9 @@ The discrete nonlinear recursive model that is linear in parameters can be deriv
                                                 + \Gamma t_s k_{ads}(t) \con{NH_3}^{in}(t)
                         \label{eqn::ads_avg}
                 \end{multline}
-        \item Finally, using (\ref{eqn::nox_avg}), $\sigma(t+ts), \sigma(t)$ can be eliminated from (\ref{eqn::ads_avg}) for getting a dynamic model for $NO_x$-reduction process which explicitly depends on the measured inputs and states alone.
+        \item Finally, using (\ref{eqn::nox_avg}), $\sigma(t+t_s), \sigma(t)$ can be eliminated from
+                (\ref{eqn::ads_avg}) for getting a dynamic model for $NO_x$-reduction process which explicitly depends
+                on the measured inputs and states alone.
                 \begin{align}
                         \text{Let, }\quad \eta(k) = u_1(k-1) - x_1(k)
                 \end{align}
@@ -64,7 +68,7 @@ The discrete nonlinear recursive model that is linear in parameters can be deriv
                 &-\eta(k) \lrb{\frac{\tau(k)}{\tau(k-1)}}
                                 \lrb{\frac{u_1(k)}{u_1(k-1)}}
                                 \lrb{\frac{k_{scr}(k)}{k_{scr}(k-1)}}
-                t_s k_{ads}(k-1) \con{NH_3}^{in}(t-1)
+                t_s k_{ads}(k-1) \con{NH_3}^{in}(k-1)
                 \\
                 &-\eta(k) \lrb{\frac{\tau(k)}{\tau(k-1)}}
                                 \lrb{\frac{u_1(k)}{u_1(k-1)}}

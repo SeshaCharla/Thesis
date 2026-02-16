@@ -1,5 +1,5 @@
 \section{Switching Condition Parametrization for the $NO_x$ Reduction Model}
-An alternative and concise derivation of the above model provides greater insight into the parametric switching conditions. We have the following equations describing the $NO_x$ reduction and ammonia adsorption in SCR-ASC system:
+An alternative and concise derivation of the above model provides greater insight into the parametric switching conditions. We have the following equations describing the $NO_x$ reduction and ammonia adsorption in the SCR-ASC system (from \ref{eqn::NOX_process}, \ref{eqn::sigma_process}, and \ref{eqn::sat_func}):
 \begin{align}
         \eta(k+1) &= \frac{u_1(k)}{F(k)}\underbrace{\lr{k_{s2v}\tau_0 k_{scr}(T(k))}}_{Q(k)} \sigma(k)\\
         \sigma(k+1)&= \sigma(k) + t_s k_{ads} \nu_0 \frac{u_2(k)}{F(k)} \lrb{\Gamma - \sigma(k)}
@@ -10,13 +10,13 @@ An alternative and concise derivation of the above model provides greater insigh
 Let,
 \begin{align*}
         u_{1F}(k) &= \frac{u_1(k)}{F(k)} \\
-        u_{2F}(k) &= \frac{u_2(k)}{F(K)}
+        u_{2F}(k) &= \frac{u_2(k)}{F(k)}
 \end{align*}
 We have,
 \begin{align*}
         Q(k) \sigma(k) &=  \frac{\eta(k+1)}{u_{1F}(k)} \\
 \end{align*}
-Multimplying both sides of the $\sigma(k+1)$ equation by $Q(k+1)$, we get
+Multiplying both sides of the $\sigma(k+1)$ equation by $Q(k)$, we get
 \begin{align*}
         \frac{Q(k)}{Q(k+1)} Q(k+1) \sigma(k+1) &= Q(k) \sigma(k) + t_s k_{ads} \nu_0 \frac{u_2(k)}{F(k)} \lrb{Q(k)\Gamma - Q(k)\sigma(k)} \\
         % ==
@@ -53,14 +53,14 @@ Moving the time back by one step, we have
         & - t_s k_{od}(k-1) \bar \eta_F (k) \\
         & - t_s k_{scr}(k-1) u_1(k-1) \bar \eta_F (k)
 \end{align*}
-Expanding Q(k):
+Expanding $Q(k)$:
 \begin{align*}
         \bar \eta_F (k+1) = \bar \eta_F (k) &+ t_s  k_{s2v}\tau_0 \nu_0 k_{ads}(k-1) k_{scr}(k-1) u_{2F}(k-1) \Gamma(k-1) \\
         & - t_s \nu_0 u_{2F}(k-1) k_{ads}(k-1) \bar \eta_F (k) \\
         & - t_s k_{od}(k-1) \bar \eta_F (k) \\
         & - t_s k_{scr}(k-1) u_1(k-1) \bar \eta_F (k)
 \end{align*}
-Parametrizing the above equation, with a chebushev basis polynomial temperature model for the rate constants (linear) and product of rate constants and $\Gamma$ (quadratic), we have the following:
+Parametrizing the above equation with a Chebyshev basis polynomial temperature model for the rate constants (linear) and the product of rate constants and $\Gamma$ (quadratic), we have the following:
 \begin{align}
         \bar \eta_F (k+1) = \bar \eta_F (k) &+ u_{2F}(k-1)\phi_2(k-1) \theta_\Gamma \label{eqn::t2}\\
         & - u_{2F}(k-1) \bar \eta_F (k) \phi_1(k-1) \theta_{\eta_{ads}} \label{eqn::t3}\\
@@ -72,8 +72,8 @@ Parametrizing the above equation, with a chebushev basis polynomial temperature 
         T_r &= \frac{T_{max} - T_{min}}{2} \quad \text{and} \quad
         T_0 = \frac{T_{max} + T_{min}}{2} \notag
 \end{align}
-Terms, (\ref{eqn::t2}) and (\ref{eqn::t3}) of the right hand side form the adsorption dynamics, term (\ref{eqn::t4})
-forms the oxidation dynamics and term (\ref{eqn::t5}) forms the SCR dynamics. The adsorption dynamics are constrained
+Terms \ref{eqn::t2} and \ref{eqn::t3} on the right-hand side form the adsorption dynamics, term \ref{eqn::t4}
+forms the oxidation dynamics, and term \ref{eqn::t5} forms the SCR dynamics. The adsorption dynamics are constrained
 and switch based on the surface coverage $\sigma$ as follows:
 \begin{align*}
         \Gamma \geq \sigma(k) \geq 0
@@ -90,16 +90,16 @@ and switch based on the surface coverage $\sigma$ as follows:
         \label{eqn::gaurd_condition}
 \end{align}
 The above condition is the condition for normal operation of the catalyst. When this condition is violated, the
-adsorption dynamics switch to zero, and the dynamics switch to saturated catalyst mode. Thus, we end up with a switching condition that is parametrized linearly in terms of the model parameters reuslting in a \itbf{self-excited threshold nonlinear autoregressive with exogenous input} \cite{hansen1991institutional} model structure.
+adsorption dynamics switch to zero, and the dynamics switch to saturated catalyst mode. Thus, we end up with a switching condition that is parametrized linearly in terms of the model parameters, resulting in a \itbf{self-excited threshold nonlinear autoregressive with exogenous input} \cite{hansen1991institutional} model structure.
 % =========================================
 
-Also, $NO_x$ reduction reduction in a given time-step is always positive, i.e.,
+Also, $NO_x$ reduction in a given time-step is always positive, i.e.,
 \begin{align*}
         \bar \eta_F (k) \geq 0 \qquad \forall \quad k
 \end{align*}
 This condition is implicitly satisfied.
 % =========================================
-Incorporating the switching condition and the saturated and unsaturated $NO_x$ reduction dyanamics, we have the state-diagriam for the $NO_x$ reduction dyanimics as shown in Figure \ref{fig::no_x_swtiching}.
+Incorporating the switching condition and the saturated and unsaturated $NO_x$ reduction dynamics, we have the state diagram for the $NO_x$ reduction dynamics as shown in Figure \ref{fig::no_x_swtiching}.
 
 \begin{figure}[!ht]
         \centering

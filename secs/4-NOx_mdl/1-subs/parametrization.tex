@@ -15,24 +15,30 @@ The individual terms are parametrized based on the following relevant set of ass
                 \con{NH_3}^{in}(k) &= \nu_u \times \frac{u_2(k)}{F(k)}
                 \label{eqn::urea_mdl}
         \end{align}
-        \item[$A6.$] The model for residence time is given by equation (\ref{eqn::res_time}), i.e., the residence time depends only on the flow-rate and effect of change in density (due to change in temperature) is negligable.
+        \item[$A6.$] The model for residence time is given by equation (\ref{eqn::residence_time_mdl}), i.e., the
+                residence time depends only on the flow-rate and effect of change in density (due to change in
+                temperature) is negligible.
         \begin{align}
                 \tau(k) &= \frac{V \rho_0}{F(k)} = \frac{\tau_0}{F(k)}
                 \label{eqn::residence_time_mdl}
         \end{align}
 \end{itemize}
 
-Further, for numerical stability \cite{press2003numerical}, the given temperature range in mapped to $[-1,1]$ and chebyshev polynomial basis \cite{trefethen2019approximation} are used instead of standard polynomials. We have the first and second order chebyshev basis as follows:
+Further, for numerical stability \cite{press2003numerical}, the given temperature range is mapped to $[-1,1]$ and Chebyshev polynomial basis functions \cite{trefethen2019approximation} are used instead of standard polynomials. We have the first and second order Chebyshev basis as follows:
 \begin{align}
     \phi_1 (k) &= \bm{ \frac{T-T_0}{T_r} & 1}
     \label{eqn::phi_1} \\
     \phi_2 (k) &= \bm{2\lr{\frac{T-T_0}{T_r}}^2-1 & \frac{T-T_0}{T_r} & 1}
     \label{eqn::phi_2} \\
     %===
-    \text{Where, } \quad T_0 &= \frac{T_{max} + T_{min}}{2}, \quad T_r = \frac{T_{max} - T_{min}}{2} \notag
+    \text{where } \quad T_0 &= \frac{T_{max} + T_{min}}{2}, \quad T_r = \frac{T_{max} - T_{min}}{2} \notag
 \end{align}
+The Chebyshev basis order is chosen based on the expected nonlinearity in the temperature dependence of the rate
+constants. A first order basis is used when terms contain only rate constants, which are expected to vary nearly
+linearly with temperature over the operating range. A second order basis is used when both rate constants and the total
+surface concentration of voids ($\Gamma$) appear, since this dependence is expected to include an inflection point.
+Using the above assumptions, we have the parametrization of individual terms:
 
-Using the above assumptions, we have the parametrization of individual terms
 \begin{enumerate}
 \item \input{./secs/4-NOx_mdl/1-subs/g0.tex}
 \item \input{./secs/4-NOx_mdl/1-subs/g1.tex}
@@ -53,9 +59,9 @@ where,
 \begin{minipage}{0.49\textwidth}
         \begin{align}
                 \phi_{\eta}(k) &= \eta(k) \lrb{\frac{u_1(k)}{F(k)}}
-                                \bm{\lrb{\frac{u_2(k-1)}{u_1(k-1)}}  \phi^T(k-1) \\
-                                         \lrb{\frac{F(k-1)}{u_1(k-1)}} \phi^T(k-1)     \\
-                                                 F(k-1) \phi^T(k)
+                                \bm{\lrb{\frac{u_2(k-1)}{u_1(k-1)}}  \phi_1^T(k-1) \\
+                                         \lrb{\frac{F(k-1)}{u_1(k-1)}} \phi_1^T(k-1)     \\
+                                                 F(k-1) \phi_1^T(k)
                                                 }
         \end{align}
 \end{minipage}
@@ -69,7 +75,7 @@ where,
 
 \begin{minipage}{0.49\textwidth}
         \begin{align}
-                \phi_{\Gamma} (k) &= \lrb{\frac{u_1(k)}{F(k)} } \lrb{ \frac{u_2(k-1)}{F(k-1)}} \phi(k-1)
+                \phi_{\Gamma} (k) &= \lrb{\frac{u_1(k)}{F(k)} } \lrb{ \frac{u_2(k-1)}{F(k-1)}} \phi_2(k-1)
         \end{align}
 \end{minipage}
 \begin{minipage}{0.49\textwidth}
@@ -92,13 +98,13 @@ Hence, we have the $NO_x$ dynamics:
 
 %==============
 
-$ \phi_\eta$ can be further simplified to avoid the multiplication and division of the same signals that results in noise amplification as follows:
+$ \phi_\eta$ can be further simplified to avoid the multiplication and division of the same signals that result in noise amplification as follows:
 
 \begin{align}
      \phi_{\eta}(k)
                         &= \lrb{\frac{u_1(k)}{F(k)}}
-                                \bm{\lrb{1 - \frac{x_1(k)}{u_1(k-1)}} u_2(k-1) \phi^T(k-1) \\
-                                     \lrb{1 - \frac{x_1(k)}{u_1(k-1)}}   F(k-1) \phi^T(k-1)     \\
-                                        \eta(k) F(k-1) \phi^T(k)
+                                \bm{\lrb{1 - \frac{x_1(k)}{u_1(k-1)}} u_2(k-1) \phi_1^T(k-1) \\
+                                     \lrb{1 - \frac{x_1(k)}{u_1(k-1)}}   F(k-1) \phi_1^T(k-1)     \\
+                                        \eta(k) F(k-1) \phi_1^T(k)
                                                 }
 \end{align}

@@ -1,5 +1,6 @@
-\section{Modelling using average concentration change of $NO_x$ due to reduction in a sample}
-Let, \textbf{$\eta$ denote the change in concentration from inlet to outlet $NO_x$ in one sample}. This is the change in concentration in the exhaust due to the $NO_x$ reduction.
+\section{Modeling using average concentration change of $NO_x$ due to reduction in a sample}
+Let \textbf{$\eta$ denote the change in concentration from inlet to outlet $NO_x$ in one sample}. This is the change in
+concentration in the exhaust due to the $NO_x$ reduction.
 %
 \begin{align}
         \eta(k) &= \con{NO_x}^{in}(k-1) - \con{NO_x}^{out}(k) = u_1(k-1) - x_1(k)
@@ -15,21 +16,21 @@ Thus, rewriting the $NO_x$ process dynamics (\ref{eqn::nox_avg}) in terms of $\e
 %
 The above equation (\ref{eqn::sigma_elim}) can be used to eliminate the unknown quantity $(\sigma)$ from equation (\ref{eqn::ads_avg}). We have,
 \begin{multline}
-        \sigma(k+1) = \sigma(k) - \sigma(k) t_s k_{ads}(k) \con{NH_3}^{in}(t)
+        \sigma(k+1) = \sigma(k) - \sigma(k) t_s k_{ads}(k) \con{NH_3}^{in}(k)
                         - \sigma(k) t_s k_{scr}(k) u_1(k)
                         - \sigma(k) t_s k_{od}(k)
                         \\ + \Gamma(k) t_s k_{ads}(k) \con{NH_3}^{in}(k)
 \end{multline}
 writing the above equation for $\sigma(k)$:
 \begin{multline*}
-         \sigma(k) = \sigma(k-1)\lrf{1 -  t_s k_{ads}(k-1) \con{NH_3}^{in}(t-1)
+         \sigma(k) = \sigma(k-1)\lrf{1 -  t_s k_{ads}(k-1) \con{NH_3}^{in}(k-1)
                         -  t_s k_{scr}(k-1) u_1(k-1)
                         -  t_s k_{od}(k-1)}
                         \\ + \Gamma(k-1) t_s k_{ads}(k-1) \con{NH_3}^{in}(k-1)
 \end{multline*}
 Let,
 \begin{align}
-        \gamma_{proc}(k-1) &= \lrf{1 -  t_s k_{ads}(k-1) \con{NH_3}^{in}(t-1)
+        \gamma_{proc}(k-1) &= \lrf{1 -  t_s k_{ads}(k-1) \con{NH_3}^{in}(k-1)
                         -  t_s k_{scr}(k-1) u_1(k-1)
                         -  t_s k_{od}(k-1)}
         \label{eqn::gamma_proc}
@@ -95,7 +96,7 @@ Incorporating the above assumptions we have the dynamic model for change in conc
                 \\
                 &-\eta(k) \lrb{\frac{\tau(k)}{\tau(k-1)}}
                                 \lrb{\frac{u_1(k)}{u_1(k-1)}}
-                t_s k_{ads}(k-1) \con{NH_3}^{in}(t-1)
+                t_s k_{ads}(k-1) \con{NH_3}^{in}(k-1)
                 \\
                 &-\eta(k) \lrb{\frac{\tau(k)}{\tau(k-1)}}
                                 \lrb{\frac{u_1(k)}{u_1(k-1)}}

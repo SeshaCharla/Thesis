@@ -1,15 +1,15 @@
 \subsection{Saturated Catalyst Model Parameter Estimation}
 
 The linear programming problem is solved using a quadratic polynomial approximation for $\pmb \phi \pmb \theta_{\Gamma
-scr}$. Both, $k_{scr/asc}$ and $\Gamma$ are assumed to be monotonic functions of temperature but in opposing directions.
-Thus, just a linear model for the product will not capture the change in monotonic of the product that happens at a
+scr}$. Both $k_{scr/asc}$ and $\Gamma$ are assumed to be monotonic functions of temperature but in opposing directions.
+Thus, a linear model for the product will not capture the change in monotonicity of the product that happens at a
 particular temperature. After a systematic analysis of various polynomial orders and temperature partitions, a quadratic
 model with two partitions was found to be the best approximation with minimum prediction error. The parameter estimates
 of the saturated model are tabulated below.
 
 \begin{table}[!ht]
         \centering
-        \caption{Parameter estimates of the Saturated Catalyst Model of SCR-ASC system}
+        \caption{Parameter estimates of the saturated catalyst model for the SCR-ASC system}
         \begin{tabular}{l l c c c c}
                 \hline \hline
                 Age & Test & Temp. Zone &
@@ -40,9 +40,9 @@ of the saturated model are tabulated below.
         $ \theta_{\Gamma scr} [i]$ is the coefficient of $T^i$ in the polynomial.
 \end{table}
 
-The parameter values are directionally different for aged and degreened catalyst. Their variance would provide better discernability of the catalyst's aging based on these parameter values.
-
-We have the plots of the response of the saturated system to the inputs from the data as follows.
+The parameter values are directionally different for aged and degreened catalysts. Their variance provides better
+discernibility of catalyst aging based on these parameter values. The responses of the saturated system to the inputs
+from the data are shown in Figures~\ref{fig::eta_bounds_cftp}, \ref{fig::eta_bounds_hftp}, and \ref{fig::eta_bounds_rmc}.
 
 \begin{figure}[!ht]
         \begin{minipage}{0.49\textwidth}
@@ -58,14 +58,15 @@ We have the plots of the response of the saturated system to the inputs from the
                 \end{figure}
         \end{minipage}
         \caption{Saturated system response for cold FTP data}
+        \label{fig::eta_bounds_cftp}
 \end{figure}
 
 The plots show the response of the system under continuous catalyst saturation with ammonia. That is, irrespective of
 the urea dosing, the catalyst remains saturated in this model. This is essentially the maximum
-possible $NO_x$ reduction at current flow-rate and temperature conditions. One observation of note that is consistent
-with intuition is that the maximum $NO_x$ reduction that is plotted above is inversely related to the flow-rate of the
-system. When there is low flow rate, the residence time is high and there is more time for the $NO_x$ to be reduced at
-the same reaction rate resulting in higher $NO_x$ reduction.
+possible $NO_x$ reduction at current flow rate and temperature conditions. One observation of note that is consistent
+with intuition is that the maximum $NO_x$ reduction shown above is inversely related to the flow rate of the system.
+When the flow rate is low, the residence time is high and there is more time for the $NO_x$ to be reduced at the same
+reaction rate, resulting in higher $NO_x$ reduction.
 
 \begin{figure}[!ht]
         \begin{minipage}{0.49\textwidth}
@@ -81,6 +82,7 @@ the same reaction rate resulting in higher $NO_x$ reduction.
                 \end{figure}
         \end{minipage}
         \caption{Saturated system response for hot FTP data}
+        \label{fig::eta_bounds_hftp}
 \end{figure}
 
 \begin{figure}[!ht]
@@ -97,7 +99,8 @@ the same reaction rate resulting in higher $NO_x$ reduction.
                 \end{figure}
         \end{minipage}
         \caption{Saturated system response for RMC data}
+        \label{fig::eta_bounds_rmc}
 \end{figure}
 
-When this quantity is normalized w.r.t the flow-rate and inlet concentration, we end up with a quantity that is purely a
-function of temperature  and aging of the catalyst. This is verified in the next section.
+When this quantity is normalized with respect to the flow-rate and inlet concentration, we obtain a quantity that is
+purely a function of temperature and catalyst aging. This is verified in the next section.
