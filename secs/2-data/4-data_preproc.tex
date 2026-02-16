@@ -2,19 +2,34 @@
 
 Test-cell and truck data are preprocessed prior to system identification and validation. The preprocessing procedure consists of the following steps:
 \begin{enumerate}
-        \item \itbf{Unit Conversion}: Measurement signal units are converted to a consistent set of units selected for analysis.
+        \item \itbf{Unit Conversion}: Measurement signal units are converted to a consistent set of units selected for
+                analysis.
 
-        \item \itbf{NaN Filtering}: Samples containing one or more measurements identified as NaN (not a number) are excluded from the data set. This typically occurs in truck data when on-board sensors fail to record signals.
+        \item \itbf{NaN Filtering}: Samples containing one or more measurements identified as NaN (not a number) are
+                excluded from the data set. This typically occurs in truck data when on-board sensors fail to record
+                signals.
 
-        \item \itbf{Clipping Data to Operating Ranges}: The data set is restricted to selected operating limits for relevant states and inputs, primarily temperature. Since polynomial fits are applied, the model's operating range is bounded. For hFTP and truck data, the temperature bounds are 200°C to 300°C, while for RMC data, the range is 250°C to 350°C.
+        \item \itbf{Clipping Data to Operating Ranges}: The data set is restricted to selected operating limits for
+                relevant states and inputs, primarily temperature. Since polynomial fits are applied, the model's
+                operating range is bounded. For hFTP and truck data, the temperature bounds are $200\,^{\circ}C$ to
+                $300\,^{\circ}C$, while for RMC data, the range is $250\,^{\circ}C$ to $350\,^{\circ}C$.
 
-        \item \itbf{Decimation to 1 Hz (Test Cell Data)}: As previously mentioned, to consistently capture the same frequency range of dynamics across test-cell and truck data sets, test-cell data are decimated from 5 Hz to 1 Hz to align with the truck data.
+        \item \itbf{Decimation to 1 Hz (Test Cell Data)}: As previously mentioned, to consistently capture the same
+                frequency range of dynamics across test-cell and truck data sets, test-cell data are decimated from 5 Hz
+                to 1 Hz to align with the truck data.
 
-        \item \itbf{Smoothing}: Signals are smoothed using a non-causal 7th-order Chebyshev filter with a passband of 0 to 0.1 Hz. For truck data, if data breaks occur shorter than 1 minute, linear interpolation is applied before smoothing.
+        \item \itbf{Smoothing}: Signals are smoothed using a non-causal 7th-order Chebyshev filter with a passband of 0
+                to 0.1 Hz. For truck data, if data breaks occur shorter than 1 minute, linear interpolation is applied
+                before smoothing.
 
-        \item \itbf{Generating Drive Segments (Truck Data)}: Smoothed truck data are partitioned into drive segments, defined as contiguous data intervals without breaks. These segments differ from drive cycles, as they do not necessarily correspond to engine-on/off events and do not have a maximum length of 4 hours.
+        \item \itbf{Generating Drive Segments (Truck Data)}: Smoothed truck data are partitioned into drive segments,
+                defined as contiguous data intervals without breaks. These segments differ from drive cycles, as they do
+                not necessarily correspond to engine-on/off events and do not have a maximum length of 4 hours. Morever,
+                the drive segments are not repatable unlike drive cycles.
 
-        \item \itbf{Calculating Functions of Measured Signals}: After smoothing, quantities directly used in the model, which are linear or nonlinear functions of the measurement signals, are calculated. These quantities include:
+        \item \itbf{Calculating Functions of Measured Signals}: After smoothing, quantities directly used in the model,
+                which are linear or nonlinear functions of the measurement signals, are calculated. These quantities
+                include:
         \begin{enumerate}
                 \item $NO_x$ reduction in a time step:
                         \begin{align}
