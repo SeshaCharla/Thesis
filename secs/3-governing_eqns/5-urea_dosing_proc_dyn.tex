@@ -40,29 +40,10 @@ Substituting, $\tau = \frac{V \rho_0}{F}$, we get:
 \begin{align}
     \con{NH_3}^{in} (k) &= 2r_u t_s \rho_0 \times \frac{u_{inj}(k)}{F}
 \end{align}
-
-The above reciprocal relationship breaks down at zero flow rate which makes sense physically.
-
-% ======================================================================================================================
-The sensitivity of change in ammonia to the change residence time (due to change in flow-rate) or change in urea dosing rate can be calculated as follows:
-\begin{align*}
-    \frac{\partial \con{NH_3}^{in} }{\partial F} &= -2 r_u t_s \rho_0 \times \frac{u_{inj}}{F^2} \\
-    \implies \frac{\delta \con{NH_3}^{in}}{\con{NH_3}^{in}} &= \frac{-\delta F}{F}
-    \qquad \text{at constant } u_{inj}
-\end{align*}
-Similarly,
-\begin{align*}
-    \frac{\partial \con{NH_3}^{in} }{\partial u_{inj}} &= \frac{2 r_u t_s \rho_0}{F} \\
-    \implies \frac{\delta \con{NH_3}^{in}}{\con{NH_3}^{in}} &= \frac{ \delta u_{inj}}{u_{inj}} \qquad \text{at constant } F
-\end{align*}
-
-From practical range of changes in data for $F$ and $u_{inj}$,
-\begin{align*}
-    \frac{ \delta u_{inj}}{u_{inj}}, \qquad \frac{\delta F}{F} \qquad \text{have the same order of magnitude.}
-\end{align*}
-Thus, the effect of change in the urea dosing is as prominent on inlet ammonia concentration as the changes in residence time due to flow rate changes. Thus, the effects of changes in residence time on ammonia generation can be neglected for the approximate model, resulting in:
+The above reciprocal relationship breaks down at zero flow rate which makes sense physically. Thus, we have the dynamics
+of urea dosing process as:
 \begin{align}
-    \con{NH_3}^{in}(k) &= \nu_u \frac{u_{inj}}{F}    \label{eqn::urea_inj}
+    \con{NH_3}^{in}(k) &= \nu_u \frac{u_{inj}}{F}    \label{eqn::urea_inj_dyn}
 \end{align}
 where,
 \begin{align*}
