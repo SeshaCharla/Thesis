@@ -1,7 +1,11 @@
 \section{Model Validation: Simulation Results}
 
-The full switched nonlinear model is simulated with the initial conditions alone and the inputs ($u_1, u_2, F$ and
-$T$).The simulation results for the $NO_x$ reduction prediction per time step for all the tests are plotted below.
+The full switched nonlinear model is simulated with the initial conditions alone and the inputs ($u_1, u_2, F$, and
+$T$). The simulation results for the $NO_x$ reduction prediction per time step for all the tests are plotted below. The
+parameter estimation and validation are done using the same data set in the results presented in
+Figures~\ref{fig::eta_sim_cftp}, \ref{fig::eta_sim_hftp}, and \ref{fig::eta_sim_rmc}. The goodness of fit of the model
+is calculated using the $\%fit$ metric defined in Table~\ref{tab::results}. The switched nonlinear model consistently
+fits the data with a goodness of fit value greater than $50\%$ for all the test cases (Table~\ref{tab::results}).
 
 \begin{figure}[!ht]
         \begin{minipage}{0.49\textwidth}
@@ -17,8 +21,8 @@ $T$).The simulation results for the $NO_x$ reduction prediction per time step fo
                 \end{figure}
         \end{minipage}
         \caption{System response for cold FTP data}
+        \label{fig::eta_sim_cftp}
 \end{figure}
-
 \begin{figure}[!ht]
         \begin{minipage}{0.49\textwidth}
                 \begin{figure}[H]
@@ -33,8 +37,8 @@ $T$).The simulation results for the $NO_x$ reduction prediction per time step fo
                 \end{figure}
         \end{minipage}
         \caption{System response for hot FTP data}
+        \label{fig::eta_sim_hftp}
 \end{figure}
-
 \begin{figure}[!ht]
         \begin{minipage}{0.49\textwidth}
                 \begin{figure}[H]
@@ -49,8 +53,8 @@ $T$).The simulation results for the $NO_x$ reduction prediction per time step fo
                 \end{figure}
         \end{minipage}
         \caption{System response for RMC data}
+        \label{fig::eta_sim_rmc}
 \end{figure}
-
 \begin{table}[!ht]
         \centering
         \caption{$\%$fit of the models with test data}
@@ -68,24 +72,23 @@ $T$).The simulation results for the $NO_x$ reduction prediction per time step fo
                 Aged      & Cold FTP & 60.33 & 23.19 \\ \hline
                 \hline
         \end{tabular}
-
         $\%fit = 100 \times \lr{1 - \frac{\norm{Y- \hat Y}}{\norm{Y -
         mean(Y)}}}$ \\
         $\%fit$ is the percentage of the measured output that was explained by the
         model.
 \end{table}
-
 \begin{table}[!ht]
         \centering
-        \caption{Cross Validation of Model Paramters on Additional Test Data from Degreened Catalyst}
+        \caption{Cross Validation of Model Parameters on Additional Test Data from Degreened Catalyst}
         \label{tab::cross_valid}
         \includegraphics[width=0.37\textwidth]{./figs/4-NOx_mdl/3_figs/cross_valid.png}
 \end{table}
 
-Further the parameter estimates are cross-validated on additional test data from the degreened catalyst
+Further, the parameter estimates are cross-validated on additional test data from the degreened catalyst
 (Table~\ref{tab::cross_valid}). Thus, the switched nonlinear model consistently fits the data with a goodness of fit
-value greater than $50\%$ for all the test-cases. While the linearized CSTR model, though identifiable, has no further
+value greater than $50\%$ for all the test cases. While the linearized CSTR model, though identifiable, has no further
 room for improvement in terms of model refinement, the proposed hybrid nonlinear model has further potential for
-refinement resulting in lower prediction errors than presented. Moreover, the model offers the flexibility of
+refinement, resulting in lower prediction errors than presented, by incorporating the unmodeled dynamics (such as
+explicitly incorporating AMOX dynamics) using additional sensors. Moreover, the model offers the flexibility of
 incorporating more complex models of underlying physical properties (rate-constants, residence time, etc.) relaxing or
 reworking the assumptions to better fit the operating conditions.
