@@ -1,11 +1,19 @@
 \chapter{Catalyst Saturation and Aging Detection}
-For $NO_x$ process dynamics under catalyst saturation, $\sigma(k) = \Gamma$.
+The surface concentration of viable voids $(\Gamma)$ is hypothesized to decrease with aging \cite{daya2018development},
+\cite{daya2020kinetic}. This effect is reflected in the lumped parameters of the dynamic model for $NO_x$ reduction
+developed in previous chapter (Figure~\ref{fig::no_x_swtiching}). The impact of $\Gamma$ reduction on parameter
+estimates is more pronounced in the saturated catalyst model, as this model does not exhibit the noise amplification
+caused by the backward difference present in the regression model of the unsaturated system. For $NO_x$ process dynamics
+(\ref{eqn::NOX_process}) under catalyst saturation, $\sigma(k) = \Gamma$.
 \begin{align}
     \implies \eta_{sat} (k+1) &=  \frac{u_1(k)}{F(k)} \tau_0 \; k_{scr}(T(k)) \; \Gamma (T(k))
         \label{eqn::nox_mdl}
 \end{align}
 %===
-The above equation~(\ref{eqn::nox_mdl}) shows that the tailpipe $NO_x$ concentration becomes independent of urea dosing under catalyst saturation. Polynomial approximations of Arrhenius temperature dependence of the rate constant, $k_{scr}$ and the concentration of viable voids, $\Gamma$ (\cite{nova2014urea},\cite{ciardelli2004scr},\cite{joo2008study}), are used to get a linear in parameters model for the $NO_x$ process dynamics.
+The above equation~(\ref{eqn::nox_mdl}) shows that the tailpipe $NO_x$ concentration becomes independent of urea dosing
+under catalyst saturation. Polynomial approximations of the Arrhenius temperature dependence of the rate constant,
+$k_{scr}$, and the concentration of viable voids, $\Gamma$ (\cite{nova2014urea}, \cite{ciardelli2004scr} and ,
+\cite{joo2008study}), are used to obtain a linear in parameters model for the $NO_x$ process dynamics.
 \begin{align}
     k_{scr}(T) &= A_{scr} e^{\lr{-\frac{E_{scr}}{RT}}} \approx \sum k_i T^i  \qquad i = 0, 1, \hdots
     \label{eqn::rate_const} \\
@@ -13,18 +21,47 @@ The above equation~(\ref{eqn::nox_mdl}) shows that the tailpipe $NO_x$ concentra
     \label{eqn::gamma}
 \end{align}
 %===
-The above approximate models for temperature introduces dependence of the parameter estimates based on temperature range in the samples. For numerical stability \cite{press2003numerical}, the given temperature range in mapped to $[-1,1]$ and chebyshev polynomial basis \cite{trefethen2019approximation} are used instead of standard polynomials. Incorporating equations (\ref{eqn::res_time}) and (\ref{eqn::gamma}) into the $NO_x$ process dynamic model (\ref{eqn::nox_mdl}),
+The above approximate models for temperature introduce dependence of the parameter estimates based on the temperature
+range in the samples. For numerical stability \cite{press2003numerical}, the given temperature range is mapped to
+$[-1,1]$, and Chebyshev polynomial bases \cite{trefethen2019approximation} are used instead of standard polynomials.
+Incorporating equations (\ref{eqn::residence_time_mdl}) and (\ref{eqn::gamma}) into the $NO_x$ process dynamic model
+(\ref{eqn::nox_mdl}),
 \begin{align}
     \eta_{sat} (k+1) &= \phi_{sat}^T(T(k)) \; \theta_{sat}
     \label{eqn::regression} \\
     %===
-    \phi_{sat} (k) &= \frac{u_1(k)}{F(k)} \bm{2\lr{\frac{T-T_0}{T_r}}^2-1 & \frac{T-T_0}{T_r} & 1}
+    \phi_{sat} (k) &= \frac{u_1(k)}{F(k)} \underbrace{\bm{2\lr{\frac{T-T_0}{T_r}}^2-1 & \frac{T-T_0}{T_r} & 1}}_{\phi_2(T)}
     \label{eqn::phi_def} \\
     %===
     \text{Where, } \quad T_0 &= \frac{T_{max} + T_{min}}{2}, \quad T_r = \frac{T_{max} - T_{min}}{2} \notag
 \end{align}
+Rearranging the terms of equation (\ref{eqn::regression}), we get a quantity that involves the product of the rate
+constant and the surface concentration of viable voids, $k_{scr} \Gamma$, i.e.,
+\begin{align}
+    \alpha_{sat} (k) &= \frac{F(k)}{u_1(k)} \eta_{sat} (k) = \tau_0 k_{scr}(T(k)) \Gamma(T(k)) = \phi_2(T(k))^T \theta_{sat}
+\end{align}
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.75\textwidth]{./figs/5-sat_detect/1_intro/alpha_sat_1.png}
+    \caption{The time plot of $\alpha_{sat}$ for aged and degreened catalysts for RMC cycle}
+    \label{fig::alpha_sat_1}
+\end{figure}
+The quantity $\alpha_{sat}$ can be estimated from the input-output data of the system and is expected to decrease with
+aging. This is verified on the test-cell data by plotting the estimated $\alpha_{sat}$ against time
+(Figure~\ref{fig::alpha_sat_1}) and temperature (Figure~\ref{fig::alpha_sat_0}) for an aged and a degreened catalyst.
+The estimated $\alpha_{sat}$ for the aged catalyst is lower than that of the degreened catalyst, which is consistent
+with the hypothesis of reduction in surface concentration of viable voids with aging.
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.7\textwidth]{./figs/5-sat_detect/1_intro/alpha_sat.png}
+    \caption{Estimated $\alpha_{sat}$ for an aged and a degreened catalyst for Hot-FTP and RMC cycles}
+    \label{fig::alpha_sat_0}
+\end{figure}
+The difference in $\alpha_{sat}$ for aged and degreened catalysts is statistically significant as shown in
+Figure~\ref{fig::alpha_sat_0}. The estimation method that provides the variance is delineated in the subsequent
+sections. Thus, the parameter estimates statistically capture the aging effects on the catalyst.
 
-\input{secs/5-sat_detect/paper/3-MLE_estimation.tex}
-\input{secs/5-sat_detect/paper/4-catalyst_mode_detection.tex}
-\input{secs/5-sat_detect/paper/5-catalyst_aging.tex}
-\input{secs/5-sat_detect/paper/6-trucks.tex}
+% \input{secs/5-sat_detect/paper/3-MLE_estimation.tex}
+% \input{secs/5-sat_detect/paper/4-catalyst_mode_detection.tex}
+% \input{secs/5-sat_detect/paper/5-catalyst_aging.tex}
+% \input{secs/5-sat_detect/paper/6-trucks.tex}
