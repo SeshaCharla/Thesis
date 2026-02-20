@@ -1,0 +1,22 @@
+\section{Framework for Catalyst Aging Detection: Statistical Hypothesis Testing}
+The catalyst aging detection problem can be formulated as a composite hypothesis testing problem, where the null
+hypothesis, $\mathcal{H}_0$, corresponds to a degreened catalyst and the alternative hypothesis, $\mathcal{H}_1$,
+corresponds to an aged catalyst. Thus, the problem can be stated as follows:
+\begin{align}
+        \mathcal{H}_0 &: \hat \theta_{sat} = \theta^{dg}_sat \quad \text{(Degreened Catalyst)} \\
+        \mathcal{H}_1 &: \hat \theta_{sat} \neq \theta^{dg}_sat \quad \text{(Aged Catalyst)}
+\end{align}
+where $\hat \theta_{sat}$ is the parameter estimate obtained from the available measurements and $\theta^{dg}_sat$ is the parameter value corresponding to a degreened catalyst. The test statistic for this hypothesis testing problem can be constructed based on the parameter estimates and their variances. For a given data set $\pmb x$, let $p(\pmb x; \theta)$ denote the likelihood function of the data given the parameter $\theta$. Thus, we have the generalized likelihood ratio test (GLRT) \cite{kay1998detection} as follows:
+\begin{align}
+\text{Decide } \mathcal{H}_1 \text{ if } & \notag \\
+        L_G (\pmb x) &= \frac{p(\pmb x; \hat \theta_{sat})}{p(\pmb x; \theta^{dg}_sat)} > \beta
+\end{align}
+where $\hat \theta_{sat}$ is the maximum likelihood estimate of $\theta$ based on the data $\pmb x$ and $\beta$ is the
+threshold for the test. For large sample sizes $(N)$, the asymptotic probability density function (PDF) of the maximum likelihood estimator (MLE) is attained, and the variance of $\hat \theta_{sat}$ attains the Cramér-Rao lower bound (CRLB) \cite{kay1993estimation}. Thus:
+\begin{align}
+        \frac{\partial ln p(\pmb x; \theta_{sat})}{\partial \theta_{sat}} = I(\theta_{sat})(\hat \theta_{sat} - \theta_{sat})
+\end{align}
+where $\theta_{sat}$ is the true parameter value and $I(\theta_{sat})$ is the Fisher information matrix. As $N \rightarrow \infty$, $\hat \theta_{sat} \rightarrow \theta_{sat}$. We can use the first-order Taylor expansion of the fisher information matrix:
+\begin{align}
+        \lrb{I(\theta_{sat})}_{ij} &=  \lrb{I(\theta_{sat})}_{ij} + \frac{\partial \lrb{I(\theta_{sat})}_{ij}}{\partial \theta_{sat}} \lvert_{\theta_{sat} = \hat \theta_{sat}} (\hat \theta_{sat} - \theta_{sat})
+\end{align}

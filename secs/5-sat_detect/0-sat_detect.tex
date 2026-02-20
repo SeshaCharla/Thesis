@@ -39,27 +39,27 @@ Rearranging the terms of equation (\ref{eqn::regression}), we get a quantity tha
 constant and the surface concentration of viable voids, $k_{scr} \Gamma$, i.e.,
 \begin{align}
     \alpha_{sat} (k) &= \frac{F(k)}{u_1(k)} \eta_{sat} (k) = \tau_0 k_{scr}(T(k)) \Gamma(T(k)) = \phi_2(T(k))^T \theta_{sat}
+    \label{eqn::alpha_sat}
 \end{align}
 \begin{figure}[!ht]
     \centering
-    \includegraphics[width=0.75\textwidth]{./figs/5-sat_detect/1_intro/alpha_sat_1.png}
-    \caption{The time plot of $\alpha_{sat}$ for aged and degreened catalysts for RMC cycle}
+    \includegraphics[width=0.5\textwidth]{./figs/5-sat_detect/1_intro/alpha_sat_1.png}
+    \caption{Time plot of $\alpha_{sat}$ for aged and degreened catalysts for RMC cycle}
     \label{fig::alpha_sat_1}
 \end{figure}
-The quantity $\alpha_{sat}$ can be estimated from the input-output data of the system and is expected to decrease with
-aging. This is verified on the test-cell data by plotting the estimated $\alpha_{sat}$ against time
-(Figure~\ref{fig::alpha_sat_1}) and temperature (Figure~\ref{fig::alpha_sat_0}) for an aged and a degreened catalyst.
-The estimated $\alpha_{sat}$ for the aged catalyst is lower than that of the degreened catalyst, which is consistent
-with the hypothesis of reduction in surface concentration of viable voids with aging.
+The parameter $\alpha_{sat}$ can be estimated from the available measurements. A plot of $\alpha_{sat}$ over time reveals a significant decrease in its magnitude for an aged catalyst compared to a degreened catalyst. The preceding equation indicates that $\alpha_{sat}$ is solely temperature-dependent. When plotted as a function of temperature, the magnitude of $\alpha_{sat}$ is consistently and statistically lower for the degreened catalyst than for the aged catalyst in both Hot-FTP and RMC tests. These findings support the hypothesis that aging reduces the surface concentration of viable voids ($\Gamma$).
 \begin{figure}[!ht]
     \centering
     \includegraphics[width=0.7\textwidth]{./figs/5-sat_detect/1_intro/alpha_sat.png}
     \caption{Estimated $\alpha_{sat}$ for an aged and a degreened catalyst for Hot-FTP and RMC cycles}
     \label{fig::alpha_sat_0}
 \end{figure}
-The difference in $\alpha_{sat}$ for aged and degreened catalysts is statistically significant as shown in
-Figure~\ref{fig::alpha_sat_0}. The estimation method that provides the variance is delineated in the subsequent
-sections. Thus, the parameter estimates statistically capture the aging effects on the catalyst.
+Thus, the parameter estimates statistically capture the aging effects on the catalyst. The next step is to develop a
+statistical test for catalyst saturation and aging detection based on the parameter estimates. The test is designed to
+be implemented in real-time on the engine control unit (ECU) of a vehicle, enabling on-board diagnostics for catalyst
+health monitoring.
+
+\input{secs/5-sat_detect/1-wald_test.tex}
 
 % \input{secs/5-sat_detect/paper/3-MLE_estimation.tex}
 % \input{secs/5-sat_detect/paper/4-catalyst_mode_detection.tex}
