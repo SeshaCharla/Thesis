@@ -3,20 +3,86 @@ The catalyst aging detection problem can be formulated as a composite hypothesis
 hypothesis, $\mathcal{H}_0$, corresponds to a degreened catalyst and the alternative hypothesis, $\mathcal{H}_1$,
 corresponds to an aged catalyst. Thus, the problem can be stated as follows:
 \begin{align}
-        \mathcal{H}_0 &: \hat \theta_{sat} = \theta^{dg}_sat \quad \text{(Degreened Catalyst)} \\
-        \mathcal{H}_1 &: \hat \theta_{sat} \neq \theta^{dg}_sat \quad \text{(Aged Catalyst)}
+        \mathcal{H}_0 &: \hat \theta_{sat} = \theta^{dg}_{sat} \quad \text{(Degreened Catalyst)} \\
+        \mathcal{H}_1 &: \hat \theta_{sat} \neq \theta^{dg}_{sat} \quad \text{(Aged Catalyst)}
 \end{align}
 where $\hat \theta_{sat}$ is the parameter estimate obtained from the available measurements and $\theta^{dg}_sat$ is the parameter value corresponding to a degreened catalyst. The test statistic for this hypothesis testing problem can be constructed based on the parameter estimates and their variances. For a given data set $\pmb x$, let $p(\pmb x; \theta)$ denote the likelihood function of the data given the parameter $\theta$. Thus, we have the generalized likelihood ratio test (GLRT) \cite{kay1998detection} as follows:
 \begin{align}
 \text{Decide } \mathcal{H}_1 \text{ if } & \notag \\
-        L_G (\pmb x) &= \frac{p(\pmb x; \hat \theta_{sat})}{p(\pmb x; \theta^{dg}_sat)} > \beta
+        L_G (\pmb x) &= \frac{p(\pmb x; \hat \theta_{sat})}{p(\pmb x; \theta^{dg}_{sat})} > \beta'
 \end{align}
-where $\hat \theta_{sat}$ is the maximum likelihood estimate of $\theta$ based on the data $\pmb x$ and $\beta$ is the
-threshold for the test. For large sample sizes $(N)$, the asymptotic probability density function (PDF) of the maximum likelihood estimator (MLE) is attained, and the variance of $\hat \theta_{sat}$ attains the Cramér-Rao lower bound (CRLB) \cite{kay1993estimation}. Thus:
+where $\hat \theta_{sat}$ is the maximum likelihood estimate of $\theta$ based on the data $\pmb x$ and $\beta'$ is the
+threshold for the test. For large sample sizes $(N)$, the asymptotic probability density function (PDF) of the maximum likelihood estimate (MLE) is attained, and the variance of $\hat \theta_{sat}$ attains the Cramer-Rao lower bound (CRLB) \cite{kay1993estimation}. Thus:
 \begin{align}
         \frac{\partial ln p(\pmb x; \theta_{sat})}{\partial \theta_{sat}} = I(\theta_{sat})(\hat \theta_{sat} - \theta_{sat})
+        \label{eqn::log_ln_P}
 \end{align}
 where $\theta_{sat}$ is the true parameter value and $I(\theta_{sat})$ is the Fisher information matrix. As $N \rightarrow \infty$, $\hat \theta_{sat} \rightarrow \theta_{sat}$. We can use the first-order Taylor expansion of the fisher information matrix:
 \begin{align}
-        \lrb{I(\theta_{sat})}_{ij} &=  \lrb{I(\theta_{sat})}_{ij} + \frac{\partial \lrb{I(\theta_{sat})}_{ij}}{\partial \theta_{sat}} \lvert_{\theta_{sat} = \hat \theta_{sat}} (\hat \theta_{sat} - \theta_{sat})
+        \lrb{I(\theta_{sat})}_{ij} &=  \lrb{I(\theta_{sat})}_{ij} + \left. \frac{\partial \lrb{I(\theta_{sat})}_{ij}}{\partial \theta_{sat}} \right|_{\theta_{sat} = \hat \theta_{sat}} (\hat \theta_{sat} - \theta_{sat})
+        \label{eqn::I_taylor}
 \end{align}
+Neglecting the higher-order terms in the Taylor expansion, we get the asymptotic equivalence of the fisher information matrix at the true parameter value and the MLE:
+\begin{align}
+        I(\theta_{sat}) = I(\hat \theta_{sat}) \qquad \text{as } N \rightarrow \infty
+        \label{eqn::I_asymp}
+\end{align}
+Thus, substituting the above equation into equation (\ref{eqn::log_ln_P}), we get:
+\begin{align}
+        \frac{\partial ln p(\pmb x; \theta_{sat})}{\partial \theta_{sat}} = I(\hat \theta_{sat})(\hat \theta_{sat} - \theta_{sat})
+        \label{eqn::log_ln_P_2}
+\end{align}
+Integrating the above equation with respect to $\theta_{sat}$, we get:
+\begin{align}
+        p(\pmb x; \theta_{sat}) = p(\pmb x; \hat \theta_{sat}) e^{-\frac{1}{2} (\hat \theta_{sat} - \theta_{sat})^T I(\hat \theta_{sat}) (\hat \theta_{sat} - \theta_{sat})}
+        \label{eqn::p_x_theta}
+\end{align}
+The $\theta_{sat}$ in the above derivation is $\theta^{dg}_{sat}$, the parameter value corresponding to a degreened catalyst. The GLRT can be rewritten as follows:
+\begin{align}
+\text{Decide } \mathcal{H}_1 \text{ if } & \notag \\
+        L_G (\pmb x) &= \frac{p(\pmb x; \hat \theta_{sat})}{p(\pmb x; \theta^{dg}_{sat})} = e^{\frac{1}{2} (\hat \theta_{sat} - \theta^{dg}_{sat})^T I(\hat \theta_{sat}) (\hat \theta_{sat} - \theta^{dg}_{sat})} > \beta'
+\end{align}
+Taking logarithm on both sides, we get the Wald-test \cite{wald1943tests} statistic, $T_w$:
+\begin{align}
+\text{Decide } \mathcal{H}_1 \text{ if } & \notag \\
+        T_w &= 2 \ln L_G (\pmb x) = (\hat \theta_{sat} - \theta^{dg}_{sat})^T I(\hat \theta_{sat}) (\hat \theta_{sat} - \theta^{dg}_{sat}) > \beta (= 2 \ln \beta')
+        \label{eqn::wald_statistic}
+\end{align}
+The distribution of the test-statistic $T_w$, can be obtained from the distribution of the MLE, $\hat \theta_{sat}$. As $N \rightarrow \infty$, the MLE is asymptotically normally distributed with mean $\theta_{sat}$ and covariance matrix $I^{-1}(\theta_{sat})$ \cite{kay1993estimation}. Thus,
+\begin{align}
+        \hat \theta_{sat} \sim
+        \begin{cases}
+        \mathcal{N}(\theta^{dg}_{sat}, I^{-1}(\theta^{dg}_{sat})) & \text{under } \mathcal{H}_0 \\
+        \mathcal{N}(\theta^{ag}_{sat}, I^{-1}(\theta^{ag}_{sat})) & \text{under } \mathcal{H}_1
+        \end{cases}
+\end{align}
+Using the similar arguments previously asymptotic equivalence of fisher information matrix (\ref{eqn::I_asymp}):
+\begin{align}
+        I(\hat \theta_{sat}) (\hat \theta_{sat} - \theta^{dg}_{sat}) = I(\theta^{dg}_{sat}) (\hat \theta_{sat} - \theta^{dg}_{sat}) = I(\theta^{ag}_{sat}) (\hat \theta_{sat} - \theta^{dg}_{sat})
+\end{align}
+Thus, the distribution of the test statistic $T_w$ would be $\chi^2$ with degrees of freedom equal to the dimension of $\theta_{sat}$ under the null hypothesis $\mathcal{H}_0$ and a non-central $\chi^2$ distribution under the alternative hypothesis $\mathcal{H}_1$ \cite{kay1998detection}.
+\begin{align}
+        T_w &\sim
+        \begin{cases}
+        \chi^2_k & \text{under } \mathcal{H}_0 \\
+        \chi^2_k (\lambda) & \text{under } \mathcal{H}_1
+        \end{cases} \\
+        \text{where,} \quad \lambda &= (\theta^{ag}_{sat} - \theta^{dg}_{sat})^T I(\theta^{ag}_{sat}) (\theta^{ag}_{sat} - \theta^{dg}_{sat})
+\end{align}
+
+The threshold $\beta$ can be chosen using the Neyman-Pearson criterion \cite{kay1998detection} to achieve a desired false alarm probability, $P_{FA}$ and maximize the detection probability, $P_D$. The false alarm probability is given by:
+\begin{align}
+        P_{FA} &= P(T_w > \beta | \mathcal{H}_0) = 1 - F_{\chi^2}(\beta)
+\end{align}
+where $F_{\chi^2_k}(\beta)$ is the cumulative distribution function (CDF) of the $\chi^2$ distribution with $k$ degrees of freedom. The detection probability is given by:
+\begin{align}
+        P_D &= P(T_w > \beta | \mathcal{H}_1) = 1 - F_{\chi^2_k (\lambda)}(\beta)
+\end{align}
+where $F_{\chi^2_k (\lambda)}(\beta)$ is the CDF of the non-central $\chi^2$ distribution with $k$ degrees of freedom and non-centrality parameter $\lambda$. The threshold $\beta$ can be chosen to achieve a desired $P_{FA}$ and maximize $P_D$. In practice, the sample size $N$ may not be large enough to achieve the asymptotic properties of the MLE, and the distribution of the test statistic may deviate from the theoretical distributions. In such cases, the threshold can be determined empirically using techniques such as bootstrapping or Monte Carlo simulations to estimate the distribution of the test statistic under both hypotheses.
+
+A more direct and worst case performance measure for the detector is the probability of missed-detection, $P_{MD}$, which is the complement of the detection probability:
+\begin{align}
+        P_{MD} &= 1 - P_D = F_{\chi^2_k (\lambda)}(\beta)
+\end{align}
+
+Wald-test is used for catalyst aging detection due to its computational efficiency and asymptotic optimality properties. The test statistic can be computed using the parameter estimates and their variances, which can be obtained from the available measurements. The test can be implemented in real-time on the engine control unit (ECU) of a vehicle, enabling on-board diagnostics for catalyst health monitoring. The next step is to develop a framework for estimating the parameters and their variances from the available measurements, which will be discussed in the next section.
