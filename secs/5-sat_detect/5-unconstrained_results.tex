@@ -25,7 +25,7 @@ Thus, the aging detector (Wald test) should account for the effect of nuisance p
 \begin{align}
 \text{Decide } \mathcal{H}_1 \text{ if} & \qquad \\
         T_w &= \lr{\hat \theta_{\Gamma} - \theta_{\Gamma}^{dg}}^T \lrf{\lrb{I^{-1} (\hat \theta)}_{\theta_{\Gamma} \theta_{\Gamma}}}^{-1} \lr{\hat \theta_{\Gamma} - \theta_{\Gamma}^{dg}} \geq \beta
-        \\
+        \label{eqn::wald_nus}\\
         %===
         \lrf{\lrb{I^{-1} (\hat \theta)}_{\theta_{\Gamma} \theta_{\Gamma}}}^{-1} &=
         I_{\theta_{\Gamma} \theta_{\Gamma}} - I_{\theta_{\Gamma} \theta_{\nu}} \lrb{I_{\theta_{\nu} \theta_{\nu}}}^{-1} I_{\theta_{\nu} \theta_{\Gamma}}
@@ -35,15 +35,17 @@ Thus, the aging detector (Wald test) should account for the effect of nuisance p
                         I_{\theta_{\nu} \theta_{\Gamma}} & I_{\theta_{\nu} \theta_{\nu}}}
 \end{align}
 where $I(\hat \theta)$ is the Fisher information matrix evaluated at $\hat \theta$. The subscript notation indicates the
-submatrix of the Fisher information matrix corresponding to the parameters indicated by the subscripts.
+submatrix of the Fisher information matrix corresponding to the parameters indicated by the subscripts. The model
+structure error in this case is assumed to be Gaussian with zero mean making the least-squares problem the
+maximum-likelihood parameter estimation problem.
 
 The performance of the above Wald test for aging detection using the unsaturated catalyst model is evaluated using the
 test cell data (\ref{tab::wald_unsat_testcell}). The test statistic, $T_w$, is computed for each test and compared
 against a threshold, $\beta$, to determine if the test correctly identifies the aged catalyst. The results show that the
 test statistic for the aged catalyst is significantly higher than that of the degreened catalyst, indicating that the
 test can effectively distinguish between aged and degreened catalysts even in the presence of $NO_x$ sensor
-cross-sensitivity. One of the reasons for this performance is the predictable nature of the test-cell drive cycles, which
-result in similar time responses of the cross-sensitivity error across different cycles of the same test.
+cross-sensitivity. One of the reasons for this performance is the predictable nature of the test-cell drive cycles,
+which result in similar time responses of the cross-sensitivity error across different cycles of the same test.
 
 \begin{table}[!ht]
 \caption{Wald test with nuisance parameters on Hot-FTP and RMC test cell data}
