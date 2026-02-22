@@ -54,12 +54,12 @@ Moving the time back by one step, we have
         & - t_s k_{scr}(k-1) u_1(k-1) \bar \eta_F (k)
 \end{align*}
 Expanding $Q(k)$:
-\begin{align*}
-        \bar \eta_F (k+1) = \bar \eta_F (k) &+ t_s  k_{s2v}\tau_0 \nu_0 k_{ads}(k-1) k_{scr}(k-1) u_{2F}(k-1) \Gamma(k-1) \\
-        & - t_s \nu_0 u_{2F}(k-1) k_{ads}(k-1) \bar \eta_F (k) \\
-        & - t_s k_{od}(k-1) \bar \eta_F (k) \\
-        & - t_s k_{scr}(k-1) u_1(k-1) \bar \eta_F (k)
-\end{align*}
+\begin{align}
+        \bar \eta_F (k+1) = \bar \eta_F (k) &+ t_s  k_{s2v}\tau_0 \nu_0 k_{ads}(k-1) k_{scr}(k-1) u_{2F}(k-1) \Gamma(k-1) \notag \\
+        & - t_s \nu_0 u_{2F}(k-1) k_{ads}(k-1) \bar \eta_F (k) \notag \\
+        & - t_s k_{od}(k-1) \bar \eta_F (k) \notag \\
+        & - t_s k_{scr}(k-1) u_1(k-1) \bar \eta_F (k) \label{eqn::unsat_mdl}
+\end{align}
 Parametrizing the above equation with a Chebyshev basis polynomial temperature model for the rate constants (linear) and the product of rate constants and $\Gamma$ (quadratic), we have the following:
 \begin{align}
         \bar \eta_F (k+1) = \bar \eta_F (k) &+ u_{2F}(k-1)\phi_2(k-1) \theta_\Gamma \label{eqn::t2}\\

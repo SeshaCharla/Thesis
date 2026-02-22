@@ -1,0 +1,176 @@
+\section{Aging Detection Using Unsaturated Catalyst Model}
+
+Similar to saturated catalyst model, a subset of unsaturated catalyst model parameters that are a function of surface concentration of viable voids, $\Gamma$, can be used for aging detection. From, (\ref{eqn::unsat_mdl}) have the parametric model for the unsaturated catalyst system as,
+\begin{align}
+        \bar \eta_F (k+1) = \bar \eta_F (k) &+ u_{2F}(k-1)\phi_2(k-1) \theta_\Gamma \notag\\
+        & - u_{2F}(k-1) \bar \eta_F (k) \phi_1(k-1) \theta_{\eta_{ads}} \notag\\
+        & - \bar \eta_F (k) \phi_1(k-1) \theta_{\eta_{od}} \notag\\
+        & - u_1(k-1) \bar \eta_F (k) \phi_1(k-1) \theta_{\eta_{scr}} \label{eqn::unsat_parametrized}
+\end{align}
+where, individual parameter vectors correspond to specific reaction dynamics as follows:
+\begin{enumerate}
+        \item $\theta_{\Gamma}$: Adoption dynamics related to the surface concentration of viable voids, $\Gamma$.
+        \item $\theta_{\eta_{ads}}$: Adsorption dynamics related to adsorbed ammonia, $\sigma$.
+        \item $\theta_{\eta_{od}}$: Oxidation dynamics and desorption dynamics that remove ammonia from the catalyst surface without reducing $NO_x$.
+        \item $\theta_{\eta_{scr}}$: SCR dynamics that reduce $NO_x$ using the adsorbed ammonia.
+\end{enumerate}
+Among the above four parameter vectors, $\theta_{\Gamma}$ is the only parameter vector that is a function of the surface
+concentration of viable voids, $\Gamma$. Thus, $\theta_{\Gamma}$ can be used for aging detection. However, the other
+parameters, $\theta_{\eta_{ads}}, \theta_{\eta_{od}}, \theta_{\eta_{scr}}$ are nuisance parameters that affect the
+estimates of $\theta_{\Gamma}$ and should be accounted for in the aging detection test design.
+\begin{align}
+        \theta_{\nu} = \bm{\theta_{\eta_{ads}}^T & \theta_{\eta_{od}}^T & \theta_{\eta_{scr}}^T}^T
+\end{align}
+Thus, the aging detector (Wald Test) should account for the effect of nuisance parameters in the test statistic. Thus, we have the following Wald test \cite{wald1943tests},\cite{kay1998detection} with nuisance parameters for aging detection using the unsaturated catalyst model.
+\begin{align}
+\text{Decide } \mathcal{H}_1 \text{ if}, & \qquad \\
+        T_w &= \lr{\hat \theta_{\Gamma} - \theta_{\Gamma}^{dg}}^T \lrf{\lrb{I^{-1} (\hat \theta)}_{\theta_{\Gamma} \theta_{\Gamma}}}^{-1} \lr{\hat \theta_{\Gamma} - \theta_{\Gamma}^{dg}} \geq \beta
+        \\
+        %===
+        \lrf{\lrb{I^{-1} (\hat \theta)}_{\theta_{\Gamma} \theta_{\Gamma}}}^{-1} &=
+        I_{\theta_{\Gamma} \theta_{\Gamma}} - I_{\theta_{\Gamma} \theta_{\nu}} \lrb{I_{\theta_{\nu} \theta_{\nu}}}^{-1} I_{\theta_{\nu} \theta_{\Gamma}}
+        \\
+        % ==
+        I &= \bm{I_{\theta_{\Gamma} \theta_{\Gamma}} & I_{\theta_{\Gamma} \theta_{\nu}} \\
+                I_{\theta_{\nu} \theta_{\Gamma}} & I_{\theta_{\nu} \theta_{\nu}}}
+\end{align}
+
+Where, $I(\hat \theta)$ is the Fisher Information Matrix evaluated at $\hat \theta$. The subscript notation indicates the sub-matrix of the Fisher Information Matrix corresponding to the parameters indicated by the subscripts.
+
+The performance of the above Walt test for aging detection using the unsaturated catalyst model is evaluated using the
+test cell data (\ref{tab::wald_unsat_testcell}). The test statistic, $T_w$, is computed for each test and compared
+against a threshold, $\beta$, to determine if the test correctly identifies the aged catalyst. The results show that the
+test statistic for the aged catalyst is significantly higher than that of the degreened catalyst, indicating that the
+test can effectively distinguish between aged and degreened catalysts. However, the performance of the test is affected
+by the presence of nuisance parameters, which can lead to false positives or false negatives if not properly accounted
+for in the test design.
+
+\begin{table}[!ht]
+\caption{Wald test with nuisance parameters on Hot-FTP and RMC test cell data}
+\label{tab::wald_unsat_testcell}
+\begin{minipage}{0.49\textwidth}
+\begin{table}[H]
+        \centering
+        \begin{tabular}{l c c}
+                \hline \hline
+                Test & $T_w$ (FTIR)     & $T_w$ ($NO_x$) \\ \hline
+                $ dg\_hftp\_1 $ & 2.95 & 2.72\\
+                $ dg\_hftp\_2 $ & 13.13 & 8.81\\
+                $ dg\_hftp\_3 $ & 0.000 & 0.000\\
+                $ aged\_hftp\ $ & 164.14 & 165.33\\
+                \hline \hline
+        \end{tabular}
+\end{table}
+\end{minipage}
+\begin{minipage}{0.49\textwidth}
+\begin{table}[H]
+        \centering
+        \begin{tabular}{l c c}
+                \hline \hline
+                Test & $T_w$ (FTIR)     & $T_w$ ($NO_x$) \\ \hline
+                $dg\_rmc\_1$ & 42.55 & 34.11\\
+                $dg\_rmc\_2$ & 0.000 & 0.000\\
+                $dg\_rmc\_3$ & 30.11 & 28.67\\
+                $aged\_rmc $ & 119.61 & 111.56\\
+                \hline \hline
+        \end{tabular}
+\end{table}
+\end{minipage}
+\end{table}
+
+%===
+% Truck Maping
+% Truck A - AD Transport (adt)
+% Truck B - Mesilla Valley (mes)
+% Truck C - Werner (wer)
+% Truck D - Transwest (trw)
+% =====
+
+\begin{table}[!ht]
+\caption{Wald test with nuisance parameters on trucks A and B}
+\label{tab::wald_unsat_truck_AB}
+\begin{minipage}{0.49\textwidth}
+        \begin{table}[H]
+                \centering
+                \begin{tabular}{l c}
+                        \hline \hline
+                        Test & $T_w$ \\ \hline
+                        $ A\_15\_0$ & 0.000\\
+                        $ A\_15\_1$ & 964.250\\
+                        $ A\_15\_2$ & 446.841\\
+                        $ A\_15\_3$ & 16.968\\
+                        \hline
+                        $ A\_17\_0$ & 60.403\\
+                        $ A\_17\_1$ & 421.009\\
+                        $ A\_17\_2$ & 107.126\\
+                        $ A\_17\_3$ & 22.801\\
+                        \hline \hline
+                \end{tabular}
+        \end{table}
+\end{minipage}
+\begin{minipage}{0.49\textwidth}
+\begin{table}[H]
+        \centering
+        \begin{tabular}{l c}
+                \hline \hline
+                Test & $T_w$ \\ \hline
+                $ B\_15\_0$  & 0.000\\
+                $ B\_15\_1$  & 43.255\\
+                $ B\_15\_2$  & 78.956\\
+                $ B\_15\_3$  & 159.709\\
+                \hline
+                $ B\_18\_0$  & 109.657\\
+                $ B\_18\_1$  & 428.107\\
+                $ B\_18\_2$  & 29.036\\
+                $ B\_18\_3$  & 85.096\\
+                \hline \hline
+        \end{tabular}
+\end{table}
+\end{minipage}
+\end{table}
+
+\begin{table}[!ht]
+\caption{Wald test with nuisance parameters on trucks C and D}
+\label{tab::wald_unsat_truck_CD}
+\begin{minipage}{0.49\textwidth}
+\begin{table}[H]
+        \centering
+        \begin{tabular}{l c}
+                \hline \hline
+                Test & $T_w$ \\ \hline
+                $ C\_15\_0$  & 0.000\\
+                $ C\_15\_1$  & 319.991\\
+                $ C\_15\_2$  & 423.146\\
+                $ C\_15\_3$  & 154.224\\
+                \hline
+                $ C\_17\_0$  & 135.084\\
+                $ C\_17\_1$  & 275.070\\
+                $ C\_17\_2$  & 161.445\\
+                $ C\_17\_3$  & 312.514\\
+                \hline \hline
+        \end{tabular}
+\end{table}
+\end{minipage}
+\begin{minipage}{0.49\textwidth}
+\begin{table}[H]
+        \centering
+        \begin{tabular}{l c}
+                \hline \hline
+                Test & $T_w$ \\ \hline
+                $ D\_15\_0$ & 0.000\\
+                $ D\_15\_1$ & 229.066\\
+                $ D\_15\_2$ & 178.935\\
+                $ D\_15\_3$ & 76.475\\
+                \hline
+                $ D\_16\_0$ & 229.306\\
+                $ D\_16\_1$ & 75.937\\
+                $ D\_16\_2$ & 103.586\\
+                $ D\_16\_3$ & 63.516\\
+                \hline \hline
+        \end{tabular}
+\end{table}
+\end{minipage}
+\end{table}
+
+
+However, the noise amplification caused by the backward difference in the regression model of the unsaturated system makes it difficult to obtain reliable parameter estimates for aging detection. Thus, a more robust statistical test that accounts for the effect of nuisance parameters is needed for aging detection using the unsaturated catalyst model.
