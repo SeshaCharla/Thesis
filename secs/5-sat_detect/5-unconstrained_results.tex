@@ -1,13 +1,13 @@
 \section{Aging Detection Using Unsaturated Catalyst Model}
 
-Similar to saturated catalyst model, a subset of unsaturated catalyst model parameters that are a function of surface concentration of viable voids, $\Gamma$, can be used for aging detection. From, (\ref{eqn::unsat_mdl}) have the parametric model for the unsaturated catalyst system as,
+Similar to the saturated catalyst model, a subset of the unsaturated catalyst model parameters that are a function of the surface concentration of viable voids, $\Gamma$, can be used for aging detection. From (\ref{eqn::unsat_mdl}), we have the parametric model for the unsaturated catalyst system as:
 \begin{align}
         \bar \eta_F (k+1) = \bar \eta_F (k) &+ u_{2F}(k-1)\phi_2(k-1) \theta_\Gamma \notag\\
         & - u_{2F}(k-1) \bar \eta_F (k) \phi_1(k-1) \theta_{\eta_{ads}} \notag\\
         & - \bar \eta_F (k) \phi_1(k-1) \theta_{\eta_{od}} \notag\\
         & - u_1(k-1) \bar \eta_F (k) \phi_1(k-1) \theta_{\eta_{scr}} \label{eqn::unsat_parametrized}
 \end{align}
-where, individual parameter vectors correspond to specific reaction dynamics as follows:
+where individual parameter vectors correspond to specific reaction dynamics as follows:
 \begin{enumerate}
         \item $\theta_{\Gamma}$: Adoption dynamics related to the surface concentration of viable voids, $\Gamma$.
         \item $\theta_{\eta_{ads}}$: Adsorption dynamics related to adsorbed ammonia, $\sigma$.
@@ -21,9 +21,9 @@ estimates of $\theta_{\Gamma}$ and should be accounted for in the aging detectio
 \begin{align}
         \theta_{\nu} = \bm{\theta_{\eta_{ads}}^T & \theta_{\eta_{od}}^T & \theta_{\eta_{scr}}^T}^T
 \end{align}
-Thus, the aging detector (Wald Test) should account for the effect of nuisance parameters in the test statistic. Thus, we have the following Wald test \cite{wald1943tests},\cite{kay1998detection} with nuisance parameters for aging detection using the unsaturated catalyst model.
+Thus, the aging detector (Wald test) should account for the effect of nuisance parameters in the test statistic. We therefore have the following Wald test \cite{wald1943tests},\cite{kay1998detection} with nuisance parameters for aging detection using the unsaturated catalyst model.
 \begin{align}
-\text{Decide } \mathcal{H}_1 \text{ if}, & \qquad \\
+\text{Decide } \mathcal{H}_1 \text{ if} & \qquad \\
         T_w &= \lr{\hat \theta_{\Gamma} - \theta_{\Gamma}^{dg}}^T \lrf{\lrb{I^{-1} (\hat \theta)}_{\theta_{\Gamma} \theta_{\Gamma}}}^{-1} \lr{\hat \theta_{\Gamma} - \theta_{\Gamma}^{dg}} \geq \beta
         \\
         %===
@@ -32,18 +32,18 @@ Thus, the aging detector (Wald Test) should account for the effect of nuisance p
         \\
         % ==
         I &= \bm{I_{\theta_{\Gamma} \theta_{\Gamma}} & I_{\theta_{\Gamma} \theta_{\nu}} \\
-                I_{\theta_{\nu} \theta_{\Gamma}} & I_{\theta_{\nu} \theta_{\nu}}}
+                        I_{\theta_{\nu} \theta_{\Gamma}} & I_{\theta_{\nu} \theta_{\nu}}}
 \end{align}
+where $I(\hat \theta)$ is the Fisher information matrix evaluated at $\hat \theta$. The subscript notation indicates the
+submatrix of the Fisher information matrix corresponding to the parameters indicated by the subscripts.
 
-Where, $I(\hat \theta)$ is the Fisher Information Matrix evaluated at $\hat \theta$. The subscript notation indicates the sub-matrix of the Fisher Information Matrix corresponding to the parameters indicated by the subscripts.
-
-The performance of the above Walt test for aging detection using the unsaturated catalyst model is evaluated using the
+The performance of the above Wald test for aging detection using the unsaturated catalyst model is evaluated using the
 test cell data (\ref{tab::wald_unsat_testcell}). The test statistic, $T_w$, is computed for each test and compared
 against a threshold, $\beta$, to determine if the test correctly identifies the aged catalyst. The results show that the
 test statistic for the aged catalyst is significantly higher than that of the degreened catalyst, indicating that the
-test can effectively distinguish between aged and degreened catalysts. However, the performance of the test is affected
-by the presence of nuisance parameters, which can lead to false positives or false negatives if not properly accounted
-for in the test design.
+test can effectively distinguish between aged and degreened catalysts even in the presence of $NO_x$ sensor
+cross-sensitivity. One of the reasons for this performance is the predictable nature of the test-cell drive cycles, which
+result in similar time responses of the cross-sensitivity error across different cycles of the same test.
 
 \begin{table}[!ht]
 \caption{Wald test with nuisance parameters on Hot-FTP and RMC test cell data}
@@ -79,12 +79,23 @@ for in the test design.
 \end{table}
 
 %===
-% Truck Maping
+% Truck Mapping
 % Truck A - AD Transport (adt)
 % Truck B - Mesilla Valley (mes)
 % Truck C - Werner (wer)
 % Truck D - Transwest (trw)
 % =====
+
+The performance of the Wald test in the case of truck data (Tables~\ref{tab::wald_unsat_truck_AB} and
+\ref{tab::wald_unsat_truck_CD}) is not conclusive as compared to the test cell data. The primary reason for this is the
+unpredictable nature of the drive cycles in the truck data, which results in a varying time response of the
+cross-sensitivity error across different cycles of the same truck. This phenomenon conclusively demonstrates the
+following limitations of the parameter-estimation-based aging detection approach for the unsaturated catalyst model:
+\begin{enumerate}
+        \item The large number of parameters (nine parameters, unlike three for the saturated model) in the unsaturated catalyst model results in overfitting the noise in the absence of sufficient excitation in the data (persistence of excitation).
+        \item Unlike the saturated model's regression form (\ref{eqn::regression}), the unsaturated model's regression form (\ref{eqn::unsat_parametrized}) involves a backward difference of the output, which amplifies the noise in the parameter estimates.
+        \item The good performance of the detector on the test cell data is an artifact of the uniform time response of the cross-sensitivity error across different cycles of the same test, which is not the case in the truck data.
+\end{enumerate}
 
 \begin{table}[!ht]
 \caption{Wald test with nuisance parameters on trucks A and B}
@@ -171,6 +182,3 @@ for in the test design.
 \end{table}
 \end{minipage}
 \end{table}
-
-
-However, the noise amplification caused by the backward difference in the regression model of the unsaturated system makes it difficult to obtain reliable parameter estimates for aging detection. Thus, a more robust statistical test that accounts for the effect of nuisance parameters is needed for aging detection using the unsaturated catalyst model.
