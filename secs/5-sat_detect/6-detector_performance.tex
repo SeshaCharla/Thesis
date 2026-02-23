@@ -1,17 +1,17 @@
 \section{Remarks on Detector Performance}
 
-This study proposes a parameter estimation-based hypothesis testing algorithm for catalyst aging detection, based on the
-hypothesis that model parameters associated with catalyst storage capacity change with aging \cite{daya2018development}
-and \cite{daya2020kinetic}. The hypothesis testing framework requires not only the parameter estimates but also their
-distributions. To address this, the maximum likelihood estimation (MLE) framework and its asymptotic properties are
-employed. The linear programming problem (\ref{eqn::lin_prog}) for estimating the parameters of the saturated model is
-demonstrated to be equivalent to MLE under a half-normal distribution of the model-structure error between the actual
-system response and the saturated model prediction. For the unsaturated model, the least-squares problem corresponds to
-MLE under the Gaussian distribution of the model-structure error. Utilizing the parameter distributions, a Wald
-test-based detector (\ref{eqn::wald_statistic})is proposed to quantify the distance between the estimated parameters and
-the known degreened parameters, scaled by the Fisher information of the parameter estimate distribution. The influence
-of nuisance parameters is also considered for the unsaturated model (\ref{eqn::wald_nus}). The performance of the
-detector is evaluated using both test-cell and truck data sets.
+The study introduces a parameter estimation-based hypothesis testing algorithm for catalyst aging detection, based on
+the hypothesis that model parameters associated with catalyst storage capacity change with aging
+\cite{daya2018development} and \cite{daya2020kinetic}. The hypothesis testing framework requires not only the parameter
+estimates but also their distributions. To address this, the maximum likelihood estimation (MLE) framework and its
+asymptotic properties are employed. The linear programming problem (\ref{eqn::lin_prog}) for estimating the parameters
+of the saturated model is demonstrated to be equivalent to MLE under a half-normal distribution of the model-structure
+error between the actual system response and the saturated model prediction. For the unsaturated model, the
+least-squares problem corresponds to MLE under the Gaussian distribution of the model-structure error. Utilizing the
+parameter distributions, a Wald test-based detector (\ref{eqn::wald_statistic}) is proposed to quantify the distance
+between the estimated parameters and the known degreened parameters, scaled by the Fisher information of the parameter
+estimate distribution. The influence of nuisance parameters is also considered for the unsaturated model
+(\ref{eqn::wald_nus}). The performance of the detector is evaluated using both test-cell and truck data sets.
 
 The saturated model-based detector demonstrates greater reliability compared to the unsaturated model-based detector.
 This improved performance can be attributed to the following factors:

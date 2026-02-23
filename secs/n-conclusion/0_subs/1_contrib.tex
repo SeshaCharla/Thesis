@@ -1,0 +1,63 @@
+\section{Summary of Contributions}
+The main contributions of this thesis are summarized below.
+\begin{enumerate}
+    \item \textbf{Discrete switched nonlinear model for SCR-ASC dynamics:}
+    A new discrete-time, switched nonlinear model of $NO_x$ reduction in the SCR--ASC system was derived directly from
+                molar conservation over a control volume, rather than from spatially discretized CSTR chains. The model:
+    \begin{enumerate}
+          \item explicitly incorporates the interplay between residence time and sensor sampling time, ensuring that the
+                  dynamics captured by the model are consistent with the temporal resolution of available measurements;
+          \item employs linear-in-parameter approximations for physical properties such as residence time and
+                  temperature-dependent rate constants, while using polynomial (Chebyshev) bases to retain a structure
+                    that is linear in parameters and numerically well conditioned; and
+          \item models catalyst saturation and desaturation by introducing a switched structure, with causal switching
+                  condition, that distinguishes saturated and unsaturated regimes and constrains $NO_x$ reduction
+                    dynamics accordingly.
+    \end{enumerate}
+
+    \item \textbf{Identifiable parametrization and convex parameter estimation:}
+    The model was reformulated into an identifiable parametric structure that can be estimated from tailpipe $NO_x$
+                measurements, urea dosing, flow rate, and temperature. A key step was the algebraic elimination of the
+                unmeasured surface ammonia state by introducing the recursive quantity $\eta(k) = u_1(k-1) - x_1(k)$,
+                which represents the change in $NO_x$ concentration due to reduction over one sampling interval. This
+                led to:
+    \begin{enumerate}
+          \item a recursive dynamic model that is linear in parameters, reducing the estimation problem to convex
+                  optimization;
+          \item a linear programming formulation for saturated-catalyst parameters that minimizes the area under the
+                  $NO_x$ reduction per time step under saturation'' curve, subject to lower bounds imposed by the actual
+                    observed $NO_x$ reduction;
+          \item a data-driven method to identify saturated and unsaturated segments, enabling separate estimation of
+                  parameters in each regime; and
+          \item a switched nonlinear model whose parameters are uniquely identifiable from available data.
+    \end{enumerate}
+
+    \item \textbf{Model validation using test cell data:}
+    The switched nonlinear model was validated using experimental test-cell data (RMC, Hot-FTP, and Cold-FTP) for both
+                degreened and aged catalysts. Across all cases, the model achieved goodness-of-fit values exceeding
+                $60\%$, and consistently outperformed the linearized CSTR model from the literature, whose fits were
+                typically below $30\%$ on the same data. The results demonstrate that explicitly enforcing conservation
+                over the sampling interval and modeling saturation yields a more accurate and physically interpretable
+                description of SCR--ASC dynamics, while retaining a parsimonious parameter set.
+
+    \item \textbf{Statistical hypothesis-testing framework for aging detection:}
+    The saturated-model parameters were embedded in a composite hypothesis test for catalyst health, where the null
+                hypothesis corresponds to a degreened catalyst and the alternative corresponds to an aged catalyst.
+                Using maximum likelihood estimation and asymptotic properties of the Fisher information matrix, a
+                Wald-test statistic was derived that compares the estimated saturated parameters to their degreened
+                reference values. The framework:
+    \begin{enumerate}
+          \item explicitly accounts for $NO_x$ sensor ammonia cross-sensitivity by treating it as a non-negative
+                  directional error, which preserves the bounding relationships used in the saturated-model estimation;
+          \item provides analytical expressions for the distributions of the test statistic under both hypotheses,
+                  enabling threshold selection via the Neyman--Pearson criterion; and
+          \item offers performance measures in terms of false-alarm, detection, and missed-detection probabilities.
+    \end{enumerate}
+
+    \item \textbf{Experimental validation on test-cell and truck data:}
+    The complete detection framework was validated using test-cell experiments (RMC and Hot-FTP cycles) and real-world
+    data from four long-haul trucks, each evaluated in both degreened and aged states. Despite sensor cross-sensitivity
+    and variability in operating conditions, the detector reliably distinguished aged from degreened catalysts whenever
+    the data contained a sufficient number of samples near catalyst saturation. This establishes a practically
+    implementable, non-intrusive, and statistically principled approach to SCR catalyst aging diagnostics.
+\end{enumerate}
