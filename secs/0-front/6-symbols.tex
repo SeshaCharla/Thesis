@@ -1,55 +1,117 @@
 % Symbols, Abbreviations, Nomenclature
 
 \begin{symbols}
-        $\con{\bullet}$ \ampeq  Concentration of species $\bullet$ (e.g., $[NO_x]$ is concentration of NOx)\\
-        $\mol{\bullet}$ \ampeq  Moles of species $\bullet$ (e.g., $\mol{NO_x}$ is moles of NOx)\\
-        $T$ \ampeq  Temperature of the exhaust gas\\
-        $F$ \ampeq  Mass flow rate of the exhaust gas\\
-        $u_1$, $\con{NO_x}^{in}$ \ampeq  Inlet NOx concentration\\
-        $u_2$, $u_{inj}$ \ampeq  Urea injection rate\\
-        $x_1$, $\con{NO_x}^{out}$ \ampeq  Outlet NOx concentration\\
-        $x_2$, $\con{NH_3}^{out}$ \ampeq  Outlet ammonia concentration\\
-        $\sigma$, $\con{NH_3}^{ads}$ \ampeq  Surface concentration of adsorbed ammonia\\
-        $\eta$ \ampeq  NOx reduction in a time step\\
-        $\eta_F$ \ampeq  Flow-scaled NOx reduction efficiency\\
-        $u_{1F}$ \ampeq  Flow-normalized inlet NOx concentration\\
-        $u_{2F}$ \ampeq  Flow-normalized urea dosing\\
-        $\Gamma$ \ampeq  Catalyst adsorption site concentration\\
-        $g_{sat}$ \ampeq Switching function used for capturing the catalyst saturation state switching \\
-        $V_{scr}$ \ampeq  Volume of the SCR-ASC catalyst chamber \\
+        % ------ Bracket Notation ------
+        $\con{\bullet}$ \ampeq  Concentration of species $\bullet$ (e.g., $[NO_x]$ is concentration of $NO_x$)\\
+        $\mol{\bullet}$ \ampeq  Moles of species $\bullet$ (e.g., $\mol{NO_x}$ is moles of $NO_x$)\\
+        % ------ English Letters ------
         $A_{scr}$ \ampeq  Surface area of the SCR catalyst coating \\
-        $\rho$ \ampeq  Density of the exhaust gas\\
-        $\tau$ \ampeq  Residence time of the exhaust gas in the SCR-ASC chamber \\
+        $F$ \ampeq  Mass flow rate of the exhaust gas\\
+        $F_{vol}$ \ampeq  Volumetric flow rate of exhaust gas\\
+        $f_\sigma$ \ampeq  Unsaturated model prediction function\\
+        $f_\Gamma$ \ampeq  Saturated model prediction function\\
+        $g_{sat}$ \ampeq Switching function used for capturing the catalyst saturation state switching \\
+        $\mathcal{H}_0$ \ampeq  Null hypothesis (degreened catalyst)\\
+        $\mathcal{H}_1$ \ampeq  Alternative hypothesis (aged catalyst)\\
+        $I$ \ampeq  Fisher information matrix\\
+        $k_{ads}$ \ampeq  Ammonia adsorption rate constant\\
+        $k_{des}$ \ampeq  Ammonia desorption rate constant\\
+        $k_{od}$ \ampeq  Combined oxidation and desorption rate constant ($= k_{oxi} + k_{des}$)\\
+        $k_{oxi}$ \ampeq  Ammonia oxidation rate constant\\
+        $k_{s2v}$ \ampeq  Surface to volumetric rate conversion factor ($= A_{scr}/V$)\\
+        $k_{scr}$ \ampeq  SCR reaction rate constant\\
+        $l(\theta)$ \ampeq  Likelihood function\\
+        $L(\theta)$ \ampeq  Log-likelihood function\\
+        $n$ \ampeq  Number of residence times within sampling period ($= t_s/\tau$)\\
+        $N$ \ampeq  Sample size/data length\\
+        $N_{sat}$ \ampeq  Number of samples near catalyst saturation\\
+        $P_D$ \ampeq  Probability of detection\\
+        $P_{FA}$ \ampeq  Probability of false alarm\\
+        $P_{MD}$ \ampeq  Probability of missed detection\\
+        $Q$ \ampeq  Combined factor ($= k_{s2v}\tau_0 k_{scr}$)\\
+        $R$ \ampeq  Universal gas constant (8.314 J/(mol·K))\\
+        $r_{ads}$ \ampeq  Adsorption reaction rate (mol/m$^2$·s)\\
+        $r_{des}$ \ampeq  Desorption reaction rate (mol/m$^2$·s)\\
+        $r_{oxi}$ \ampeq  Oxidation reaction rate (mol/m$^2$·s)\\
+        $r_{scr}$ \ampeq  SCR reaction rate (mol/m$^2$·s)\\
+        $r_u$ \ampeq  Urea decomposition rate constant\\
         $t_s$ \ampeq  Sampling time of the data \\
+        $T$ \ampeq  Temperature of the exhaust gas\\
+        $T_0$ \ampeq  Reference/centering temperature for polynomial approximations\\
+        $T_r$ \ampeq  Temperature range scaling factor\\
+        $T_w$ \ampeq  Wald test statistic for catalyst aging detection \\
+        $u_1$, $\con{NO_x}^{in}$ \ampeq  Inlet $NO_x$ concentration\\
+        $u_{1F}$ \ampeq  Flow-normalized inlet $NO_x$ concentration\\
+        $u_2$, $u_{inj}$ \ampeq  Urea injection rate\\
+        $u_{2F}$ \ampeq  Flow-normalized urea dosing\\
+        $V_0$ \ampeq  Volume of one mole of air at STP (22.4 L)\\
+        $V_{scr}$ \ampeq  Volume of the SCR-ASC catalyst chamber \\
+        $x_1$, $\con{NO_x}^{out}$ \ampeq  Outlet $NO_x$ concentration\\
+        $x_2$, $\con{NH_3}^{out}$ \ampeq  Outlet ammonia concentration\\
+        $y_1$ \ampeq  Measured tailpipe $NO_x$ (with cross-sensitivity)\\
+        % ------ Greek Letters (Lowercase) ------
+        $\alpha_{sat}$ \ampeq  Flow and concentration normalized $NO_x$ reduction ($= \tau_0 k_{scr} \Gamma$)\\
+        $\beta$ \ampeq  Threshold for hypothesis test\\
+        $\Gamma$ \ampeq  Catalyst adsorption site concentration\\
+        $\varepsilon_\chi$ \ampeq  Cross-sensitivity error in $NO_x$ measurement\\
+        $\varepsilon_\eta$ \ampeq  Model structure error between saturated model and actual response\\
+        $\eta$ \ampeq  $NO_x$ reduction in a time step\\
+        $\bar \eta_F$ \ampeq  Flow-scaled $NO_x$ reduction efficiency\\
+        $\eta_{sat}$ \ampeq  $NO_x$ reduction when catalyst is saturated\\
+        $\eta_y$ \ampeq  Measured $NO_x$ reduction (from sensor with cross-sensitivity)\\
+        $\theta_{sat}$ \ampeq  Parameter vector for saturated catalyst model\\
+        $\theta^{ag}_{sat}$ \ampeq  Parameter values for aged catalyst\\
+        $\theta^{dg}_{sat}$ \ampeq  Parameter values for degreened catalyst\\
+        $\lambda$ \ampeq  Non-centrality parameter for chi-squared distribution\\
+        $\nu_u$ \ampeq  Urea to ammonia conversion factor ($= 2r_u t_s \rho_0$)\\
+        $\sigma$, $\con{NH_3}^{ads}$ \ampeq  Surface concentration of adsorbed ammonia\\
+        $\sigma^{ub}$ \ampeq  Unbounded surface concentration of adsorbed ammonia\\
+        $\tau$ \ampeq  Residence time of the exhaust gas in the SCR-ASC chamber \\
+        $\phi_1$, $\phi_2$ \ampeq  First and second-order Chebyshev polynomial basis\\
+        $\phi_{sat}$ \ampeq  Regressor vector for saturated catalyst model\\
+        $\chi$ \ampeq  $NO_x$ sensor cross-sensitivity factor to ammonia\\
 \end{symbols}
 
 % =============================================================
 
 \begin{abbreviations}
-        SCR \ampeq  Selective Catalytic Reduction \\
+        A, B, C, D \ampeq  Different truck IDs used in the experimental data sets \\
+        AG \ampeq  Aged \\
         ASC \ampeq  Ammonia Slip Catalyst \\
+        CARB \ampeq  California Air Resources Board \\
+        CDF \ampeq  Cumulative Distribution Function \\
+        CRLB \ampeq  Cramer-Rao Lower Bound \\
+        CSTR \ampeq  Continuously Stirred Tank Reactor \\
+        DEF \ampeq  Diesel Exhaust Fluid \\
+        DG \ampeq  De-greened \\
         DOC \ampeq  Diesel Oxidation Catalyst \\
         DPF \ampeq  Diesel Particulate Filter \\
-        DEF \ampeq  Diesel Exhaust Fluid \\
-        FTP \ampeq  Federal Test Procedure \\
-        RMC \ampeq  Ramped Mode Cycle \\
+        ECU \ampeq  Engine Control Unit \\
         EO  \ampeq  Engine Out \\
-        IUMPR \ampeq In-use Pefformance Ratio \\
+        EPA \ampeq  Environmental Protection Agency \\
         EUL \ampeq  End of Useful Life \\
+        FTP \ampeq  Federal Test Procedure \\
+        GLRT \ampeq  Generalized Likelihood Ratio Test \\
+        IUMPR \ampeq In-use Performance Ratio \\
+        MLE \ampeq  Maximum Likelihood Estimation \\
         OBD \ampeq  On-board Diagnostics \\
-        DG \ampeq  De-greened \\
-        adt, trw, wer, mes \ampeq  Different truck IDs used in the experimental data sets \\
+        PDF \ampeq  Probability Density Function \\
+        RMC \ampeq  Ramped Mode Cycle \\
+        SCR \ampeq  Selective Catalytic Reduction \\
+        SETAR \ampeq  Self-Excited Threshold Autoregressive \\
+        SET \ampeq  Supplemental Emission Test \\
+        STP \ampeq  Standard Temperature and Pressure \\
 \end{abbreviations}
 
 % =============================================================
 % Names of the things I created
 \begin{nomenclature}
-        $\tau-t_s$ Plot \ampeq  Plot of Residence Time vs Sampling Time.\\
         Drive Segment   \ampeq  Truck data that is contiguous in time.\\
-        Saturated Catalyst \ampeq  A catalyst with adsorption sites are occupied.\\
-        Unsaturated Catalyst \ampeq  A catalyst in which some adsorption sites are free.\\
-        $NO_x$ reduction in a time step \ampeq $\eta(k) = u_1(k-1) - x_1(k)$ \\
-        Flow-normalized urea dosing \ampeq $u_{2F}(k) = \sfrac{u_{2}(k)}{F(k)}$ \\
         Flow-normalized inlet $NO_x$ concentration \ampeq $u_{1F}(k) = \sfrac{u_{1}(k)}{F(k)}$ \\
-        Flow-scaled $NO_x$ reduction efficiency \ampeq $\eta_F(k) = \sfrac{\eta(k)}{u_{1F}(k)}$ \\
+        Flow-scaled $NO_x$ reduction efficiency \ampeq $\bar \eta_F(k) = \sfrac{\eta(k)}{u_{1F}(k)}$ \\
+        Flow-normalized urea dosing \ampeq $u_{2F}(k) = \sfrac{u_{2}(k)}{F(k)}$ \\
+        $NO_x$ reduction in a time step \ampeq $\eta(k) = u_1(k-1) - x_1(k)$ \\
+        Saturated Catalyst \ampeq  A catalyst with adsorption sites are occupied.\\
+        $\tau-t_s$ Plot \ampeq  Plot of Residence Time vs Sampling Time.\\
+        Unsaturated Catalyst \ampeq  A catalyst in which some adsorption sites are free.\\
 \end{nomenclature}
