@@ -1,7 +1,6 @@
 \chapter{Catalyst Saturation and Aging Detection}
-The surface concentration of viable voids $(\Gamma)$ is hypothesized to decrease with aging \cite{daya2018development},
-\cite{daya2020kinetic}. This effect is reflected in the lumped parameters of the dynamic model for $NO_x$ reduction
-developed in previous chapter (Figure~\ref{fig::no_x_swtiching}). The impact of $\Gamma$ reduction on parameter
+The surface concentration of viable voids $(\Gamma)$ is hypothesized to decrease with aging \cite{daya2018development,daya2020kinetic}. This effect is reflected in the lumped parameters of the dynamic model for $NO_x$ reduction
+developed in the previous chapter (Figure~\ref{fig::no_x_switching}). The impact of $\Gamma$ reduction on parameter
 estimates is more pronounced in the saturated catalyst model, as this model does not exhibit the noise amplification
 caused by the backward difference present in the regression model of the unsaturated system. For $NO_x$ process dynamics
 (\ref{eqn::NOX_process}) under catalyst saturation, $\sigma(k) = \Gamma$.
@@ -12,8 +11,7 @@ caused by the backward difference present in the regression model of the unsatur
 %===
 The above equation~(\ref{eqn::nox_mdl}) shows that the tailpipe $NO_x$ concentration becomes independent of urea dosing
 under catalyst saturation. Polynomial approximations of the Arrhenius temperature dependence of the rate constant,
-$k_{scr}$, and the concentration of viable voids, $\Gamma$ (\cite{nova2014urea}, \cite{ciardelli2004scr} and ,
-\cite{joo2008study}), are used to obtain a linear in parameters model for the $NO_x$ process dynamics.
+$k_{scr}$, and the concentration of viable voids, $\Gamma$ \cite{nova2014urea,ciardelli2004scr,joo2008study}, are used to obtain a linear in parameters model for the $NO_x$ process dynamics.
 \begin{align}
     k_{scr}(T) &= A_{scr} e^{\lr{-\frac{E_{scr}}{RT}}} \approx \sum k_i T^i  \qquad i = 0, 1, \hdots
     \label{eqn::rate_const} \\
@@ -47,7 +45,7 @@ constant and the surface concentration of viable voids, $k_{scr} \Gamma$, i.e.,
     \caption{Time plot of $\alpha_{sat}$ for aged and degreened catalysts for RMC cycle}
     \label{fig::alpha_sat_1}
 \end{figure}
-The parameter $\alpha_{sat}$ can be estimated from the available measurements. A plot of $\alpha_{sat}$ over time reveals a significant decrease in its magnitude for an aged catalyst compared to a degreened catalyst. The preceding equation indicates that $\alpha_{sat}$ is solely temperature-dependent. When plotted as a function of temperature, the magnitude of $\alpha_{sat}$ is consistently and statistically lower for the degreened catalyst than for the aged catalyst in both Hot-FTP and RMC tests. These findings support the hypothesis that aging reduces the surface concentration of viable voids ($\Gamma$).
+The parameter $\alpha_{sat}$ can be estimated from the available measurements. A plot of $\alpha_{sat}$ over time reveals a significant decrease in its magnitude for an aged catalyst compared to a degreened catalyst. The preceding equation indicates that $\alpha_{sat}$ is solely temperature-dependent. When plotted as a function of temperature, the magnitude of $\alpha_{sat}$ is consistently and statistically lower for the aged catalyst than for the degreened catalyst in both Hot-FTP and RMC tests. These findings support the hypothesis that aging reduces the surface concentration of viable voids ($\Gamma$).
 \begin{figure}[!ht]
     \centering
     \includegraphics[width=0.7\textwidth]{./figs/5-sat_detect/1_intro/alpha_sat.png}

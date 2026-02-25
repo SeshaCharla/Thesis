@@ -1,8 +1,8 @@
 \section{$NO_x$ Sensor Cross-sensitivity}
-Commercial $NO_x$ sensors are cross-sensitive to tailpipe ammonia. The resulting error is modeled as a function of
+Commercial $NO_x$ sensors are cross-sensitive to tailpipe ammonia. The resulting error is modelled as a function of
 ammonia concentration and a temperature-dependent cross-sensitivity factor $\chi(T)$. This introduces a non-negative
 directional error $\lr{\varepsilon_\chi}$ into the tailpipe $NO_x$ measurement $\con{NO_x}^{out}_{\chi}$
-(Figure~\ref{fig::corss_sen_ref1}).
+(Figure~\ref{fig::cross_sen_ref1}).
 \begin{align}
         \varepsilon_\chi= \chi\lr{T(k)} \times \con{NH_3}^{out}\geq 0
 \end{align}
@@ -11,7 +11,7 @@ directional error $\lr{\varepsilon_\chi}$ into the tailpipe $NO_x$ measurement $
         \centering
         \includegraphics[width=\figWidth]{./figs/2-data/cross_aged_hftp.png}
         \caption{$NO_x$ sensor cross-sensitivity to tailpipe ammonia}
-        \label{fig::corss_sen_ref1}
+        \label{fig::cross_sen_ref1}
 \end{figure}
 The FTIR sensor also has a bias that is directional.
 
@@ -59,7 +59,7 @@ sensor becomes cross-sensitive to ammonia. Thus the expression for cross-sensiti
 \end{align*}
 
 \subsubsection{Least-squares estimation assuming temperature independence}
-The temperature changes in RMC cycle don't affect the cross-sensitivity factor significantly. Thus, it can be treated as
+The temperature changes in the RMC cycle do not affect the cross-sensitivity factor significantly. Thus, it can be treated as
 a constant with respect to temperature fluctuations in that range. We have,
 \begin{align*}
     \underbrace{y_1 - x_1}_{\pmb y} &= \underbrace{\bm{x_2 & -1}}_{\pmb \phi^T} \underbrace{\bm{ \chi \\ \underbrace{\chi b_{th} + b_0}_{=b}}}_{ \pmb \theta}\\

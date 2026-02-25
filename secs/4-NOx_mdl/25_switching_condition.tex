@@ -30,7 +30,7 @@ Multiplying both sides of the $\sigma(k+1)$ equation by $Q(k)$, we get
         & - t_s k_{od} \frac{\eta(k+1)}{u_{1F}(k)} \\
         & - t_s k_{scr} u_1(k) \frac{\eta(k+1)}{u_{1F}(k)}
 \end{align*}
-\itbf{Definition:} We have, the \itbf{flow-scaled fractional $NO_x$ reduction} defined as,
+\itbf{Definition:} We have the \itbf{flow-scaled fractional $NO_x$ reduction} defined as,
 \begin{align*}
         \bar \eta_F (k) = \frac{\eta(k)}{u_{1F}(k-1)} = \frac{F(k-1)}{u_1(k-1)} \eta(k)
 \end{align*}
@@ -87,7 +87,7 @@ and switch based on the surface coverage $\sigma$ as follows:
 \begin{align}
         \implies  \underbrace{\bm{ \bar \eta_F(k) \phi_1^T(k-1)
                         & \pmb 0 & \pmb 0 & - \phi_2^T(k-1) }}_{\phi_g(k)^T} \underbrace{\bm{\theta_{\eta_{ads}} \\ \theta_{\eta_{od}} \\ \theta_{\eta_{scr}} \\ \theta_\Gamma }}_{\theta_{NO_x}} \leq 0
-        \label{eqn::gaurd_condition}
+        \label{eqn::guard_condition}
 \end{align}
 The above condition is the condition for normal operation of the catalyst. When this condition is violated, the
 adsorption dynamics switch to zero, and the dynamics switch to saturated catalyst mode. Thus, we end up with a switching condition that is parametrized linearly in terms of the model parameters, resulting in a \itbf{self-excited threshold nonlinear autoregressive with exogenous input} \cite{hansen1991institutional} model structure.
@@ -99,11 +99,11 @@ Also, $NO_x$ reduction in a given time-step is always positive, i.e.,
 \end{align*}
 This condition is implicitly satisfied.
 % =========================================
-Incorporating the switching condition and the saturated and unsaturated $NO_x$ reduction dynamics, we have the state diagram for the $NO_x$ reduction dynamics as shown in Figure \ref{fig::no_x_swtiching}.
+Incorporating the switching condition and the saturated and unsaturated $NO_x$ reduction dynamics, we have the state diagram for the $NO_x$ reduction dynamics as shown in Figure \ref{fig::no_x_switching}.
 
 \begin{figure}[!ht]
         \centering
         \includegraphics[width=\textwidth]{./figs/4-NOx_mdl/hybrid_model.png}
         \caption{State Diagram for the $NO_x$ Reduction Model with Switching Conditions}
-        \label{fig::no_x_swtiching}
+        \label{fig::no_x_switching}
 \end{figure}

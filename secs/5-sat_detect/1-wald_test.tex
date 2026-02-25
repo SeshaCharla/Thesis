@@ -6,7 +6,7 @@ corresponds to an aged catalyst. Thus, the problem can be stated as follows:
         \mathcal{H}_0 &: \hat \theta_{sat} = \theta^{dg}_{sat} \quad \text{(Degreened Catalyst)} \\
         \mathcal{H}_1 &: \hat \theta_{sat} \neq \theta^{dg}_{sat} \quad \text{(Aged Catalyst)}
 \end{align}
-where $\hat \theta_{sat}$ is the parameter estimate obtained from the available measurements and $\theta^{dg}_sat$ is the parameter value corresponding to a degreened catalyst. The test statistic for this hypothesis testing problem can be constructed based on the parameter estimates and their variances. For a given data set $\pmb x$, let $p(\pmb x; \theta)$ denote the likelihood function of the data given the parameter $\theta$. Thus, we have the generalized likelihood ratio test (GLRT) \cite{kay1998detection} as follows:
+where $\hat \theta_{sat}$ is the parameter estimate obtained from the available measurements and $\theta^{dg}_{sat}$ is the parameter value corresponding to a degreened catalyst. The test statistic for this hypothesis testing problem can be constructed based on the parameter estimates and their variances. For a given data set $\pmb x$, let $p(\pmb x; \theta)$ denote the likelihood function of the data given the parameter $\theta$. Thus, we have the generalized likelihood ratio test (GLRT) \cite{kay1998detection} as follows:
 \begin{align}
 \text{Decide } \mathcal{H}_1 \text{ if } & \notag \\
         L_G (\pmb x) &= \frac{p(\pmb x; \hat \theta_{sat})}{p(\pmb x; \theta^{dg}_{sat})} > \beta'
@@ -17,12 +17,12 @@ threshold for the test. For large sample sizes $(N)$, the asymptotic probability
         \frac{\partial ln p(\pmb x; \theta_{sat})}{\partial \theta_{sat}} = I(\theta_{sat})(\hat \theta_{sat} - \theta_{sat})
         \label{eqn::log_ln_P}
 \end{align}
-where $\theta_{sat}$ is the true parameter value and $I(\theta_{sat})$ is the Fisher information matrix. As $N \rightarrow \infty$, $\hat \theta_{sat} \rightarrow \theta_{sat}$. We can use the first-order Taylor expansion of the fisher information matrix:
+where $\theta_{sat}$ is the true parameter value and $I(\theta_{sat})$ is the Fisher information matrix. As $N \rightarrow \infty$, $\hat \theta_{sat} \rightarrow \theta_{sat}$. We can use the first-order Taylor expansion of the Fisher information matrix:
 \begin{align}
         \lrb{I(\theta_{sat})}_{ij} &=  \lrb{I(\theta_{sat})}_{ij} + \left. \frac{\partial \lrb{I(\theta_{sat})}_{ij}}{\partial \theta_{sat}} \right|_{\theta_{sat} = \hat \theta_{sat}} (\hat \theta_{sat} - \theta_{sat})
         \label{eqn::I_taylor}
 \end{align}
-Neglecting the higher-order terms in the Taylor expansion, we get the asymptotic equivalence of the fisher information matrix at the true parameter value and the MLE:
+Neglecting the higher-order terms in the Taylor expansion, we get the asymptotic equivalence of the Fisher information matrix at the true parameter value and the MLE:
 \begin{align}
         I(\theta_{sat}) = I(\hat \theta_{sat}) \qquad \text{as } N \rightarrow \infty
         \label{eqn::I_asymp}
@@ -56,7 +56,7 @@ The distribution of the test-statistic $T_w$, can be obtained from the distribut
         \mathcal{N}(\theta^{ag}_{sat}, I^{-1}(\theta^{ag}_{sat})) & \text{under } \mathcal{H}_1
         \end{cases}
 \end{align}
-Using the similar arguments previously asymptotic equivalence of fisher information matrix (\ref{eqn::I_asymp}):
+Using similar arguments as for the asymptotic equivalence of the Fisher information matrix (\ref{eqn::I_asymp}):
 \begin{align}
         I(\hat \theta_{sat}) (\hat \theta_{sat} - \theta^{dg}_{sat}) = I(\theta^{dg}_{sat}) (\hat \theta_{sat} - \theta^{dg}_{sat}) = I(\theta^{ag}_{sat}) (\hat \theta_{sat} - \theta^{dg}_{sat})
 \end{align}
@@ -85,4 +85,4 @@ A more direct and worst case performance measure for the detector is the probabi
         P_{MD} &= 1 - P_D = F_{\chi^2_k (\lambda)}(\beta)
 \end{align}
 
-Wald-test is used for catalyst aging detection due to its computational efficiency and asymptotic optimality properties. The test statistic can be computed using the parameter estimates and their variances, which can be obtained from the available measurements. The test can be implemented in real-time on the engine control unit (ECU) of a vehicle, enabling on-board diagnostics for catalyst health monitoring. The next step is to develop a framework for estimating the parameters and their variances from the available measurements, which will be discussed in the next section.
+The Wald test is used for catalyst aging detection due to its computational efficiency and asymptotic optimality properties. The test statistic can be computed using the parameter estimates and their variances, which can be obtained from the available measurements. The test can be implemented in real-time on the engine control unit (ECU) of a vehicle, enabling on-board diagnostics for catalyst health monitoring. The next step is to develop a framework for estimating the parameters and their variances from the available measurements, which will be discussed in the next section.
