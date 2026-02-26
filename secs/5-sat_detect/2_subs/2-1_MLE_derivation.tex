@@ -39,6 +39,9 @@ where, N is the total sample size. The maximum likelihood estimate for $\theta_{
         &\quad  s.t \quad \phi_{sat}(k)^T \theta_{sat} \geq \eta(k) \quad \forall \: k \in {1,2, \hdots, N}
         \label{eqn::quad_prog}
 \end{align}
+%%
+% Write the link between argmax to argmin.
+%%
 The quadratic program with a positivity constraint can be relaxed to a linear program as follows. By norm equivalence,
 the $l_2-$norm in (\ref{eqn::quad_prog}) is replaced with the $l_1$-norm, and the nonnegativity constraint renders the
 absolute value redundant, yielding the linear programming formulation in (\ref{eqn::lin_prog_final}).

@@ -19,7 +19,7 @@ threshold for the test. For large sample sizes $(N)$, the asymptotic probability
 \end{align}
 where $\theta_{sat}$ is the true parameter value and $I(\theta_{sat})$ is the Fisher information matrix. As $N \rightarrow \infty$, $\hat \theta_{sat} \rightarrow \theta_{sat}$. We can use the first-order Taylor expansion of the Fisher information matrix:
 \begin{align}
-        \lrb{I(\theta_{sat})}_{ij} &=  \lrb{I(\theta_{sat})}_{ij} + \left. \frac{\partial \lrb{I(\theta_{sat})}_{ij}}{\partial \theta_{sat}} \right|_{\theta_{sat} = \hat \theta_{sat}} (\hat \theta_{sat} - \theta_{sat})
+        \lrb{I(\hat \theta_{sat})}_{ij} &=  \lrb{I(\theta_{sat})}_{ij} + \left. \frac{\partial \lrb{I(\theta_{sat})}_{ij}}{\partial \theta_{sat}} \right|_{\theta_{sat} = \hat \theta_{sat}} (\hat \theta_{sat} - \theta_{sat})
         \label{eqn::I_taylor}
 \end{align}
 Neglecting the higher-order terms in the Taylor expansion, we get the asymptotic equivalence of the Fisher information matrix at the true parameter value and the MLE:
@@ -60,6 +60,9 @@ Using similar arguments as for the asymptotic equivalence of the Fisher informat
 \begin{align}
         I(\hat \theta_{sat}) (\hat \theta_{sat} - \theta^{dg}_{sat}) = I(\theta^{dg}_{sat}) (\hat \theta_{sat} - \theta^{dg}_{sat}) = I(\theta^{ag}_{sat}) (\hat \theta_{sat} - \theta^{dg}_{sat})
 \end{align}
+%%
+% Write the physical interpretation of the above equation. Mean Shifted but the variance remains same for distribution.
+%%
 Thus, the distribution of the test statistic $T_w$ would be $\chi^2$ with degrees of freedom equal to the dimension of $\theta_{sat}$ under the null hypothesis $\mathcal{H}_0$ and a non-central $\chi^2$ distribution under the alternative hypothesis $\mathcal{H}_1$ \cite{kay1998detection}.
 \begin{align}
         T_w &\sim
