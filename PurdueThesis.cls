@@ -5334,10 +5334,10 @@
         \ifthen{\equal{mse}{\ZZprogram}}
           {\bool_set_false:N \ZZUnsetB\addcontentsline{toc}{chapter}{\protect\uppercase{\@chapapp\ \thechapter. #1}}}
         \if_bool:N \ZZUnsetB
-          \addcontentsline{toc}{chapter}{\protect\numberline{\thechapter}{#1}}
+          \addcontentsline{toc}{chapter}{\protect\numberline{\thechapter}\MakeUppercase{#1}}
         \fi:
       \else
-        \addcontentsline{toc}{chapter}{#1}
+        \addcontentsline{toc}{chapter}{\MakeUppercase{#1}}
       \fi
       \chaptermark{#1}
       % \addtocontents{lof}{\protect\addvspace{10\p@}}
@@ -5423,8 +5423,8 @@
   \def\fnum@protocol{{\ZZprotocolseries\ZZprotocolname\space\theprotocol.}~}
   \def\fnum@scheme{{\ZZschemeseries\ZZschemename\space\thescheme.}~}
   \def\fnum@table{{\ZZtableseries\tablename~\thetable.}~}
-  \def\ZZmake@chapter@head#1{\ZZchapterseries \ZZchaptersize \thechapter.~#1}
-  \def\ZZmake@schapter@head#1{\ZZchapterseries \ZZchaptersize #1}
+  \def\ZZmake@chapter@head#1{\ZZchapterseries \ZZchaptersize \thechapter.~\MakeUppercase{#1}}
+  \def\ZZmake@schapter@head#1{\ZZchapterseries \ZZchaptersize \MakeUppercase{#1}}
   \def\ZZtitleseries{\bf}
   \def\ZZauthorseries{\bf}
   \def\ZZdocumentseries{\bf}
