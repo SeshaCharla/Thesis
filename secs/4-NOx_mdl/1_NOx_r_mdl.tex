@@ -33,14 +33,14 @@ directly using control volume (Figure~\ref{fig::ctrl_vol}). The model derivation
                                                 dt
                         \label{eqn::ads_bal}
                 \end{multline}
-        \item By summing the equations from (\ref{eqn::nox_bal}) for  $i = 0$ to $n-1$, where $n$ is the total number of residence times within one sampling period $(= t_s/\tau)$, we get the relation between the total moles of $NO_x$ that entered, reduced and left the SCR-ASC chamber. Finally, writing the equation in terms of the inlet and outlet concentrations we get the equation relating inlet and outlet concentrations at the end of sampling period as:
+        \item By summing the equations from (\ref{eqn::nox_bal}) for  $i = 0$ to $n-1$, where $n$ is the total number of residence times within one sampling period $(= t_s/\tau)$, we get the relation between the total number of moles of $NO_x$ that entered, reduced and left the SCR-ASC chamber. Finally, writing the equation in terms of the inlet and outlet concentrations we get the equation relating inlet and outlet concentrations at the end of sampling period as:
                 \begin{multline}
                         \underbrace{\con{NO_x}^{out}}_{x_1}(t + t_s) =
                                 \underbrace{\con{NO_x}^{in}}_{u_1}(t) - \tau(t) k_{s2v} k_{scr}(t) \con{NO_x}^{in}(t) \underbrace{\lrf{\frac{1}{n} \sum_{i = 0}^{n-1} \con{NH_3}^{ads}(t + i \tau)}}_{\sigma}
                         \label{eqn::nox_avg}
                 \end{multline}
 
-        \item The dynamics of $\sigma$, the average surface concentration of adsorbed ammonia on the catalyst for the
+        \item The dynamics of $\sigma$, the average surface concentration of adsorbed ammonia on the catalyst in the
                 given sampling period, can be obtained by summing the equations from (\ref{eqn::ads_bal}) for $i = 0$ to
                 $n-1$ which is the sampling period. This results in a telescopic cancellation of the terms resulting in
                 an equation relating the moles in the current sample to the moles in the next sample
@@ -56,7 +56,7 @@ directly using control volume (Figure~\ref{fig::ctrl_vol}). The model derivation
                         \label{eqn::ads_avg}
                 \end{multline}
         \item Finally, using (\ref{eqn::nox_avg}), $\sigma(t+t_s), \sigma(t)$ can be eliminated from
-                (\ref{eqn::ads_avg}) to get a dynamic model for $NO_x$-reduction process that explicitly depends
+                (\ref{eqn::ads_avg}) to get a dynamic model for the $NO_x$-reduction process that explicitly depends
                 on the measured inputs and states alone.
                 \begin{align}
                         \text{Let }\quad \eta(k) = u_1(k-1) - x_1(k)
