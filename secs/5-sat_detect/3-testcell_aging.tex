@@ -2,11 +2,11 @@
 Using the parameter estimation approach outlined in the previous section, we analyze the test cell data to estimate the
 parameters of the saturated catalyst model. The parameter estimates using FTIR measurements from the test cell
 experiments are tabulated in Table~\ref{tab::parm_FTIR}. The parameters show consistency across repeated RMC (Ramped
-Mode Cycle) and Hot-FTP (Federal Test Procedure) tests on the same catalyst validating the estimation approach. However,
+Mode Cycle) and Hot-FTP (Federal Test Procedure) tests on the same catalyst, validating the estimation approach. However,
 the parameters vary significantly between RMC and Hot-FTP tests. This is predominantly due to the differences in the
 temperature ranges experienced by the catalyst during the tests, which affects the Arrhenius temperature dependence of
 the rate constant and the concentration of viable voids on the catalyst surface. The temperature range of the data
-considered during the RMC tests is between 240°C and 360°C, while for the Hot-FTP tests it is between 200°C and 300°C.
+considered during the RMC tests is between $240\lx{^o}{C}$ and $360\lx{^o}{C}$, while for the Hot-FTP tests it is between $200\lx{^o}{C}$ and $300\lx{^o}{C}$.
 \begin{table}[ht]
         \centering
         \caption{Parameter Estimates using FTIR Data}
@@ -31,7 +31,7 @@ Table~\ref{tab::parm_nox}. The parameter estimates are different from those obta
 (Table~\ref{tab::parm_FTIR}) due to the cross-sensitivity of the $NO_x$ sensor to ammonia. However, the parameters show
 consistency across repeated tests on the same catalyst under similar test conditions. The $NO_x$ sensor cross-
 sensitivity error $\varepsilon_{\chi}(T)$ introduces bias in the parameter estimates as part of the error that has the
-same temperature dependence as the model structure enters into the parameter estimates. Thus, the linear programming problem estimated the parameters with an added bias term as shown below:
+same temperature dependence as the model structure enters into the parameter estimates. Thus, the linear programming problem estimates the parameters with an added bias term as shown below:
 \begin{align}
     \varepsilon_{\chi}(T) &= \phi_{sat}(T(k))^T \theta_{\varepsilon_{\chi}} + \Delta \varepsilon_{\chi}\\
     J(\theta_{sat})
