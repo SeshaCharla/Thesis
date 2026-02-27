@@ -30,7 +30,7 @@ We have the likelihood and log-likelihood functions given the data and parameter
                 \quad \varepsilon_\eta(k) \geq  0
         \label{eqn::log_likelihood}
 \end{align}
-where, N is the total sample size. The maximum likelihood estimate for $\theta_{sat}$ would be:
+where $N$ is the total sample size. The maximum likelihood estimate for $\theta_{sat}$ would be:
 \begin{align}
         \hat \theta_{sat}
         &= \argmax_{\theta_{sat}} \lrf{ \frac{N}{2} \ln \frac{2}{\sigma^2 \pi} - \frac{1}{2 \sigma^2} {\sum_{k=1}^N \varepsilon_\eta^2} } \quad \varepsilon_\eta(k) \geq  0 \notag\\
@@ -61,7 +61,7 @@ conditions on the PDF $p(\pmb \varepsilon_n; \theta_{sat})$.
         \hat \theta_{sat} \sim \mathcal{N} \lr{\theta_{sat},  I^{-1}(\theta_{sat})}
         \label{eqn::theta_dist}
 \end{align}
-where, $I(\theta_{sat})$ is the Fisher information matrix evaluated at the true value of the parameter $(\theta_{sat})$.
+where $I(\theta_{sat})$ is the Fisher information matrix evaluated at the true value of the parameter $(\theta_{sat})$.
 The regularity conditions require the existence of derivatives of the log-likelihood function and the Fisher information
 being non-zero. Using the log-likelihood function, $L(\theta_{sat})$, for half-normal distribution
 (\ref{eqn::log_likelihood}), we have,

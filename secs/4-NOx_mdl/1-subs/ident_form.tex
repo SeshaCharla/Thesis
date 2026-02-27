@@ -1,6 +1,6 @@
 \subsection{Identification Model}
 The parametric model presented previously can be converted to a regression form with minimal noise amplification as follows:
-let,
+let
 \begin{align}
         \phi_{\eta r}(k) &= \bm{\lrb{1 - \frac{x_1(k)}{u_1(k-1)}} u_2(k-1) \phi_1^T(k-1) \\
                                      \lrb{1 - \frac{x_1(k)}{u_1(k-1)}}   F(k-1) \phi_1^T(k-1)     \\
@@ -13,7 +13,7 @@ Thus, rewriting equation (\ref{eqn::eta_parm}):
         \lrb{\frac{F(k)}{u_1(k)}} \eta(k+1) &= \eta(k) \lrb{\frac{F(k-1)}{u_1(k-1)}}
                     -  \phi^T_{\eta r}(k) \theta_{\eta}  + \phi_{\Gamma r}^T(k) \theta_{\Gamma}
 \end{align*}
-Let,
+Let
 \begin{align}
         y_{NO_x}(k) &= \lrb{\frac{F(k)}{u_1(k)}} \eta(k+1) - \eta(k) \lrb{\frac{F(k-1)}{u_1(k-1)}} \\
         %====

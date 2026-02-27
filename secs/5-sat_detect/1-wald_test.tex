@@ -14,7 +14,7 @@ where $\hat \theta_{sat}$ is the parameter estimate obtained from the available 
 where $\hat \theta_{sat}$ is the maximum likelihood estimate of $\theta$ based on the data $\pmb x$ and $\beta'$ is the
 threshold for the test. For large sample sizes $(N)$, the asymptotic probability density function (PDF) of the maximum likelihood estimate (MLE) is attained, and the variance of $\hat \theta_{sat}$ attains the Cramer-Rao lower bound (CRLB) \cite{kay1993estimation}. Thus:
 \begin{align}
-        \frac{\partial ln p(\pmb x; \theta_{sat})}{\partial \theta_{sat}} = I(\theta_{sat})(\hat \theta_{sat} - \theta_{sat})
+        \frac{\partial \ln p(\pmb x; \theta_{sat})}{\partial \theta_{sat}} = I(\theta_{sat})(\hat \theta_{sat} - \theta_{sat})
         \label{eqn::log_ln_P}
 \end{align}
 where $\theta_{sat}$ is the true parameter value and $I(\theta_{sat})$ is the Fisher information matrix. As $N \rightarrow \infty$, $\hat \theta_{sat} \rightarrow \theta_{sat}$. We can use the first-order Taylor expansion of the Fisher information matrix:
@@ -29,7 +29,7 @@ Neglecting the higher-order terms in the Taylor expansion, we get the asymptotic
 \end{align}
 Thus, substituting the above equation into equation (\ref{eqn::log_ln_P}), we get:
 \begin{align}
-        \frac{\partial ln p(\pmb x; \theta_{sat})}{\partial \theta_{sat}} = I(\hat \theta_{sat})(\hat \theta_{sat} - \theta_{sat})
+        \frac{\partial \ln p(\pmb x; \theta_{sat})}{\partial \theta_{sat}} = I(\hat \theta_{sat})(\hat \theta_{sat} - \theta_{sat})
         \label{eqn::log_ln_P_2}
 \end{align}
 Integrating the above equation with respect to $\theta_{sat}$, we get:
@@ -70,7 +70,7 @@ Thus, the distribution of the test statistic $T_w$ would be $\chi^2$ with degree
         \chi^2_k & \text{under } \mathcal{H}_0 \\
         \chi^2_k (\lambda) & \text{under } \mathcal{H}_1
         \end{cases} \\
-        \text{where,} \quad \lambda &= (\theta^{ag}_{sat} - \theta^{dg}_{sat})^T I(\theta^{ag}_{sat}) (\theta^{ag}_{sat} - \theta^{dg}_{sat})
+        \text{where} \quad \lambda &= (\theta^{ag}_{sat} - \theta^{dg}_{sat})^T I(\theta^{ag}_{sat}) (\theta^{ag}_{sat} - \theta^{dg}_{sat})
 \end{align}
 
 The threshold $\beta$ can be chosen using the Neyman-Pearson criterion \cite{kay1998detection} to achieve a desired false alarm probability, $P_{FA}$ and maximize the detection probability, $P_D$. The false alarm probability is given by:
