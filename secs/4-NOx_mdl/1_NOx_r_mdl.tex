@@ -55,36 +55,34 @@ directly using control volume (Figure~\ref{fig::ctrl_vol}). The model derivation
                                                 + \Gamma t_s k_{ads}(t) \con{NH_3}^{in}(t)
                         \label{eqn::ads_avg}
                 \end{multline}
-        \item Finally, using (\ref{eqn::nox_avg}), $\sigma(t+t_s), \sigma(t)$ can be eliminated from
+        \item Finally, using (\ref{eqn::nox_avg}), $\sigma(t+t_s)$ and $\sigma(t)$ can be eliminated from
                 (\ref{eqn::ads_avg}) to get a dynamic model for the $NO_x$-reduction process that explicitly depends
                 on the measured inputs and states alone.
                 \begin{align}
                         \text{Let }\quad \eta(k) = u_1(k-1) - x_1(k)
                 \end{align}
-\begin{align*}
+\begin{align}
         \eta(k+1) =& \eta(k) \lrb{\frac{\tau(k)}{\tau(k-1)}}
                                 \lrb{\frac{u_1(k)}{u_1(k-1)}}
-                                \lrb{\frac{k_{scr}(k)}{k_{scr}(k-1)}} \\
+                                \lrb{\frac{k_{scr}(k)}{k_{scr}(k-1)}} \notag \\
                 &-\eta(k) \lrb{\frac{\tau(k)}{\tau(k-1)}}
                                 \lrb{\frac{u_1(k)}{u_1(k-1)}}
                                 \lrb{\frac{k_{scr}(k)}{k_{scr}(k-1)}}
                 t_s k_{ads}(k-1) \con{NH_3}^{in}(k-1)
-                \\
+                \notag \\
                 &-\eta(k) \lrb{\frac{\tau(k)}{\tau(k-1)}}
                                 \lrb{\frac{u_1(k)}{u_1(k-1)}}
                                 \lrb{\frac{k_{scr}(k)}{k_{scr}(k-1)}}
                 t_s k_{scr}(k-1) u_1(k-1)
-                \\
+                \notag \\
                 &-\eta(k) \lrb{\frac{\tau(k)}{\tau(k-1)}}
                                 \lrb{\frac{u_1(k)}{u_1(k-1)}}
                                 \lrb{\frac{k_{scr}(k)}{k_{scr}(k-1)}}
                 t_s k_{od}(k-1)
-                \\
+                \notag \\
                 &+ t_s k_{s2v} \times \lrf{\Gamma(k-1) \tau(k) u_1(k) \con{NH_3}^{in}(k-1)} \times \lr{k_{scr}(k) k_{ads}(k-1)}
-\end{align*}
-\begin{equation}
                 \label{eqn::disc_NOx}
-\end{equation}
+\end{align}
 
 \end{enumerate}
 
