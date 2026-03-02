@@ -2,7 +2,7 @@
 
 The model developed up until now considers the situation where the urea-dosing is such that the catalyst is neither
 saturated nor empty. This ideal case is also an assumption in the linearized CSTR model. The dynamic model for the
-catalyst surface concentration, when considering saturation and the zero concentration limit, is
+catalyst surface concentration, when considering saturation and the zero concentration limit, is given by
 ($\gamma_{proc}(k)$ is defined in \ref{eqn::gamma_proc}):
 %=====
 \begin{align}
@@ -16,7 +16,7 @@ catalyst surface concentration, when considering saturation and the zero concent
         \label{eqn::actual_sigma_mdl}
 \end{align}
 
-Thus, substituting equation \ref{eqn::sigma_elim} into the above equations \ref{eqn::unbounded_sigma_mdl} and \ref{eqn::actual_sigma_mdl}:
+Thus, substituting equation \ref{eqn::sigma_elim} into the above equations \ref{eqn::unbounded_sigma_mdl} and \ref{eqn::actual_sigma_mdl} yields:
 %===
 \begin{align}
         &\sigma^{ub}(k) = \lrf{\frac{\eta(k)}{\tau(k-1) k_{s2v} k_{scr}(k-1) u_1(k-1)}} \gamma_{proc}(k-1) + t_s \Gamma k_{ads}(k-1) \con{NH_3}^{in}(k-1)\\
@@ -93,7 +93,12 @@ Thus, the $NO_x$ reduction dynamics are bounded by:
         0 \leq \eta(k+1) \leq f_\Gamma(k)
 \end{align}
 % ====
-The above equation can be interpreted as follows: $\eta$ at any given time step is bounded by the change in concentration due to $NO_x$ reduction when the catalyst is saturated $\lr{\eta_{sat}}$ under the same conditions of flow-rate and inlet $NO_x$ concentration. This relationship can be used to find the optimal values of the parameters $\pmb \theta_{\Gamma scr}$ by solving the following constrained linear programming problem:
+The above equation can be interpreted as follows: $\eta$ at any given time step
+is bounded by the change in concentration due to $NO_x$ reduction when the
+catalyst is saturated $\lr{\eta_{sat}}$ under the same conditions of flow-rate
+and inlet $NO_x$ concentration. This relationship can be used to find the
+optimal values of the parameters $\pmb \theta_{sat}$ by solving the
+following constrained linear programming problem:
 \begin{align*}
         \text{Minimize:}& \qquad    \lrb{ \sum_{k = 0}^{N-2} \lrb{\frac{u_1(k)}{F(k)}} \phi_2^T(k) } \theta_{sat}\\
         \text{Subject to:}& \qquad
