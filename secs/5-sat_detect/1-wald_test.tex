@@ -56,9 +56,16 @@ The distribution of the test-statistic $T_w$, can be obtained from the distribut
         \mathcal{N}(\theta^{ag}_{sat}, I^{-1}(\theta^{ag}_{sat})) & \text{under } \mathcal{H}_1
         \end{cases}
 \end{align}
-Using similar arguments as for the asymptotic equivalence of the Fisher information matrix (\ref{eqn::I_asymp}):
+Using similar arguments as for the asymptotic equivalence of the Fisher
+information matrix (\ref{eqn::I_asymp}) we get the equation
+(\ref{eqn::I_asymptotic_equivalence}) which essentialy states that variances of
+the parameter vectors is similar between aged and degreened catalysts and only
+the mean is shifted.
 \begin{align}
-        I(\hat \theta_{sat}) (\hat \theta_{sat} - \theta^{dg}_{sat}) = I(\theta^{dg}_{sat}) (\hat \theta_{sat} - \theta^{dg}_{sat}) = I(\theta^{ag}_{sat}) (\hat \theta_{sat} - \theta^{dg}_{sat})
+        I(\hat \theta_{sat}) (\hat \theta_{sat} - \theta^{dg}_{sat}) =
+        I(\theta^{dg}_{sat}) (\hat \theta_{sat} - \theta^{dg}_{sat}) =
+        I(\theta^{ag}_{sat}) (\hat \theta_{sat} - \theta^{dg}_{sat})
+        \label{eqn::I_asymptotic_equivalence}
 \end{align}
 %%
 % Write the physical interpretation of the above equation. Mean Shifted but the variance remains same for distribution.

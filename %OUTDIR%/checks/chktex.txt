@@ -1,0 +1,1705 @@
+./secs/1-intro/0-intro.tex:15:36:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/0-intro.tex:27:81:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/0-intro.tex:28:4:24:Delete this space to maintain correct pagereferences.
+./secs/1-intro/0-intro.tex:41:4:24:Delete this space to maintain correct pagereferences.
+./secs/1-intro/0-intro.tex:54:8:24:Delete this space to maintain correct pagereferences.
+./secs/1-intro/0-intro.tex:58:70:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/0-intro.tex:60:1:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/0-intro.tex:62:27:12:Interword spacing (`\ ') should perhaps be used.
+./secs/1-intro/0-intro.tex:63:50:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-1_OBD.tex:7:16:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-1_OBD.tex:10:82:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-1_OBD.tex:14:16:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-1_OBD.tex:16:57:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-1_OBD.tex:18:26:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-1_OBD.tex:20:16:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-1_OBD.tex:23:42:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-1_OBD.tex:24:69:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-1_OBD.tex:25:45:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-1_OBD.tex:26:18:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-1_OBD.tex:27:1:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-1_OBD.tex:32:1:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-1_OBD.tex:37:85:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-1_OBD.tex:39:1:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-1_OBD.tex:42:248:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:5:44:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:7:91:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:8:90:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:9:1:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:9:23:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:9:52:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:10:1:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:10:23:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:10:47:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:10:78:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:11:12:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:11:42:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:11:71:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:12:60:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:15:24:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:17:1:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:17:26:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:18:84:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:27:62:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:38:4:24:Delete this space to maintain correct pagereferences.
+./secs/1-intro/subs/1-2_cstr.tex:43:51:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:43:86:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:57:4:24:Delete this space to maintain correct pagereferences.
+./secs/1-intro/subs/1-2_cstr.tex:58:5:44:User Regex: -2:Vertical rules in tables are ugly.
+./secs/1-intro/subs/1-2_cstr.tex:59:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/1-intro/subs/1-2_cstr.tex:60:57:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/1-intro/subs/1-2_cstr.tex:64:66:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/1-intro/subs/1-2_cstr.tex:68:47:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/1-intro/subs/1-2_cstr.tex:72:80:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/1-intro/subs/1-2_cstr.tex:76:49:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/1-intro/subs/1-2_cstr.tex:105:86:13:Intersentence spacing (`\@') should perhaps be used.
+./secs/1-intro/subs/1-2_cstr.tex:128:44:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:144:4:24:Delete this space to maintain correct pagereferences.
+./secs/1-intro/subs/1-1_OBD.tex:7:16:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-1_OBD.tex:10:82:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-1_OBD.tex:14:16:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-1_OBD.tex:16:57:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-1_OBD.tex:18:26:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-1_OBD.tex:20:16:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-1_OBD.tex:23:42:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-1_OBD.tex:24:69:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-1_OBD.tex:25:45:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-1_OBD.tex:26:18:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-1_OBD.tex:27:1:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-1_OBD.tex:32:1:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-1_OBD.tex:37:85:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-1_OBD.tex:39:1:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-1_OBD.tex:42:248:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:5:44:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:7:91:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:8:90:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:9:1:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:9:23:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:9:52:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:10:1:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:10:23:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:10:47:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:10:78:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:11:12:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:11:42:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:11:71:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:12:60:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:15:24:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:17:1:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:17:26:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:18:84:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:27:62:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:38:4:24:Delete this space to maintain correct pagereferences.
+./secs/1-intro/subs/1-2_cstr.tex:43:51:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:43:86:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:57:4:24:Delete this space to maintain correct pagereferences.
+./secs/1-intro/subs/1-2_cstr.tex:58:5:44:User Regex: -2:Vertical rules in tables are ugly.
+./secs/1-intro/subs/1-2_cstr.tex:59:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/1-intro/subs/1-2_cstr.tex:60:57:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/1-intro/subs/1-2_cstr.tex:64:66:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/1-intro/subs/1-2_cstr.tex:68:47:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/1-intro/subs/1-2_cstr.tex:72:80:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/1-intro/subs/1-2_cstr.tex:76:49:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/1-intro/subs/1-2_cstr.tex:105:86:13:Intersentence spacing (`\@') should perhaps be used.
+./secs/1-intro/subs/1-2_cstr.tex:128:44:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:144:4:24:Delete this space to maintain correct pagereferences.
+./secs/4-NOx_mdl/3_validation.tex:6:33:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/3_validation.tex:6:62:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/3_validation.tex:24:8:24:Delete this space to maintain correct pagereferences.
+./secs/4-NOx_mdl/3_validation.tex:40:8:24:Delete this space to maintain correct pagereferences.
+./secs/4-NOx_mdl/3_validation.tex:56:8:24:Delete this space to maintain correct pagereferences.
+./secs/4-NOx_mdl/3_validation.tex:61:8:24:Delete this space to maintain correct pagereferences.
+./secs/4-NOx_mdl/3_validation.tex:63:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/4-NOx_mdl/3_validation.tex:63:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/4-NOx_mdl/3_validation.tex:64:82:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/4-NOx_mdl/3_validation.tex:64:89:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/4-NOx_mdl/3_validation.tex:66:52:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/4-NOx_mdl/3_validation.tex:69:55:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/4-NOx_mdl/3_validation.tex:72:57:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/4-NOx_mdl/3_validation.tex:73:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/4-NOx_mdl/3_validation.tex:83:8:24:Delete this space to maintain correct pagereferences.
+secs/4-NOx_mdl/1_NOx_r_mdl.tex:7:8:24:Delete this space to maintain correct pagereferences.
+./secs/4-NOx_mdl/1-subs/change_in_nox_model.tex:83:18:40:You should put punctuation outside inner math mode.
+./secs/4-NOx_mdl/1-subs/change_in_nox_model.tex:87:18:40:You should put punctuation outside inner math mode.
+./secs/4-NOx_mdl/1-subs/parametrization.tex:8:18:40:You should put punctuation outside inner math mode.
+./secs/4-NOx_mdl/1-subs/parametrization.tex:10:18:40:You should put punctuation outside inner math mode.
+./secs/4-NOx_mdl/1-subs/parametrization.tex:13:18:40:You should put punctuation outside inner math mode.
+./secs/4-NOx_mdl/1-subs/parametrization.tex:18:18:40:You should put punctuation outside inner math mode.
+./secs/4-NOx_mdl/1-subs/parametrization.tex:27:33:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/parametrization.tex:27:151:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/parametrization.tex:34:41:35:You should perhaps use `\max' instead.
+./secs/4-NOx_mdl/1-subs/parametrization.tex:34:51:35:You should perhaps use `\min' instead.
+./secs/4-NOx_mdl/1-subs/parametrization.tex:34:82:35:You should perhaps use `\max' instead.
+./secs/4-NOx_mdl/1-subs/parametrization.tex:34:92:35:You should perhaps use `\min' instead.
+./secs/4-NOx_mdl/1-subs/g0.tex:4:37:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/g0.tex:4:68:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/g0.tex:4:89:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/g1.tex:5:36:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/g2.tex:9:29:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/g2.tex:9:60:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/g2.tex:9:78:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/g3.tex:8:36:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/g3.tex:8:67:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/g4.tex:5:36:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/g4.tex:5:67:2:Non-breaking space (`~') should have been used.
+secs/4-NOx_mdl/2_catalyst_saturation.tex:6:34:2:Non-breaking space (`~') should have been used.
+secs/4-NOx_mdl/2_catalyst_saturation.tex:19:28:2:Non-breaking space (`~') should have been used.
+secs/4-NOx_mdl/2_catalyst_saturation.tex:19:75:2:Non-breaking space (`~') should have been used.
+secs/4-NOx_mdl/2_catalyst_saturation.tex:19:110:2:Non-breaking space (`~') should have been used.
+secs/4-NOx_mdl/2_catalyst_saturation.tex:43:89:2:Non-breaking space (`~') should have been used.
+secs/4-NOx_mdl/2_catalyst_saturation.tex:44:1:2:Non-breaking space (`~') should have been used.
+secs/4-NOx_mdl/2_catalyst_saturation.tex:52:159:2:Non-breaking space (`~') should have been used.
+secs/4-NOx_mdl/2_catalyst_saturation.tex:54:110:3:You should enclose the previous parenthesis with `{}'.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:14:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:14:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:18:39:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:18:46:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:22:65:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:26:73:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:30:73:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:36:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:36:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:45:63:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:45:95:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:61:8:24:Delete this space to maintain correct pagereferences.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:85:8:24:Delete this space to maintain correct pagereferences.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:102:8:24:Delete this space to maintain correct pagereferences.
+secs/4-NOx_mdl/25_switching_condition.tex:2:239:2:Non-breaking space (`~') should have been used.
+secs/4-NOx_mdl/25_switching_condition.tex:2:263:2:Non-breaking space (`~') should have been used.
+secs/4-NOx_mdl/25_switching_condition.tex:2:293:2:Non-breaking space (`~') should have been used.
+secs/4-NOx_mdl/25_switching_condition.tex:8:14:3:You should enclose the previous parenthesis with `{}'.
+secs/4-NOx_mdl/25_switching_condition.tex:72:25:35:You should perhaps use `\max' instead.
+secs/4-NOx_mdl/25_switching_condition.tex:72:35:35:You should perhaps use `\min' instead.
+secs/4-NOx_mdl/25_switching_condition.tex:73:24:35:You should perhaps use `\max' instead.
+secs/4-NOx_mdl/25_switching_condition.tex:73:34:35:You should perhaps use `\min' instead.
+secs/4-NOx_mdl/25_switching_condition.tex:75:6:2:Non-breaking space (`~') should have been used.
+secs/4-NOx_mdl/25_switching_condition.tex:75:24:2:Non-breaking space (`~') should have been used.
+secs/4-NOx_mdl/25_switching_condition.tex:75:96:2:Non-breaking space (`~') should have been used.
+secs/4-NOx_mdl/25_switching_condition.tex:76:39:2:Non-breaking space (`~') should have been used.
+secs/4-NOx_mdl/25_switching_condition.tex:89:73:3:You should enclose the previous parenthesis with `{}'.
+secs/4-NOx_mdl/25_switching_condition.tex:93:286:2:Non-breaking space (`~') should have been used.
+secs/4-NOx_mdl/25_switching_condition.tex:102:178:2:Non-breaking space (`~') should have been used.
+secs/4-NOx_mdl/25_switching_condition.tex:108:8:24:Delete this space to maintain correct pagereferences.
+secs/4-NOx_mdl/3_validation.tex:6:33:2:Non-breaking space (`~') should have been used.
+secs/4-NOx_mdl/3_validation.tex:6:62:2:Non-breaking space (`~') should have been used.
+secs/4-NOx_mdl/3_validation.tex:24:8:24:Delete this space to maintain correct pagereferences.
+secs/4-NOx_mdl/3_validation.tex:40:8:24:Delete this space to maintain correct pagereferences.
+secs/4-NOx_mdl/3_validation.tex:56:8:24:Delete this space to maintain correct pagereferences.
+secs/4-NOx_mdl/3_validation.tex:61:8:24:Delete this space to maintain correct pagereferences.
+secs/4-NOx_mdl/3_validation.tex:63:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/4-NOx_mdl/3_validation.tex:63:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/4-NOx_mdl/3_validation.tex:64:82:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/4-NOx_mdl/3_validation.tex:64:89:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/4-NOx_mdl/3_validation.tex:66:52:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/4-NOx_mdl/3_validation.tex:69:55:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/4-NOx_mdl/3_validation.tex:72:57:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/4-NOx_mdl/3_validation.tex:73:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/4-NOx_mdl/3_validation.tex:83:8:24:Delete this space to maintain correct pagereferences.
+./secs/4-NOx_mdl/25_switching_condition.tex:2:239:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/25_switching_condition.tex:2:263:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/25_switching_condition.tex:2:293:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/25_switching_condition.tex:8:14:3:You should enclose the previous parenthesis with `{}'.
+./secs/4-NOx_mdl/25_switching_condition.tex:72:25:35:You should perhaps use `\max' instead.
+./secs/4-NOx_mdl/25_switching_condition.tex:72:35:35:You should perhaps use `\min' instead.
+./secs/4-NOx_mdl/25_switching_condition.tex:73:24:35:You should perhaps use `\max' instead.
+./secs/4-NOx_mdl/25_switching_condition.tex:73:34:35:You should perhaps use `\min' instead.
+./secs/4-NOx_mdl/25_switching_condition.tex:75:6:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/25_switching_condition.tex:75:24:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/25_switching_condition.tex:75:96:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/25_switching_condition.tex:76:39:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/25_switching_condition.tex:89:73:3:You should enclose the previous parenthesis with `{}'.
+./secs/4-NOx_mdl/25_switching_condition.tex:93:286:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/25_switching_condition.tex:102:178:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/25_switching_condition.tex:108:8:24:Delete this space to maintain correct pagereferences.
+./secs/4-NOx_mdl/2_catalyst_saturation.tex:6:34:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/2_catalyst_saturation.tex:19:28:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/2_catalyst_saturation.tex:19:75:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/2_catalyst_saturation.tex:19:110:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/2_catalyst_saturation.tex:43:89:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/2_catalyst_saturation.tex:44:1:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/2_catalyst_saturation.tex:52:159:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/2_catalyst_saturation.tex:54:110:3:You should enclose the previous parenthesis with `{}'.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:14:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:14:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:18:39:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:18:46:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:22:65:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:26:73:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:30:73:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:36:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:36:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:45:63:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:45:95:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:61:8:24:Delete this space to maintain correct pagereferences.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:85:8:24:Delete this space to maintain correct pagereferences.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:102:8:24:Delete this space to maintain correct pagereferences.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:14:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:14:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:18:39:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:18:46:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:22:65:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:26:73:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:30:73:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:36:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:36:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:45:63:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:45:95:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:61:8:24:Delete this space to maintain correct pagereferences.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:85:8:24:Delete this space to maintain correct pagereferences.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:102:8:24:Delete this space to maintain correct pagereferences.
+./secs/4-NOx_mdl/1_NOx_r_mdl.tex:7:8:24:Delete this space to maintain correct pagereferences.
+./secs/4-NOx_mdl/1-subs/change_in_nox_model.tex:83:18:40:You should put punctuation outside inner math mode.
+./secs/4-NOx_mdl/1-subs/change_in_nox_model.tex:87:18:40:You should put punctuation outside inner math mode.
+./secs/4-NOx_mdl/1-subs/parametrization.tex:8:18:40:You should put punctuation outside inner math mode.
+./secs/4-NOx_mdl/1-subs/parametrization.tex:10:18:40:You should put punctuation outside inner math mode.
+./secs/4-NOx_mdl/1-subs/parametrization.tex:13:18:40:You should put punctuation outside inner math mode.
+./secs/4-NOx_mdl/1-subs/parametrization.tex:18:18:40:You should put punctuation outside inner math mode.
+./secs/4-NOx_mdl/1-subs/parametrization.tex:27:33:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/parametrization.tex:27:151:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/parametrization.tex:34:41:35:You should perhaps use `\max' instead.
+./secs/4-NOx_mdl/1-subs/parametrization.tex:34:51:35:You should perhaps use `\min' instead.
+./secs/4-NOx_mdl/1-subs/parametrization.tex:34:82:35:You should perhaps use `\max' instead.
+./secs/4-NOx_mdl/1-subs/parametrization.tex:34:92:35:You should perhaps use `\min' instead.
+./secs/4-NOx_mdl/1-subs/g0.tex:4:37:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/g0.tex:4:68:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/g0.tex:4:89:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/g1.tex:5:36:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/g2.tex:9:29:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/g2.tex:9:60:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/g2.tex:9:78:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/g3.tex:8:36:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/g3.tex:8:67:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/g4.tex:5:36:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/g4.tex:5:67:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/g4.tex:5:36:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/g4.tex:5:67:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/g3.tex:8:36:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/g3.tex:8:67:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/g2.tex:9:29:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/g2.tex:9:60:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/g2.tex:9:78:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/g0.tex:4:37:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/g0.tex:4:68:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/g0.tex:4:89:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/g1.tex:5:36:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/parametrization.tex:8:18:40:You should put punctuation outside inner math mode.
+./secs/4-NOx_mdl/1-subs/parametrization.tex:10:18:40:You should put punctuation outside inner math mode.
+./secs/4-NOx_mdl/1-subs/parametrization.tex:13:18:40:You should put punctuation outside inner math mode.
+./secs/4-NOx_mdl/1-subs/parametrization.tex:18:18:40:You should put punctuation outside inner math mode.
+./secs/4-NOx_mdl/1-subs/parametrization.tex:27:33:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/parametrization.tex:27:151:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/parametrization.tex:34:41:35:You should perhaps use `\max' instead.
+./secs/4-NOx_mdl/1-subs/parametrization.tex:34:51:35:You should perhaps use `\min' instead.
+./secs/4-NOx_mdl/1-subs/parametrization.tex:34:82:35:You should perhaps use `\max' instead.
+./secs/4-NOx_mdl/1-subs/parametrization.tex:34:92:35:You should perhaps use `\min' instead.
+./secs/4-NOx_mdl/1-subs/g0.tex:4:37:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/g0.tex:4:68:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/g0.tex:4:89:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/g1.tex:5:36:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/g2.tex:9:29:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/g2.tex:9:60:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/g2.tex:9:78:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/g3.tex:8:36:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/g3.tex:8:67:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/g4.tex:5:36:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/g4.tex:5:67:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/change_in_nox_model.tex:83:18:40:You should put punctuation outside inner math mode.
+./secs/4-NOx_mdl/1-subs/change_in_nox_model.tex:87:18:40:You should put punctuation outside inner math mode.
+./secs/n-back/1-show-bib.tex:38:21:1:Command terminated with space.
+./secs/n-back/1-show-bib.tex:40:21:1:Command terminated with space.
+./secs/n-back/3-pubs.tex:3:1:24:Delete this space to maintain correct pagereferences.
+./secs/n-back/3-pubs.tex:4:1:24:Delete this space to maintain correct pagereferences.
+./secs/n-back/3-pubs.tex:8:47:26:You ought to remove spaces in front of punctuation.
+./secs/n-back/3-pubs.tex:12:47:26:You ought to remove spaces in front of punctuation.
+./secs/n-back/3-pubs.tex:20:47:26:You ought to remove spaces in front of punctuation.
+./secs/n-back/3-pubs.tex:20:192:8:Wrong length of dash may have been used.
+./secs/n-back/3-pubs.tex:22:178:8:Wrong length of dash may have been used.
+./secs/n-back/3-pubs.tex:24:203:8:Wrong length of dash may have been used.
+./secs/n-back/3-pubs.tex:24:214:13:Intersentence spacing (`\@') should perhaps be used.
+./secs/n-back/3-pubs.tex:26:36:26:You ought to remove spaces in front of punctuation.
+./secs/n-back/3-pubs.tex:26:182:8:Wrong length of dash may have been used.
+./secs/n-back/3-pubs.tex:3:1:24:Delete this space to maintain correct pagereferences.
+./secs/n-back/3-pubs.tex:4:1:24:Delete this space to maintain correct pagereferences.
+./secs/n-back/3-pubs.tex:8:47:26:You ought to remove spaces in front of punctuation.
+./secs/n-back/3-pubs.tex:12:47:26:You ought to remove spaces in front of punctuation.
+./secs/n-back/3-pubs.tex:20:47:26:You ought to remove spaces in front of punctuation.
+./secs/n-back/3-pubs.tex:20:192:8:Wrong length of dash may have been used.
+./secs/n-back/3-pubs.tex:22:178:8:Wrong length of dash may have been used.
+./secs/n-back/3-pubs.tex:24:203:8:Wrong length of dash may have been used.
+./secs/n-back/3-pubs.tex:24:214:13:Intersentence spacing (`\@') should perhaps be used.
+./secs/n-back/3-pubs.tex:26:36:26:You ought to remove spaces in front of punctuation.
+./secs/n-back/3-pubs.tex:26:182:8:Wrong length of dash may have been used.
+./secs/n-back/ref_list.tex:1:1:2:Non-breaking space (`~') should have been used.
+./secs/n-back/ref_list.tex:2:1:2:Non-breaking space (`~') should have been used.
+./secs/n-back/ref_list.tex:3:1:2:Non-breaking space (`~') should have been used.
+./secs/n-back/ref_list.tex:4:1:2:Non-breaking space (`~') should have been used.
+./secs/n-back/ref_list.tex:5:1:2:Non-breaking space (`~') should have been used.
+./secs/n-back/ref_list.tex:6:1:2:Non-breaking space (`~') should have been used.
+./secs/n-back/ref_list.tex:7:1:2:Non-breaking space (`~') should have been used.
+./secs/n-back/ref_list.tex:8:1:2:Non-breaking space (`~') should have been used.
+./secs/n-back/ref_list.tex:9:1:2:Non-breaking space (`~') should have been used.
+./secs/n-back/ref_list.tex:10:1:2:Non-breaking space (`~') should have been used.
+./secs/n-back/ref_list.tex:11:1:2:Non-breaking space (`~') should have been used.
+./secs/n-back/ref_list.tex:12:1:2:Non-breaking space (`~') should have been used.
+./secs/n-back/1-show-bib.tex:38:21:1:Command terminated with space.
+./secs/n-back/1-show-bib.tex:40:21:1:Command terminated with space.
+./secs/0-front/3-acknowledgments.tex:6:40:12:Interword spacing (`\ ') should perhaps be used.
+./secs/0-front/0-front.tex:4:15:1:Command terminated with space.
+./secs/0-front/0-front.tex:6:15:1:Command terminated with space.
+./secs/0-front/0-front.tex:8:15:1:Command terminated with space.
+./secs/0-front/3-acknowledgments.tex:6:40:12:Interword spacing (`\ ') should perhaps be used.
+./secs/0-front/0-front.tex:10:15:1:Command terminated with space.
+./secs/0-front/0-front.tex:17:15:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:5:31:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:6:31:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:8:25:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:9:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:10:25:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:11:26:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:12:26:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:13:25:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:14:31:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:15:31:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:16:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:17:25:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:18:25:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:19:24:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:20:25:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:21:25:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:22:25:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:23:27:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:24:27:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:25:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:26:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:27:25:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:28:21:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:29:24:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:30:24:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:31:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:32:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:32:53:36:You should put a space in front of parenthesis.
+./secs/0-front/6-symbols.tex:33:25:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:34:25:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:35:25:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:36:25:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:37:21:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:38:21:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:39:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:40:21:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:41:21:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:42:21:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:43:40:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:44:24:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:45:32:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:46:24:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:47:21:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:48:25:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:49:41:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:50:41:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:51:21:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:53:30:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:54:23:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:55:24:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:56:34:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:57:34:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:58:22:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:59:29:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:60:28:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:61:24:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:62:30:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:63:35:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:64:35:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:65:25:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:66:23:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:67:44:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:68:29:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:69:22:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:70:34:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:71:28:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:72:22:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:76:11:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:78:26:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:79:18:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:80:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:81:20:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:82:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:83:20:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:84:20:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:85:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:86:18:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:87:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:88:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:89:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:90:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:91:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:92:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:93:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:94:20:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:95:21:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:96:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:97:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:98:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:99:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:100:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:101:21:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:102:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:103:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:108:11:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:110:31:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:111:58:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:112:55:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:113:43:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:114:47:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:115:34:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:116:31:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:117:36:1:Command terminated with space.
+./secs/0-front/0-front.tex:26:11:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:5:31:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:6:31:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:8:25:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:9:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:10:25:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:11:26:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:12:26:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:13:25:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:14:31:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:15:31:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:16:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:17:25:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:18:25:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:19:24:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:20:25:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:21:25:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:22:25:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:23:27:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:24:27:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:25:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:26:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:27:25:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:28:21:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:29:24:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:30:24:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:31:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:32:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:32:53:36:You should put a space in front of parenthesis.
+./secs/0-front/6-symbols.tex:33:25:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:34:25:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:35:25:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:36:25:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:37:21:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:38:21:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:39:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:40:21:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:41:21:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:42:21:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:43:40:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:44:24:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:45:32:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:46:24:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:47:21:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:48:25:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:49:41:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:50:41:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:51:21:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:53:30:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:54:23:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:55:24:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:56:34:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:57:34:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:58:22:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:59:29:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:60:28:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:61:24:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:62:30:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:63:35:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:64:35:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:65:25:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:66:23:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:67:44:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:68:29:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:69:22:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:70:34:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:71:28:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:72:22:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:76:11:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:78:26:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:79:18:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:80:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:81:20:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:82:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:83:20:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:84:20:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:85:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:86:18:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:87:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:88:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:89:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:90:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:91:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:92:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:93:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:94:20:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:95:21:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:96:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:97:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:98:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:99:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:100:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:101:21:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:102:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:103:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:108:11:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:110:31:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:111:58:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:112:55:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:113:43:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:114:47:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:115:34:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:116:31:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:117:36:1:Command terminated with space.
+./secs/5-sat_detect/3_subs/1_cat_mode.tex:37:8:24:Delete this space to maintain correct pagereferences.
+./secs/5-sat_detect/3_subs/1_cat_mode.tex:49:1:2:Non-breaking space (`~') should have been used.
+./secs/5-sat_detect/3_subs/1_cat_mode.tex:54:8:24:Delete this space to maintain correct pagereferences.
+./secs/5-sat_detect/3_subs/1_cat_mode.tex:56:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/3_subs/1_cat_mode.tex:56:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/3_subs/1_cat_mode.tex:57:42:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/3_subs/1_cat_mode.tex:57:49:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/3_subs/1_cat_mode.tex:61:44:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/3_subs/1_cat_mode.tex:66:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/3_subs/1_cat_mode.tex:66:23:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/3_subs/1_cat_mode.tex:72:8:24:Delete this space to maintain correct pagereferences.
+./secs/5-sat_detect/3_subs/1_cat_mode.tex:74:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/3_subs/1_cat_mode.tex:74:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/3_subs/1_cat_mode.tex:75:42:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/3_subs/1_cat_mode.tex:75:49:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/3_subs/1_cat_mode.tex:79:44:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/3_subs/1_cat_mode.tex:84:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/3_subs/1_cat_mode.tex:84:23:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/3_subs/0_necc_cond.tex:1:73:24:Delete this space to maintain correct pagereferences.
+./secs/5-sat_detect/3_subs/0_necc_cond.tex:6:1:2:Non-breaking space (`~') should have been used.
+./secs/5-sat_detect/3_subs/0_necc_cond.tex:12:8:24:Delete this space to maintain correct pagereferences.
+./secs/5-sat_detect/3_subs/0_necc_cond.tex:18:8:24:Delete this space to maintain correct pagereferences.
+./secs/5-sat_detect/3_subs/0_necc_cond.tex:25:391:35:You should perhaps use `\max' instead.
+./secs/5-sat_detect/3_subs/0_necc_cond.tex:25:413:35:You should perhaps use `\max' instead.
+./secs/5-sat_detect/3_subs/0_necc_cond.tex:27:81:35:You should perhaps use `\max' instead.
+./secs/5-sat_detect/3_subs/2_aging_detection.tex:12:8:24:Delete this space to maintain correct pagereferences.
+./secs/5-sat_detect/3_subs/2_aging_detection.tex:25:60:2:Non-breaking space (`~') should have been used.
+./secs/5-sat_detect/3_subs/2_aging_detection.tex:32:24:24:Delete this space to maintain correct pagereferences.
+./secs/5-sat_detect/3_subs/2_aging_detection.tex:40:24:24:Delete this space to maintain correct pagereferences.
+./secs/5-sat_detect/3_subs/2_aging_detection.tex:49:35:2:Non-breaking space (`~') should have been used.
+./secs/5-sat_detect/3_subs/2_aging_detection.tex:62:8:24:Delete this space to maintain correct pagereferences.
+./secs/5-sat_detect/3_subs/2_aging_detection.tex:64:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/3_subs/2_aging_detection.tex:64:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/3_subs/2_aging_detection.tex:65:61:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/3_subs/2_aging_detection.tex:65:68:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/3_subs/2_aging_detection.tex:70:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/3_subs/2_aging_detection.tex:75:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/3_subs/2_aging_detection.tex:75:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/2_subs/2-1_MLE_derivation.tex:7:95:2:Non-breaking space (`~') should have been used.
+./secs/5-sat_detect/2_subs/2-1_MLE_derivation.tex:22:8:24:Delete this space to maintain correct pagereferences.
+./secs/5-sat_detect/2_subs/2-1_MLE_derivation.tex:38:68:3:You should enclose the previous parenthesis with `{}'.
+./secs/5-sat_detect/2_subs/2-1_MLE_derivation.tex:39:39:3:You should enclose the previous parenthesis with `{}'.
+./secs/5-sat_detect/2_subs/2-1_MLE_derivation.tex:47:68:3:You should enclose the previous parenthesis with `{}'.
+./secs/5-sat_detect/2_subs/2-1_MLE_derivation.tex:48:39:3:You should enclose the previous parenthesis with `{}'.
+./secs/5-sat_detect/2_subs/2-1_MLE_derivation.tex:54:51:2:Non-breaking space (`~') should have been used.
+./secs/5-sat_detect/2_subs/2-1_MLE_derivation.tex:75:48:3:You should enclose the previous parenthesis with `{}'.
+./secs/5-sat_detect/0-sat_detect.tex:2:92:2:Non-breaking space (`~') should have been used.
+./secs/5-sat_detect/0-sat_detect.tex:3:1:2:Non-breaking space (`~') should have been used.
+./secs/5-sat_detect/0-sat_detect.tex:15:81:2:Non-breaking space (`~') should have been used.
+./secs/5-sat_detect/0-sat_detect.tex:16:1:2:Non-breaking space (`~') should have been used.
+./secs/5-sat_detect/0-sat_detect.tex:25:46:2:Non-breaking space (`~') should have been used.
+./secs/5-sat_detect/0-sat_detect.tex:26:41:2:Non-breaking space (`~') should have been used.
+./secs/5-sat_detect/0-sat_detect.tex:36:42:35:You should perhaps use `\max' instead.
+./secs/5-sat_detect/0-sat_detect.tex:36:52:35:You should perhaps use `\min' instead.
+./secs/5-sat_detect/0-sat_detect.tex:36:83:35:You should perhaps use `\max' instead.
+./secs/5-sat_detect/0-sat_detect.tex:36:93:35:You should perhaps use `\min' instead.
+./secs/5-sat_detect/0-sat_detect.tex:41:109:3:You should enclose the previous parenthesis with `{}'.
+./secs/5-sat_detect/0-sat_detect.tex:48:4:24:Delete this space to maintain correct pagereferences.
+./secs/5-sat_detect/0-sat_detect.tex:55:4:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/1-wald_test.tex:9:494:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/1-wald_test.tex:15:240:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/1-wald_test.tex:17:24:35:You should perhaps use `\ln' instead.
+secs/5-sat_detect/1-wald_test.tex:25:166:13:Intersentence spacing (`\@') should perhaps be used.
+secs/5-sat_detect/1-wald_test.tex:32:24:35:You should perhaps use `\ln' instead.
+secs/5-sat_detect/1-wald_test.tex:37:113:3:You should enclose the previous parenthesis with `{}'.
+secs/5-sat_detect/1-wald_test.tex:43:146:3:You should enclose the previous parenthesis with `{}'.
+secs/5-sat_detect/1-wald_test.tex:45:53:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/1-wald_test.tex:48:75:3:You should enclose the previous parenthesis with `{}'.
+secs/5-sat_detect/1-wald_test.tex:51:261:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/1-wald_test.tex:63:265:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/1-wald_test.tex:70:78:3:You should enclose the previous parenthesis with `{}'.
+secs/5-sat_detect/1-wald_test.tex:73:71:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/2-param_dist.tex:41:116:26:You ought to remove spaces in front of punctuation.
+secs/5-sat_detect/2-param_dist.tex:54:1:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/2_subs/2-1_MLE_derivation.tex:7:95:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/2_subs/2-1_MLE_derivation.tex:22:8:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/2_subs/2-1_MLE_derivation.tex:38:68:3:You should enclose the previous parenthesis with `{}'.
+secs/5-sat_detect/2_subs/2-1_MLE_derivation.tex:39:39:3:You should enclose the previous parenthesis with `{}'.
+secs/5-sat_detect/2_subs/2-1_MLE_derivation.tex:47:68:3:You should enclose the previous parenthesis with `{}'.
+secs/5-sat_detect/2_subs/2-1_MLE_derivation.tex:48:39:3:You should enclose the previous parenthesis with `{}'.
+secs/5-sat_detect/2_subs/2-1_MLE_derivation.tex:54:51:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/2_subs/2-1_MLE_derivation.tex:75:48:3:You should enclose the previous parenthesis with `{}'.
+secs/5-sat_detect/3-testcell_aging.tex:13:8:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/3-testcell_aging.tex:15:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3-testcell_aging.tex:15:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3-testcell_aging.tex:16:92:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3-testcell_aging.tex:16:99:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3-testcell_aging.tex:20:67:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3-testcell_aging.tex:25:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3-testcell_aging.tex:25:23:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3-testcell_aging.tex:36:45:3:You should enclose the previous parenthesis with `{}'.
+secs/5-sat_detect/3-testcell_aging.tex:43:34:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/3-testcell_aging.tex:49:8:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/3-testcell_aging.tex:51:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3-testcell_aging.tex:51:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3-testcell_aging.tex:52:93:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3-testcell_aging.tex:52:100:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3-testcell_aging.tex:56:66:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3-testcell_aging.tex:61:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3-testcell_aging.tex:61:23:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/0_necc_cond.tex:1:73:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/3_subs/0_necc_cond.tex:6:1:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/3_subs/0_necc_cond.tex:12:8:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/3_subs/0_necc_cond.tex:18:8:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/3_subs/0_necc_cond.tex:25:391:35:You should perhaps use `\max' instead.
+secs/5-sat_detect/3_subs/0_necc_cond.tex:25:413:35:You should perhaps use `\max' instead.
+secs/5-sat_detect/3_subs/0_necc_cond.tex:27:81:35:You should perhaps use `\max' instead.
+secs/5-sat_detect/3_subs/1_cat_mode.tex:37:8:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/3_subs/1_cat_mode.tex:49:1:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/3_subs/1_cat_mode.tex:54:8:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/3_subs/1_cat_mode.tex:56:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/1_cat_mode.tex:56:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/1_cat_mode.tex:57:42:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/1_cat_mode.tex:57:49:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/1_cat_mode.tex:61:44:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/1_cat_mode.tex:66:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/1_cat_mode.tex:66:23:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/1_cat_mode.tex:72:8:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/3_subs/1_cat_mode.tex:74:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/1_cat_mode.tex:74:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/1_cat_mode.tex:75:42:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/1_cat_mode.tex:75:49:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/1_cat_mode.tex:79:44:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/1_cat_mode.tex:84:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/1_cat_mode.tex:84:23:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/2_aging_detection.tex:12:8:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/3_subs/2_aging_detection.tex:25:60:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/3_subs/2_aging_detection.tex:32:24:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/3_subs/2_aging_detection.tex:40:24:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/3_subs/2_aging_detection.tex:49:35:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/3_subs/2_aging_detection.tex:62:8:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/3_subs/2_aging_detection.tex:64:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/2_aging_detection.tex:64:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/2_aging_detection.tex:65:61:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/2_aging_detection.tex:65:68:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/2_aging_detection.tex:70:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/2_aging_detection.tex:75:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/2_aging_detection.tex:75:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:16:32:35:You should perhaps use `\min' instead.
+secs/5-sat_detect/4-truck_aging.tex:22:1:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/4-truck_aging.tex:23:33:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/4-truck_aging.tex:23:59:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/4-truck_aging.tex:23:88:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/4-truck_aging.tex:29:8:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/4-truck_aging.tex:31:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:31:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:33:63:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:33:70:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:38:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:38:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:52:87:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/4-truck_aging.tex:52:113:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/4-truck_aging.tex:52:142:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/4-truck_aging.tex:65:8:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/4-truck_aging.tex:67:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:67:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:68:86:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:68:93:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:72:52:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:77:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:77:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:83:8:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/4-truck_aging.tex:85:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:85:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:86:86:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:86:93:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:91:51:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:98:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:98:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:104:8:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/4-truck_aging.tex:106:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:106:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:107:86:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:107:93:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:110:53:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:117:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:117:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:123:8:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/4-truck_aging.tex:125:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:125:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:126:86:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:126:93:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:130:53:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:135:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:135:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:24:155:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/5-unconstrained_results.tex:52:1:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/5-unconstrained_results.tex:57:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:57:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:58:61:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:63:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:63:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:71:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:71:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:72:61:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:77:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:77:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:92:1:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/5-unconstrained_results.tex:104:1:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/5-unconstrained_results.tex:109:25:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:109:32:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:110:41:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:115:25:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:120:25:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:120:32:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:128:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:128:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:129:33:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:134:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:139:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:139:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:147:1:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/5-unconstrained_results.tex:152:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:152:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:153:33:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:158:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:163:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:163:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:171:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:171:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:172:33:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:177:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:182:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:182:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/6-detector_performance.tex:5:1:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/6-detector_performance.tex:5:31:2:Non-breaking space (`~') should have been used.
+./secs/5-sat_detect/6-detector_performance.tex:5:1:2:Non-breaking space (`~') should have been used.
+./secs/5-sat_detect/6-detector_performance.tex:5:31:2:Non-breaking space (`~') should have been used.
+./secs/5-sat_detect/5-unconstrained_results.tex:24:155:2:Non-breaking space (`~') should have been used.
+./secs/5-sat_detect/5-unconstrained_results.tex:52:1:24:Delete this space to maintain correct pagereferences.
+./secs/5-sat_detect/5-unconstrained_results.tex:57:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/5-unconstrained_results.tex:57:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/5-unconstrained_results.tex:58:61:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/5-unconstrained_results.tex:63:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/5-unconstrained_results.tex:63:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/5-unconstrained_results.tex:71:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/5-unconstrained_results.tex:71:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/5-unconstrained_results.tex:72:61:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/5-unconstrained_results.tex:77:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/5-unconstrained_results.tex:77:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/5-unconstrained_results.tex:92:1:2:Non-breaking space (`~') should have been used.
+./secs/5-sat_detect/5-unconstrained_results.tex:104:1:24:Delete this space to maintain correct pagereferences.
+./secs/5-sat_detect/5-unconstrained_results.tex:109:25:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/5-unconstrained_results.tex:109:32:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/5-unconstrained_results.tex:110:41:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/5-unconstrained_results.tex:115:25:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/5-unconstrained_results.tex:120:25:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/5-unconstrained_results.tex:120:32:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/5-unconstrained_results.tex:128:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/5-unconstrained_results.tex:128:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/5-unconstrained_results.tex:129:33:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/5-unconstrained_results.tex:134:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/5-unconstrained_results.tex:139:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/5-unconstrained_results.tex:139:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/5-unconstrained_results.tex:147:1:24:Delete this space to maintain correct pagereferences.
+./secs/5-sat_detect/5-unconstrained_results.tex:152:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/5-unconstrained_results.tex:152:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/5-unconstrained_results.tex:153:33:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/5-unconstrained_results.tex:158:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/5-unconstrained_results.tex:163:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/5-unconstrained_results.tex:163:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/5-unconstrained_results.tex:171:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/5-unconstrained_results.tex:171:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/5-unconstrained_results.tex:172:33:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/5-unconstrained_results.tex:177:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/5-unconstrained_results.tex:182:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/5-unconstrained_results.tex:182:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/2-param_dist.tex:41:116:26:You ought to remove spaces in front of punctuation.
+./secs/5-sat_detect/2-param_dist.tex:54:1:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/2_subs/2-1_MLE_derivation.tex:7:95:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/2_subs/2-1_MLE_derivation.tex:22:8:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/2_subs/2-1_MLE_derivation.tex:38:68:3:You should enclose the previous parenthesis with `{}'.
+secs/5-sat_detect/2_subs/2-1_MLE_derivation.tex:39:39:3:You should enclose the previous parenthesis with `{}'.
+secs/5-sat_detect/2_subs/2-1_MLE_derivation.tex:47:68:3:You should enclose the previous parenthesis with `{}'.
+secs/5-sat_detect/2_subs/2-1_MLE_derivation.tex:48:39:3:You should enclose the previous parenthesis with `{}'.
+secs/5-sat_detect/2_subs/2-1_MLE_derivation.tex:54:51:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/2_subs/2-1_MLE_derivation.tex:75:48:3:You should enclose the previous parenthesis with `{}'.
+./secs/5-sat_detect/1-wald_test.tex:9:494:2:Non-breaking space (`~') should have been used.
+./secs/5-sat_detect/1-wald_test.tex:15:240:2:Non-breaking space (`~') should have been used.
+./secs/5-sat_detect/1-wald_test.tex:17:24:35:You should perhaps use `\ln' instead.
+./secs/5-sat_detect/1-wald_test.tex:25:166:13:Intersentence spacing (`\@') should perhaps be used.
+./secs/5-sat_detect/1-wald_test.tex:32:24:35:You should perhaps use `\ln' instead.
+./secs/5-sat_detect/1-wald_test.tex:37:113:3:You should enclose the previous parenthesis with `{}'.
+./secs/5-sat_detect/1-wald_test.tex:43:146:3:You should enclose the previous parenthesis with `{}'.
+./secs/5-sat_detect/1-wald_test.tex:45:53:2:Non-breaking space (`~') should have been used.
+./secs/5-sat_detect/1-wald_test.tex:48:75:3:You should enclose the previous parenthesis with `{}'.
+./secs/5-sat_detect/1-wald_test.tex:51:261:2:Non-breaking space (`~') should have been used.
+./secs/5-sat_detect/1-wald_test.tex:63:265:2:Non-breaking space (`~') should have been used.
+./secs/5-sat_detect/1-wald_test.tex:70:78:3:You should enclose the previous parenthesis with `{}'.
+./secs/5-sat_detect/1-wald_test.tex:73:71:2:Non-breaking space (`~') should have been used.
+./secs/5-sat_detect/4-truck_aging.tex:16:32:35:You should perhaps use `\min' instead.
+./secs/5-sat_detect/4-truck_aging.tex:22:1:2:Non-breaking space (`~') should have been used.
+./secs/5-sat_detect/4-truck_aging.tex:23:33:2:Non-breaking space (`~') should have been used.
+./secs/5-sat_detect/4-truck_aging.tex:23:59:2:Non-breaking space (`~') should have been used.
+./secs/5-sat_detect/4-truck_aging.tex:23:88:2:Non-breaking space (`~') should have been used.
+./secs/5-sat_detect/4-truck_aging.tex:29:8:24:Delete this space to maintain correct pagereferences.
+./secs/5-sat_detect/4-truck_aging.tex:31:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/4-truck_aging.tex:31:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/4-truck_aging.tex:33:63:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/4-truck_aging.tex:33:70:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/4-truck_aging.tex:38:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/4-truck_aging.tex:38:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/4-truck_aging.tex:52:87:2:Non-breaking space (`~') should have been used.
+./secs/5-sat_detect/4-truck_aging.tex:52:113:2:Non-breaking space (`~') should have been used.
+./secs/5-sat_detect/4-truck_aging.tex:52:142:2:Non-breaking space (`~') should have been used.
+./secs/5-sat_detect/4-truck_aging.tex:65:8:24:Delete this space to maintain correct pagereferences.
+./secs/5-sat_detect/4-truck_aging.tex:67:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/4-truck_aging.tex:67:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/4-truck_aging.tex:68:86:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/4-truck_aging.tex:68:93:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/4-truck_aging.tex:72:52:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/4-truck_aging.tex:77:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/4-truck_aging.tex:77:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/4-truck_aging.tex:83:8:24:Delete this space to maintain correct pagereferences.
+./secs/5-sat_detect/4-truck_aging.tex:85:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/4-truck_aging.tex:85:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/4-truck_aging.tex:86:86:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/4-truck_aging.tex:86:93:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/4-truck_aging.tex:91:51:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/4-truck_aging.tex:98:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/4-truck_aging.tex:98:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/4-truck_aging.tex:104:8:24:Delete this space to maintain correct pagereferences.
+./secs/5-sat_detect/4-truck_aging.tex:106:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/4-truck_aging.tex:106:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/4-truck_aging.tex:107:86:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/4-truck_aging.tex:107:93:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/4-truck_aging.tex:110:53:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/4-truck_aging.tex:117:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/4-truck_aging.tex:117:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/4-truck_aging.tex:123:8:24:Delete this space to maintain correct pagereferences.
+./secs/5-sat_detect/4-truck_aging.tex:125:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/4-truck_aging.tex:125:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/4-truck_aging.tex:126:86:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/4-truck_aging.tex:126:93:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/4-truck_aging.tex:130:53:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/4-truck_aging.tex:135:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/4-truck_aging.tex:135:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/3-testcell_aging.tex:13:8:24:Delete this space to maintain correct pagereferences.
+./secs/5-sat_detect/3-testcell_aging.tex:15:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/3-testcell_aging.tex:15:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/3-testcell_aging.tex:16:92:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/3-testcell_aging.tex:16:99:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/3-testcell_aging.tex:20:67:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/3-testcell_aging.tex:25:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/3-testcell_aging.tex:25:23:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/3-testcell_aging.tex:36:45:3:You should enclose the previous parenthesis with `{}'.
+./secs/5-sat_detect/3-testcell_aging.tex:43:34:2:Non-breaking space (`~') should have been used.
+./secs/5-sat_detect/3-testcell_aging.tex:49:8:24:Delete this space to maintain correct pagereferences.
+./secs/5-sat_detect/3-testcell_aging.tex:51:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/3-testcell_aging.tex:51:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/3-testcell_aging.tex:52:93:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/3-testcell_aging.tex:52:100:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/3-testcell_aging.tex:56:66:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/3-testcell_aging.tex:61:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/5-sat_detect/3-testcell_aging.tex:61:23:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/0_necc_cond.tex:1:73:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/3_subs/0_necc_cond.tex:6:1:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/3_subs/0_necc_cond.tex:12:8:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/3_subs/0_necc_cond.tex:18:8:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/3_subs/0_necc_cond.tex:25:391:35:You should perhaps use `\max' instead.
+secs/5-sat_detect/3_subs/0_necc_cond.tex:25:413:35:You should perhaps use `\max' instead.
+secs/5-sat_detect/3_subs/0_necc_cond.tex:27:81:35:You should perhaps use `\max' instead.
+secs/5-sat_detect/3_subs/1_cat_mode.tex:37:8:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/3_subs/1_cat_mode.tex:49:1:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/3_subs/1_cat_mode.tex:54:8:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/3_subs/1_cat_mode.tex:56:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/1_cat_mode.tex:56:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/1_cat_mode.tex:57:42:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/1_cat_mode.tex:57:49:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/1_cat_mode.tex:61:44:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/1_cat_mode.tex:66:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/1_cat_mode.tex:66:23:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/1_cat_mode.tex:72:8:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/3_subs/1_cat_mode.tex:74:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/1_cat_mode.tex:74:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/1_cat_mode.tex:75:42:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/1_cat_mode.tex:75:49:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/1_cat_mode.tex:79:44:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/1_cat_mode.tex:84:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/1_cat_mode.tex:84:23:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/2_aging_detection.tex:12:8:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/3_subs/2_aging_detection.tex:25:60:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/3_subs/2_aging_detection.tex:32:24:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/3_subs/2_aging_detection.tex:40:24:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/3_subs/2_aging_detection.tex:49:35:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/3_subs/2_aging_detection.tex:62:8:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/3_subs/2_aging_detection.tex:64:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/2_aging_detection.tex:64:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/2_aging_detection.tex:65:61:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/2_aging_detection.tex:65:68:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/2_aging_detection.tex:70:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/2_aging_detection.tex:75:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/2_aging_detection.tex:75:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/tst_filt/sig_ranges.tex:6:1:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/tst_filt/sig_ranges.tex:6:8:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/tst_filt/sig_ranges.tex:8:1:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/tst_filt/sig_ranges.tex:8:8:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/tst_filt/sig_ranges.tex:9:47:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/tst_filt/sig_ranges.tex:24:1:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/tst_filt/sig_ranges.tex:25:41:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/tst_filt/sig_ranges.tex:40:1:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/tst_filt/sig_ranges.tex:40:8:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/trk_filt/sig_ranges.tex:6:1:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/trk_filt/sig_ranges.tex:6:8:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/trk_filt/sig_ranges.tex:8:1:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/trk_filt/sig_ranges.tex:8:8:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/trk_filt/sig_ranges.tex:9:61:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/trk_filt/sig_ranges.tex:20:1:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/trk_filt/sig_ranges.tex:21:56:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/trk_filt/sig_ranges.tex:32:1:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/trk_filt/sig_ranges.tex:32:8:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/3-cross.tex:14:8:24:Delete this space to maintain correct pagereferences.
+./secs/2-data/3-cross.tex:49:8:24:Delete this space to maintain correct pagereferences.
+./secs/2-data/3-cross.tex:81:8:24:Delete this space to maintain correct pagereferences.
+./secs/2-data/3-cross.tex:87:4:24:Delete this space to maintain correct pagereferences.
+./secs/2-data/3-cross.tex:116:8:24:Delete this space to maintain correct pagereferences.
+./secs/2-data/3-cross.tex:130:8:24:Delete this space to maintain correct pagereferences.
+./secs/2-data/2-data_units.tex:8:8:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/2-data_units.tex:8:15:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/2-data_units.tex:10:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/2-data_units.tex:10:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/2-data_units.tex:16:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/2-data_units.tex:16:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/2-data_units.tex:102:25:2:Non-breaking space (`~') should have been used.
+./secs/2-data/0-subs/0-1_test_cell_data.tex:13:8:24:Delete this space to maintain correct pagereferences.
+./secs/2-data/0-subs/0-1_test_cell_data.tex:19:1:24:Delete this space to maintain correct pagereferences.
+./secs/2-data/0-subs/0-1_test_cell_data.tex:21:4:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-1_test_cell_data.tex:21:11:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-1_test_cell_data.tex:25:19:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-1_test_cell_data.tex:25:26:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-1_test_cell_data.tex:86:4:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-1_test_cell_data.tex:86:11:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-2_truck_data.tex:5:1:24:Delete this space to maintain correct pagereferences.
+./secs/2-data/0-subs/0-2_truck_data.tex:7:1:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-2_truck_data.tex:7:8:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-2_truck_data.tex:8:47:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-2_truck_data.tex:8:54:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-2_truck_data.tex:9:1:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-2_truck_data.tex:9:8:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-2_truck_data.tex:16:1:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-2_truck_data.tex:17:1:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-2_truck_data.tex:34:4:24:Delete this space to maintain correct pagereferences.
+./secs/2-data/0-subs/0-2_truck_data.tex:48:8:24:Delete this space to maintain correct pagereferences.
+./secs/2-data/0-subs/0-2_truck_data.tex:50:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-2_truck_data.tex:50:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-2_truck_data.tex:52:63:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-2_truck_data.tex:52:70:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-2_truck_data.tex:57:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-2_truck_data.tex:57:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/1-res_time.tex:13:36:2:Non-breaking space (`~') should have been used.
+./secs/2-data/1-res_time.tex:17:4:24:Delete this space to maintain correct pagereferences.
+./secs/2-data/1-res_time.tex:19:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/1-res_time.tex:19:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/1-res_time.tex:21:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/1-res_time.tex:21:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/1-res_time.tex:26:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/1-res_time.tex:26:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/1-res_time.tex:44:1:18:Use either `` or '' as an alternative to `"'.
+./secs/2-data/1-res_time.tex:44:10:18:Use either `` or '' as an alternative to `"'.
+./secs/2-data/1-res_time.tex:50:8:24:Delete this space to maintain correct pagereferences.
+./secs/2-data/2-data_units.tex:8:8:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/2-data_units.tex:8:15:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/2-data_units.tex:10:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/2-data_units.tex:10:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/2-data_units.tex:16:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/2-data_units.tex:16:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/2-data_units.tex:102:25:2:Non-breaking space (`~') should have been used.
+./secs/2-data/3-cross.tex:14:8:24:Delete this space to maintain correct pagereferences.
+./secs/2-data/3-cross.tex:49:8:24:Delete this space to maintain correct pagereferences.
+./secs/2-data/3-cross.tex:81:8:24:Delete this space to maintain correct pagereferences.
+./secs/2-data/3-cross.tex:87:4:24:Delete this space to maintain correct pagereferences.
+./secs/2-data/3-cross.tex:116:8:24:Delete this space to maintain correct pagereferences.
+./secs/2-data/3-cross.tex:130:8:24:Delete this space to maintain correct pagereferences.
+./secs/2-data/0-subs/0-1_test_cell_data.tex:13:8:24:Delete this space to maintain correct pagereferences.
+./secs/2-data/0-subs/0-1_test_cell_data.tex:19:1:24:Delete this space to maintain correct pagereferences.
+./secs/2-data/0-subs/0-1_test_cell_data.tex:21:4:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-1_test_cell_data.tex:21:11:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-1_test_cell_data.tex:25:19:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-1_test_cell_data.tex:25:26:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-1_test_cell_data.tex:86:4:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-1_test_cell_data.tex:86:11:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-2_truck_data.tex:5:1:24:Delete this space to maintain correct pagereferences.
+./secs/2-data/0-subs/0-2_truck_data.tex:7:1:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-2_truck_data.tex:7:8:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-2_truck_data.tex:8:47:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-2_truck_data.tex:8:54:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-2_truck_data.tex:9:1:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-2_truck_data.tex:9:8:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-2_truck_data.tex:16:1:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-2_truck_data.tex:17:1:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-2_truck_data.tex:34:4:24:Delete this space to maintain correct pagereferences.
+./secs/2-data/0-subs/0-2_truck_data.tex:48:8:24:Delete this space to maintain correct pagereferences.
+./secs/2-data/0-subs/0-2_truck_data.tex:50:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-2_truck_data.tex:50:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-2_truck_data.tex:52:63:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-2_truck_data.tex:52:70:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-2_truck_data.tex:57:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-2_truck_data.tex:57:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/1-res_time.tex:13:36:2:Non-breaking space (`~') should have been used.
+./secs/2-data/1-res_time.tex:17:4:24:Delete this space to maintain correct pagereferences.
+./secs/2-data/1-res_time.tex:19:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/1-res_time.tex:19:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/1-res_time.tex:21:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/1-res_time.tex:21:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/1-res_time.tex:26:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/1-res_time.tex:26:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/1-res_time.tex:44:1:18:Use either `` or '' as an alternative to `"'.
+./secs/2-data/1-res_time.tex:44:10:18:Use either `` or '' as an alternative to `"'.
+./secs/2-data/1-res_time.tex:50:8:24:Delete this space to maintain correct pagereferences.
+./secs/0-template_options/te3-custom-commands.tex:17:31:1:Command terminated with space.
+./secs/0-template_options/te3-custom-commands.tex:32:14:1:Command terminated with space.
+./secs/0-template_options/te3-custom-commands.tex:44:15:1:Command terminated with space.
+./secs/0-template_options/te0-template.tex:1:23:1:Command terminated with space.
+./secs/0-template_options/te1-project-settings.tex:31:32:1:Command terminated with space.
+./secs/0-template_options/te1-project-settings.tex:34:32:1:Command terminated with space.
+./secs/0-template_options/te2-external-packages.tex:49:13:1:Command terminated with space.
+./secs/0-template_options/te2-external-packages.tex:50:13:1:Command terminated with space.
+./secs/0-template_options/te2-external-packages.tex:51:13:1:Command terminated with space.
+./secs/0-template_options/te2-external-packages.tex:52:14:1:Command terminated with space.
+./secs/0-template_options/te2-external-packages.tex:97:19:1:Command terminated with space.
+./secs/0-template_options/te3-custom-commands.tex:17:31:1:Command terminated with space.
+./secs/0-template_options/te3-custom-commands.tex:32:14:1:Command terminated with space.
+./secs/0-template_options/te3-custom-commands.tex:44:15:1:Command terminated with space.
+./secs/0-template_options/te2-external-packages.tex:49:13:1:Command terminated with space.
+./secs/0-template_options/te2-external-packages.tex:50:13:1:Command terminated with space.
+./secs/0-template_options/te2-external-packages.tex:51:13:1:Command terminated with space.
+./secs/0-template_options/te2-external-packages.tex:52:14:1:Command terminated with space.
+./secs/0-template_options/te2-external-packages.tex:97:19:1:Command terminated with space.
+./secs/0-template_options/____config_bibtex.tex:32:18:1:Command terminated with space.
+./secs/0-template_options/____config_bibtex.tex:39:11:1:Command terminated with space.
+./secs/0-template_options/te1-project-settings.tex:31:32:1:Command terminated with space.
+./secs/0-template_options/te1-project-settings.tex:34:32:1:Command terminated with space.
+./secs/3-governing_eqns/2-1-sig_approx.tex:56:44:24:Delete this space to maintain correct pagereferences.
+./secs/3-governing_eqns/1-reactions.tex:37:46:2:Non-breaking space (`~') should have been used.
+./secs/3-governing_eqns/1-reactions.tex:37:69:2:Non-breaking space (`~') should have been used.
+./secs/3-governing_eqns/1-reactions.tex:37:98:2:Non-breaking space (`~') should have been used.
+./secs/3-governing_eqns/1-reactions.tex:77:66:35:You should perhaps use `\max' instead.
+./secs/3-governing_eqns/1-reactions.tex:77:88:35:You should perhaps use `\max' instead.
+./secs/3-governing_eqns/1-reactions.tex:80:81:35:You should perhaps use `\max' instead.
+./secs/3-governing_eqns/1-reactions.tex:87:77:3:You should enclose the previous parenthesis with `{}'.
+./secs/3-governing_eqns/1-reactions.tex:91:74:3:You should enclose the previous parenthesis with `{}'.
+./secs/3-governing_eqns/1-reactions.tex:96:74:35:You should perhaps use `\max' instead.
+./secs/3-governing_eqns/1-reactions.tex:96:96:35:You should perhaps use `\max' instead.
+./secs/3-governing_eqns/1-reactions.tex:106:4:24:Delete this space to maintain correct pagereferences.
+./secs/3-governing_eqns/1-reactions.tex:117:22:2:Non-breaking space (`~') should have been used.
+./secs/3-governing_eqns/2-NH3ads_proc_dyn.tex:1:56:24:Delete this space to maintain correct pagereferences.
+./secs/3-governing_eqns/2-NH3ads_proc_dyn.tex:6:4:24:Delete this space to maintain correct pagereferences.
+./secs/3-governing_eqns/2-NH3ads_proc_dyn.tex:14:182:2:Non-breaking space (`~') should have been used.
+./secs/3-governing_eqns/2-NH3ads_proc_dyn.tex:57:92:18:Use either `` or '' as an alternative to `"'.
+./secs/3-governing_eqns/2-NH3ads_proc_dyn.tex:57:98:18:Use either `` or '' as an alternative to `"'.
+./secs/3-governing_eqns/2-NH3ads_proc_dyn.tex:59:38:12:Interword spacing (`\ ') should perhaps be used.
+./secs/3-governing_eqns/2-1-sig_approx.tex:56:44:24:Delete this space to maintain correct pagereferences.
+./secs/3-governing_eqns/6-proc_dyn.tex:41:103:36:You should put a space in front of parenthesis.
+./secs/3-governing_eqns/0-governing_eqns.tex:16:8:24:Delete this space to maintain correct pagereferences.
+./secs/3-governing_eqns/1-reactions.tex:37:46:2:Non-breaking space (`~') should have been used.
+./secs/3-governing_eqns/1-reactions.tex:37:69:2:Non-breaking space (`~') should have been used.
+./secs/3-governing_eqns/1-reactions.tex:37:98:2:Non-breaking space (`~') should have been used.
+./secs/3-governing_eqns/1-reactions.tex:77:66:35:You should perhaps use `\max' instead.
+./secs/3-governing_eqns/1-reactions.tex:77:88:35:You should perhaps use `\max' instead.
+./secs/3-governing_eqns/1-reactions.tex:80:81:35:You should perhaps use `\max' instead.
+./secs/3-governing_eqns/1-reactions.tex:87:77:3:You should enclose the previous parenthesis with `{}'.
+./secs/3-governing_eqns/1-reactions.tex:91:74:3:You should enclose the previous parenthesis with `{}'.
+./secs/3-governing_eqns/1-reactions.tex:96:74:35:You should perhaps use `\max' instead.
+./secs/3-governing_eqns/1-reactions.tex:96:96:35:You should perhaps use `\max' instead.
+./secs/3-governing_eqns/1-reactions.tex:106:4:24:Delete this space to maintain correct pagereferences.
+./secs/3-governing_eqns/1-reactions.tex:117:22:2:Non-breaking space (`~') should have been used.
+./secs/3-governing_eqns/2-NH3ads_proc_dyn.tex:1:56:24:Delete this space to maintain correct pagereferences.
+./secs/3-governing_eqns/2-NH3ads_proc_dyn.tex:6:4:24:Delete this space to maintain correct pagereferences.
+./secs/3-governing_eqns/2-NH3ads_proc_dyn.tex:14:182:2:Non-breaking space (`~') should have been used.
+./secs/3-governing_eqns/2-NH3ads_proc_dyn.tex:57:92:18:Use either `` or '' as an alternative to `"'.
+./secs/3-governing_eqns/2-NH3ads_proc_dyn.tex:57:98:18:Use either `` or '' as an alternative to `"'.
+./secs/3-governing_eqns/2-NH3ads_proc_dyn.tex:59:38:12:Interword spacing (`\ ') should perhaps be used.
+./secs/3-governing_eqns/2-1-sig_approx.tex:56:44:24:Delete this space to maintain correct pagereferences.
+./secs/3-governing_eqns/5-urea_dosing_proc_dyn.tex:51:8:35:You should perhaps use `\min' instead.
+./secs/3-governing_eqns/5-urea_dosing_proc_dyn.tex:51:29:35:You should perhaps use `\max' instead.
+./secs/3-governing_eqns/5-urea_dosing_proc_dyn.tex:52:8:35:You should perhaps use `\min' instead.
+./secs/3-governing_eqns/5-urea_dosing_proc_dyn.tex:52:29:35:You should perhaps use `\max' instead.
+./secs/3-governing_eqns/6-proc_dyn.tex:41:103:36:You should put a space in front of parenthesis.
+./secs/3-governing_eqns/5-urea_dosing_proc_dyn.tex:51:8:35:You should perhaps use `\min' instead.
+./secs/3-governing_eqns/5-urea_dosing_proc_dyn.tex:51:29:35:You should perhaps use `\max' instead.
+./secs/3-governing_eqns/5-urea_dosing_proc_dyn.tex:52:8:35:You should perhaps use `\min' instead.
+./secs/3-governing_eqns/5-urea_dosing_proc_dyn.tex:52:29:35:You should perhaps use `\max' instead.
+./secs/n-conclusion/0-conclusion.tex:3:75:8:Wrong length of dash may have been used.
+./secs/n-conclusion/0-conclusion.tex:21:8:24:Delete this space to maintain correct pagereferences.
+secs/n-conclusion/0_subs/1_contrib.tex:5:81:8:Wrong length of dash may have been used.
+secs/n-conclusion/0_subs/1_contrib.tex:41:35:8:Wrong length of dash may have been used.
+secs/n-conclusion/0_subs/1_contrib.tex:53:62:8:Wrong length of dash may have been used.
+./secs/n-conclusion/0_subs/1_contrib.tex:5:81:8:Wrong length of dash may have been used.
+./secs/n-conclusion/0_subs/1_contrib.tex:41:35:8:Wrong length of dash may have been used.
+./secs/n-conclusion/0_subs/1_contrib.tex:53:62:8:Wrong length of dash may have been used.
+./secs/0-template_options/te0-template.tex:1:23:1:Command terminated with space.
+./secs/0-template_options/te1-project-settings.tex:31:32:1:Command terminated with space.
+./secs/0-template_options/te1-project-settings.tex:34:32:1:Command terminated with space.
+./secs/0-template_options/te2-external-packages.tex:49:13:1:Command terminated with space.
+./secs/0-template_options/te2-external-packages.tex:50:13:1:Command terminated with space.
+./secs/0-template_options/te2-external-packages.tex:51:13:1:Command terminated with space.
+./secs/0-template_options/te2-external-packages.tex:52:14:1:Command terminated with space.
+./secs/0-template_options/te2-external-packages.tex:97:19:1:Command terminated with space.
+./secs/0-template_options/te3-custom-commands.tex:17:31:1:Command terminated with space.
+./secs/0-template_options/te3-custom-commands.tex:32:14:1:Command terminated with space.
+./secs/0-template_options/te3-custom-commands.tex:44:15:1:Command terminated with space.
+./ltx_core/lst_style.tex:12:19:11:You should use \ldots to achieve an ellipsis.
+./ltx_core/lst_style.tex:13:23:9:`}' expected, found `)'.
+./ltx_core/lst_style.tex:20:19:11:You should use \ldots to achieve an ellipsis.
+./ltx_core/lst_style.tex:31:17:1:Command terminated with space.
+./ltx_core/lst_style.tex:32:1:10:Solo `}' found.
+./ltx_core/new_cmds.tex:7:31:1:Command terminated with space.
+./ltx_core/new_cmds.tex:8:36:1:Command terminated with space.
+./ltx_core/new_cmds.tex:13:27:37:You should avoid spaces after parenthesis.
+./ltx_core/new_cmds.tex:19:35:1:Command terminated with space.
+./secs/0-front/0-front.tex:4:15:1:Command terminated with space.
+./secs/0-front/0-front.tex:6:15:1:Command terminated with space.
+./secs/0-front/0-front.tex:8:15:1:Command terminated with space.
+./secs/0-front/3-acknowledgments.tex:6:40:12:Interword spacing (`\ ') should perhaps be used.
+./secs/0-front/0-front.tex:10:15:1:Command terminated with space.
+./secs/0-front/0-front.tex:17:15:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:5:31:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:6:31:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:8:25:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:9:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:10:25:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:11:26:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:12:26:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:13:25:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:14:31:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:15:31:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:16:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:17:25:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:18:25:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:19:24:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:20:25:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:21:25:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:22:25:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:23:27:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:24:27:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:25:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:26:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:27:25:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:28:21:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:29:24:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:30:24:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:31:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:32:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:32:53:36:You should put a space in front of parenthesis.
+./secs/0-front/6-symbols.tex:33:25:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:34:25:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:35:25:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:36:25:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:37:21:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:38:21:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:39:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:40:21:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:41:21:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:42:21:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:43:40:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:44:24:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:45:32:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:46:24:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:47:21:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:48:25:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:49:41:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:50:41:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:51:21:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:53:30:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:54:23:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:55:24:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:56:34:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:57:34:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:58:22:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:59:29:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:60:28:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:61:24:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:62:30:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:63:35:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:64:35:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:65:25:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:66:23:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:67:44:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:68:29:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:69:22:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:70:34:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:71:28:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:72:22:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:76:11:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:78:26:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:79:18:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:80:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:81:20:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:82:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:83:20:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:84:20:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:85:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:86:18:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:87:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:88:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:89:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:90:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:91:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:92:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:93:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:94:20:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:95:21:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:96:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:97:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:98:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:99:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:100:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:101:21:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:102:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:103:19:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:108:11:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:110:31:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:111:58:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:112:55:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:113:43:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:114:47:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:115:34:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:116:31:1:Command terminated with space.
+./secs/0-front/6-symbols.tex:117:36:1:Command terminated with space.
+./secs/0-front/0-front.tex:26:11:1:Command terminated with space.
+./thesis.tex:32:11:1:Command terminated with space.
+./secs/1-intro/0-intro.tex:15:36:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/0-intro.tex:27:81:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/0-intro.tex:28:4:24:Delete this space to maintain correct pagereferences.
+./secs/1-intro/0-intro.tex:41:4:24:Delete this space to maintain correct pagereferences.
+./secs/1-intro/0-intro.tex:54:8:24:Delete this space to maintain correct pagereferences.
+./secs/1-intro/0-intro.tex:58:70:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/0-intro.tex:60:1:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/0-intro.tex:62:27:12:Interword spacing (`\ ') should perhaps be used.
+./secs/1-intro/0-intro.tex:63:50:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-1_OBD.tex:7:16:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-1_OBD.tex:10:82:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-1_OBD.tex:14:16:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-1_OBD.tex:16:57:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-1_OBD.tex:18:26:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-1_OBD.tex:20:16:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-1_OBD.tex:23:42:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-1_OBD.tex:24:69:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-1_OBD.tex:25:45:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-1_OBD.tex:26:18:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-1_OBD.tex:27:1:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-1_OBD.tex:32:1:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-1_OBD.tex:37:85:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-1_OBD.tex:39:1:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-1_OBD.tex:42:248:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:5:44:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:7:91:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:8:90:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:9:1:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:9:23:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:9:52:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:10:1:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:10:23:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:10:47:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:10:78:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:11:12:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:11:42:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:11:71:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:12:60:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:15:24:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:17:1:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:17:26:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:18:84:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:27:62:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:38:4:24:Delete this space to maintain correct pagereferences.
+./secs/1-intro/subs/1-2_cstr.tex:43:51:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:43:86:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:57:4:24:Delete this space to maintain correct pagereferences.
+./secs/1-intro/subs/1-2_cstr.tex:58:5:44:User Regex: -2:Vertical rules in tables are ugly.
+./secs/1-intro/subs/1-2_cstr.tex:59:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/1-intro/subs/1-2_cstr.tex:60:57:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/1-intro/subs/1-2_cstr.tex:64:66:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/1-intro/subs/1-2_cstr.tex:68:47:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/1-intro/subs/1-2_cstr.tex:72:80:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/1-intro/subs/1-2_cstr.tex:76:49:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/1-intro/subs/1-2_cstr.tex:105:86:13:Intersentence spacing (`\@') should perhaps be used.
+./secs/1-intro/subs/1-2_cstr.tex:128:44:2:Non-breaking space (`~') should have been used.
+./secs/1-intro/subs/1-2_cstr.tex:144:4:24:Delete this space to maintain correct pagereferences.
+./secs/2-data/0-subs/0-1_test_cell_data.tex:13:8:24:Delete this space to maintain correct pagereferences.
+./secs/2-data/0-subs/0-1_test_cell_data.tex:19:1:24:Delete this space to maintain correct pagereferences.
+./secs/2-data/0-subs/0-1_test_cell_data.tex:21:4:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-1_test_cell_data.tex:21:11:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-1_test_cell_data.tex:25:19:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-1_test_cell_data.tex:25:26:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-1_test_cell_data.tex:86:4:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-1_test_cell_data.tex:86:11:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-2_truck_data.tex:5:1:24:Delete this space to maintain correct pagereferences.
+./secs/2-data/0-subs/0-2_truck_data.tex:7:1:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-2_truck_data.tex:7:8:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-2_truck_data.tex:8:47:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-2_truck_data.tex:8:54:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-2_truck_data.tex:9:1:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-2_truck_data.tex:9:8:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-2_truck_data.tex:16:1:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-2_truck_data.tex:17:1:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-2_truck_data.tex:34:4:24:Delete this space to maintain correct pagereferences.
+./secs/2-data/0-subs/0-2_truck_data.tex:48:8:24:Delete this space to maintain correct pagereferences.
+./secs/2-data/0-subs/0-2_truck_data.tex:50:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-2_truck_data.tex:50:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-2_truck_data.tex:52:63:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-2_truck_data.tex:52:70:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-2_truck_data.tex:57:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/0-subs/0-2_truck_data.tex:57:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/1-res_time.tex:13:36:2:Non-breaking space (`~') should have been used.
+./secs/2-data/1-res_time.tex:17:4:24:Delete this space to maintain correct pagereferences.
+./secs/2-data/1-res_time.tex:19:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/1-res_time.tex:19:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/1-res_time.tex:21:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/1-res_time.tex:21:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/1-res_time.tex:26:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/1-res_time.tex:26:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/1-res_time.tex:44:1:18:Use either `` or '' as an alternative to `"'.
+./secs/2-data/1-res_time.tex:44:10:18:Use either `` or '' as an alternative to `"'.
+./secs/2-data/1-res_time.tex:50:8:24:Delete this space to maintain correct pagereferences.
+./secs/2-data/2-data_units.tex:8:8:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/2-data_units.tex:8:15:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/2-data_units.tex:10:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/2-data_units.tex:10:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/2-data_units.tex:16:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/2-data_units.tex:16:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/2-data/2-data_units.tex:102:25:2:Non-breaking space (`~') should have been used.
+./secs/2-data/3-cross.tex:14:8:24:Delete this space to maintain correct pagereferences.
+./secs/2-data/3-cross.tex:49:8:24:Delete this space to maintain correct pagereferences.
+./secs/2-data/3-cross.tex:81:8:24:Delete this space to maintain correct pagereferences.
+./secs/2-data/3-cross.tex:87:4:24:Delete this space to maintain correct pagereferences.
+./secs/2-data/3-cross.tex:116:8:24:Delete this space to maintain correct pagereferences.
+./secs/2-data/3-cross.tex:130:8:24:Delete this space to maintain correct pagereferences.
+./secs/3-governing_eqns/0-governing_eqns.tex:16:8:24:Delete this space to maintain correct pagereferences.
+./secs/3-governing_eqns/1-reactions.tex:37:46:2:Non-breaking space (`~') should have been used.
+./secs/3-governing_eqns/1-reactions.tex:37:69:2:Non-breaking space (`~') should have been used.
+./secs/3-governing_eqns/1-reactions.tex:37:98:2:Non-breaking space (`~') should have been used.
+./secs/3-governing_eqns/1-reactions.tex:77:66:35:You should perhaps use `\max' instead.
+./secs/3-governing_eqns/1-reactions.tex:77:88:35:You should perhaps use `\max' instead.
+./secs/3-governing_eqns/1-reactions.tex:80:81:35:You should perhaps use `\max' instead.
+./secs/3-governing_eqns/1-reactions.tex:87:77:3:You should enclose the previous parenthesis with `{}'.
+./secs/3-governing_eqns/1-reactions.tex:91:74:3:You should enclose the previous parenthesis with `{}'.
+./secs/3-governing_eqns/1-reactions.tex:96:74:35:You should perhaps use `\max' instead.
+./secs/3-governing_eqns/1-reactions.tex:96:96:35:You should perhaps use `\max' instead.
+./secs/3-governing_eqns/1-reactions.tex:106:4:24:Delete this space to maintain correct pagereferences.
+./secs/3-governing_eqns/1-reactions.tex:117:22:2:Non-breaking space (`~') should have been used.
+./secs/3-governing_eqns/2-NH3ads_proc_dyn.tex:1:56:24:Delete this space to maintain correct pagereferences.
+./secs/3-governing_eqns/2-NH3ads_proc_dyn.tex:6:4:24:Delete this space to maintain correct pagereferences.
+./secs/3-governing_eqns/2-NH3ads_proc_dyn.tex:14:182:2:Non-breaking space (`~') should have been used.
+./secs/3-governing_eqns/2-NH3ads_proc_dyn.tex:57:92:18:Use either `` or '' as an alternative to `"'.
+./secs/3-governing_eqns/2-NH3ads_proc_dyn.tex:57:98:18:Use either `` or '' as an alternative to `"'.
+./secs/3-governing_eqns/2-NH3ads_proc_dyn.tex:59:38:12:Interword spacing (`\ ') should perhaps be used.
+./secs/3-governing_eqns/2-1-sig_approx.tex:56:44:24:Delete this space to maintain correct pagereferences.
+./secs/3-governing_eqns/5-urea_dosing_proc_dyn.tex:51:8:35:You should perhaps use `\min' instead.
+./secs/3-governing_eqns/5-urea_dosing_proc_dyn.tex:51:29:35:You should perhaps use `\max' instead.
+./secs/3-governing_eqns/5-urea_dosing_proc_dyn.tex:52:8:35:You should perhaps use `\min' instead.
+./secs/3-governing_eqns/5-urea_dosing_proc_dyn.tex:52:29:35:You should perhaps use `\max' instead.
+./secs/3-governing_eqns/6-proc_dyn.tex:41:103:36:You should put a space in front of parenthesis.
+./thesis.tex:36:11:1:Command terminated with space.
+secs/4-NOx_mdl/1_NOx_r_mdl.tex:7:8:24:Delete this space to maintain correct pagereferences.
+./secs/4-NOx_mdl/1-subs/change_in_nox_model.tex:83:18:40:You should put punctuation outside inner math mode.
+./secs/4-NOx_mdl/1-subs/change_in_nox_model.tex:87:18:40:You should put punctuation outside inner math mode.
+./secs/4-NOx_mdl/1-subs/parametrization.tex:8:18:40:You should put punctuation outside inner math mode.
+./secs/4-NOx_mdl/1-subs/parametrization.tex:10:18:40:You should put punctuation outside inner math mode.
+./secs/4-NOx_mdl/1-subs/parametrization.tex:13:18:40:You should put punctuation outside inner math mode.
+./secs/4-NOx_mdl/1-subs/parametrization.tex:18:18:40:You should put punctuation outside inner math mode.
+./secs/4-NOx_mdl/1-subs/parametrization.tex:27:33:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/parametrization.tex:27:151:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/parametrization.tex:34:41:35:You should perhaps use `\max' instead.
+./secs/4-NOx_mdl/1-subs/parametrization.tex:34:51:35:You should perhaps use `\min' instead.
+./secs/4-NOx_mdl/1-subs/parametrization.tex:34:82:35:You should perhaps use `\max' instead.
+./secs/4-NOx_mdl/1-subs/parametrization.tex:34:92:35:You should perhaps use `\min' instead.
+./secs/4-NOx_mdl/1-subs/g0.tex:4:37:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/g0.tex:4:68:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/g0.tex:4:89:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/g1.tex:5:36:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/g2.tex:9:29:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/g2.tex:9:60:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/g2.tex:9:78:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/g3.tex:8:36:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/g3.tex:8:67:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/g4.tex:5:36:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/1-subs/g4.tex:5:67:2:Non-breaking space (`~') should have been used.
+secs/4-NOx_mdl/2_catalyst_saturation.tex:6:34:2:Non-breaking space (`~') should have been used.
+secs/4-NOx_mdl/2_catalyst_saturation.tex:19:28:2:Non-breaking space (`~') should have been used.
+secs/4-NOx_mdl/2_catalyst_saturation.tex:19:75:2:Non-breaking space (`~') should have been used.
+secs/4-NOx_mdl/2_catalyst_saturation.tex:19:110:2:Non-breaking space (`~') should have been used.
+secs/4-NOx_mdl/2_catalyst_saturation.tex:43:89:2:Non-breaking space (`~') should have been used.
+secs/4-NOx_mdl/2_catalyst_saturation.tex:44:1:2:Non-breaking space (`~') should have been used.
+secs/4-NOx_mdl/2_catalyst_saturation.tex:52:159:2:Non-breaking space (`~') should have been used.
+secs/4-NOx_mdl/2_catalyst_saturation.tex:54:110:3:You should enclose the previous parenthesis with `{}'.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:14:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:14:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:18:39:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:18:46:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:22:65:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:26:73:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:30:73:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:36:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:36:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:45:63:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:45:95:2:Non-breaking space (`~') should have been used.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:61:8:24:Delete this space to maintain correct pagereferences.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:85:8:24:Delete this space to maintain correct pagereferences.
+./secs/4-NOx_mdl/2-subs/parm_est.tex:102:8:24:Delete this space to maintain correct pagereferences.
+secs/4-NOx_mdl/25_switching_condition.tex:2:239:2:Non-breaking space (`~') should have been used.
+secs/4-NOx_mdl/25_switching_condition.tex:2:263:2:Non-breaking space (`~') should have been used.
+secs/4-NOx_mdl/25_switching_condition.tex:2:293:2:Non-breaking space (`~') should have been used.
+secs/4-NOx_mdl/25_switching_condition.tex:8:14:3:You should enclose the previous parenthesis with `{}'.
+secs/4-NOx_mdl/25_switching_condition.tex:72:25:35:You should perhaps use `\max' instead.
+secs/4-NOx_mdl/25_switching_condition.tex:72:35:35:You should perhaps use `\min' instead.
+secs/4-NOx_mdl/25_switching_condition.tex:73:24:35:You should perhaps use `\max' instead.
+secs/4-NOx_mdl/25_switching_condition.tex:73:34:35:You should perhaps use `\min' instead.
+secs/4-NOx_mdl/25_switching_condition.tex:75:6:2:Non-breaking space (`~') should have been used.
+secs/4-NOx_mdl/25_switching_condition.tex:75:24:2:Non-breaking space (`~') should have been used.
+secs/4-NOx_mdl/25_switching_condition.tex:75:96:2:Non-breaking space (`~') should have been used.
+secs/4-NOx_mdl/25_switching_condition.tex:76:39:2:Non-breaking space (`~') should have been used.
+secs/4-NOx_mdl/25_switching_condition.tex:89:73:3:You should enclose the previous parenthesis with `{}'.
+secs/4-NOx_mdl/25_switching_condition.tex:93:286:2:Non-breaking space (`~') should have been used.
+secs/4-NOx_mdl/25_switching_condition.tex:102:178:2:Non-breaking space (`~') should have been used.
+secs/4-NOx_mdl/25_switching_condition.tex:108:8:24:Delete this space to maintain correct pagereferences.
+secs/4-NOx_mdl/3_validation.tex:6:33:2:Non-breaking space (`~') should have been used.
+secs/4-NOx_mdl/3_validation.tex:6:62:2:Non-breaking space (`~') should have been used.
+secs/4-NOx_mdl/3_validation.tex:24:8:24:Delete this space to maintain correct pagereferences.
+secs/4-NOx_mdl/3_validation.tex:40:8:24:Delete this space to maintain correct pagereferences.
+secs/4-NOx_mdl/3_validation.tex:56:8:24:Delete this space to maintain correct pagereferences.
+secs/4-NOx_mdl/3_validation.tex:61:8:24:Delete this space to maintain correct pagereferences.
+secs/4-NOx_mdl/3_validation.tex:63:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/4-NOx_mdl/3_validation.tex:63:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/4-NOx_mdl/3_validation.tex:64:82:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/4-NOx_mdl/3_validation.tex:64:89:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/4-NOx_mdl/3_validation.tex:66:52:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/4-NOx_mdl/3_validation.tex:69:55:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/4-NOx_mdl/3_validation.tex:72:57:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/4-NOx_mdl/3_validation.tex:73:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/4-NOx_mdl/3_validation.tex:83:8:24:Delete this space to maintain correct pagereferences.
+./thesis.tex:38:11:1:Command terminated with space.
+./secs/5-sat_detect/0-sat_detect.tex:2:92:2:Non-breaking space (`~') should have been used.
+./secs/5-sat_detect/0-sat_detect.tex:3:1:2:Non-breaking space (`~') should have been used.
+./secs/5-sat_detect/0-sat_detect.tex:15:81:2:Non-breaking space (`~') should have been used.
+./secs/5-sat_detect/0-sat_detect.tex:16:1:2:Non-breaking space (`~') should have been used.
+./secs/5-sat_detect/0-sat_detect.tex:25:46:2:Non-breaking space (`~') should have been used.
+./secs/5-sat_detect/0-sat_detect.tex:26:41:2:Non-breaking space (`~') should have been used.
+./secs/5-sat_detect/0-sat_detect.tex:36:42:35:You should perhaps use `\max' instead.
+./secs/5-sat_detect/0-sat_detect.tex:36:52:35:You should perhaps use `\min' instead.
+./secs/5-sat_detect/0-sat_detect.tex:36:83:35:You should perhaps use `\max' instead.
+./secs/5-sat_detect/0-sat_detect.tex:36:93:35:You should perhaps use `\min' instead.
+./secs/5-sat_detect/0-sat_detect.tex:41:109:3:You should enclose the previous parenthesis with `{}'.
+./secs/5-sat_detect/0-sat_detect.tex:48:4:24:Delete this space to maintain correct pagereferences.
+./secs/5-sat_detect/0-sat_detect.tex:55:4:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/1-wald_test.tex:9:494:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/1-wald_test.tex:15:240:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/1-wald_test.tex:17:24:35:You should perhaps use `\ln' instead.
+secs/5-sat_detect/1-wald_test.tex:25:166:13:Intersentence spacing (`\@') should perhaps be used.
+secs/5-sat_detect/1-wald_test.tex:32:24:35:You should perhaps use `\ln' instead.
+secs/5-sat_detect/1-wald_test.tex:37:113:3:You should enclose the previous parenthesis with `{}'.
+secs/5-sat_detect/1-wald_test.tex:43:146:3:You should enclose the previous parenthesis with `{}'.
+secs/5-sat_detect/1-wald_test.tex:45:53:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/1-wald_test.tex:48:75:3:You should enclose the previous parenthesis with `{}'.
+secs/5-sat_detect/1-wald_test.tex:51:261:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/1-wald_test.tex:63:265:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/1-wald_test.tex:70:78:3:You should enclose the previous parenthesis with `{}'.
+secs/5-sat_detect/1-wald_test.tex:73:71:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/2-param_dist.tex:41:116:26:You ought to remove spaces in front of punctuation.
+secs/5-sat_detect/2-param_dist.tex:54:1:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/2_subs/2-1_MLE_derivation.tex:7:95:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/2_subs/2-1_MLE_derivation.tex:22:8:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/2_subs/2-1_MLE_derivation.tex:38:68:3:You should enclose the previous parenthesis with `{}'.
+secs/5-sat_detect/2_subs/2-1_MLE_derivation.tex:39:39:3:You should enclose the previous parenthesis with `{}'.
+secs/5-sat_detect/2_subs/2-1_MLE_derivation.tex:47:68:3:You should enclose the previous parenthesis with `{}'.
+secs/5-sat_detect/2_subs/2-1_MLE_derivation.tex:48:39:3:You should enclose the previous parenthesis with `{}'.
+secs/5-sat_detect/2_subs/2-1_MLE_derivation.tex:54:51:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/2_subs/2-1_MLE_derivation.tex:75:48:3:You should enclose the previous parenthesis with `{}'.
+secs/5-sat_detect/3-testcell_aging.tex:13:8:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/3-testcell_aging.tex:15:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3-testcell_aging.tex:15:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3-testcell_aging.tex:16:92:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3-testcell_aging.tex:16:99:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3-testcell_aging.tex:20:67:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3-testcell_aging.tex:25:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3-testcell_aging.tex:25:23:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3-testcell_aging.tex:36:45:3:You should enclose the previous parenthesis with `{}'.
+secs/5-sat_detect/3-testcell_aging.tex:43:34:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/3-testcell_aging.tex:49:8:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/3-testcell_aging.tex:51:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3-testcell_aging.tex:51:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3-testcell_aging.tex:52:93:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3-testcell_aging.tex:52:100:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3-testcell_aging.tex:56:66:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3-testcell_aging.tex:61:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3-testcell_aging.tex:61:23:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/0_necc_cond.tex:1:73:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/3_subs/0_necc_cond.tex:6:1:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/3_subs/0_necc_cond.tex:12:8:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/3_subs/0_necc_cond.tex:18:8:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/3_subs/0_necc_cond.tex:25:391:35:You should perhaps use `\max' instead.
+secs/5-sat_detect/3_subs/0_necc_cond.tex:25:413:35:You should perhaps use `\max' instead.
+secs/5-sat_detect/3_subs/0_necc_cond.tex:27:81:35:You should perhaps use `\max' instead.
+secs/5-sat_detect/3_subs/1_cat_mode.tex:37:8:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/3_subs/1_cat_mode.tex:49:1:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/3_subs/1_cat_mode.tex:54:8:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/3_subs/1_cat_mode.tex:56:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/1_cat_mode.tex:56:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/1_cat_mode.tex:57:42:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/1_cat_mode.tex:57:49:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/1_cat_mode.tex:61:44:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/1_cat_mode.tex:66:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/1_cat_mode.tex:66:23:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/1_cat_mode.tex:72:8:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/3_subs/1_cat_mode.tex:74:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/1_cat_mode.tex:74:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/1_cat_mode.tex:75:42:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/1_cat_mode.tex:75:49:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/1_cat_mode.tex:79:44:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/1_cat_mode.tex:84:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/1_cat_mode.tex:84:23:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/2_aging_detection.tex:12:8:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/3_subs/2_aging_detection.tex:25:60:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/3_subs/2_aging_detection.tex:32:24:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/3_subs/2_aging_detection.tex:40:24:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/3_subs/2_aging_detection.tex:49:35:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/3_subs/2_aging_detection.tex:62:8:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/3_subs/2_aging_detection.tex:64:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/2_aging_detection.tex:64:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/2_aging_detection.tex:65:61:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/2_aging_detection.tex:65:68:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/2_aging_detection.tex:70:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/2_aging_detection.tex:75:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/3_subs/2_aging_detection.tex:75:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:16:32:35:You should perhaps use `\min' instead.
+secs/5-sat_detect/4-truck_aging.tex:22:1:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/4-truck_aging.tex:23:33:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/4-truck_aging.tex:23:59:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/4-truck_aging.tex:23:88:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/4-truck_aging.tex:29:8:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/4-truck_aging.tex:31:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:31:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:33:63:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:33:70:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:38:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:38:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:52:87:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/4-truck_aging.tex:52:113:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/4-truck_aging.tex:52:142:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/4-truck_aging.tex:65:8:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/4-truck_aging.tex:67:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:67:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:68:86:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:68:93:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:72:52:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:77:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:77:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:83:8:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/4-truck_aging.tex:85:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:85:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:86:86:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:86:93:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:91:51:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:98:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:98:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:104:8:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/4-truck_aging.tex:106:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:106:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:107:86:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:107:93:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:110:53:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:117:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:117:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:123:8:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/4-truck_aging.tex:125:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:125:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:126:86:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:126:93:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:130:53:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:135:9:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/4-truck_aging.tex:135:16:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:24:155:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/5-unconstrained_results.tex:52:1:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/5-unconstrained_results.tex:57:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:57:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:58:61:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:63:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:63:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:71:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:71:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:72:61:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:77:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:77:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:92:1:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/5-unconstrained_results.tex:104:1:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/5-unconstrained_results.tex:109:25:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:109:32:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:110:41:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:115:25:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:120:25:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:120:32:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:128:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:128:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:129:33:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:134:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:139:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:139:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:147:1:24:Delete this space to maintain correct pagereferences.
+secs/5-sat_detect/5-unconstrained_results.tex:152:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:152:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:153:33:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:158:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:163:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:163:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:171:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:171:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:172:33:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:177:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:182:17:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/5-unconstrained_results.tex:182:24:44:User Regex: -2:Use \toprule, \midrule, or \bottomrule from booktabs.
+secs/5-sat_detect/6-detector_performance.tex:5:1:2:Non-breaking space (`~') should have been used.
+secs/5-sat_detect/6-detector_performance.tex:5:31:2:Non-breaking space (`~') should have been used.
+./secs/n-conclusion/0-conclusion.tex:3:75:8:Wrong length of dash may have been used.
+./secs/n-conclusion/0-conclusion.tex:21:8:24:Delete this space to maintain correct pagereferences.
+secs/n-conclusion/0_subs/1_contrib.tex:5:81:8:Wrong length of dash may have been used.
+secs/n-conclusion/0_subs/1_contrib.tex:41:35:8:Wrong length of dash may have been used.
+secs/n-conclusion/0_subs/1_contrib.tex:53:62:8:Wrong length of dash may have been used.
+./secs/n-back/1-show-bib.tex:38:21:1:Command terminated with space.
+./secs/n-back/1-show-bib.tex:40:21:1:Command terminated with space.
+./secs/n-back/3-pubs.tex:3:1:24:Delete this space to maintain correct pagereferences.
+./secs/n-back/3-pubs.tex:4:1:24:Delete this space to maintain correct pagereferences.
+./secs/n-back/3-pubs.tex:8:47:26:You ought to remove spaces in front of punctuation.
+./secs/n-back/3-pubs.tex:12:47:26:You ought to remove spaces in front of punctuation.
+./secs/n-back/3-pubs.tex:20:47:26:You ought to remove spaces in front of punctuation.
+./secs/n-back/3-pubs.tex:20:192:8:Wrong length of dash may have been used.
+./secs/n-back/3-pubs.tex:22:178:8:Wrong length of dash may have been used.
+./secs/n-back/3-pubs.tex:24:203:8:Wrong length of dash may have been used.
+./secs/n-back/3-pubs.tex:24:214:13:Intersentence spacing (`\@') should perhaps be used.
+./secs/n-back/3-pubs.tex:26:36:26:You ought to remove spaces in front of punctuation.
+./secs/n-back/3-pubs.tex:26:182:8:Wrong length of dash may have been used.
+./secs/1-intro/0-intro.tex:44:1:17:Number of `(' doesn't match the number of `)'!
+./ltx_core/lst_style.tex:12:19:11:You should use \ldots to achieve an ellipsis.
+./ltx_core/lst_style.tex:13:23:9:`}' expected, found `)'.
+./ltx_core/lst_style.tex:20:19:11:You should use \ldots to achieve an ellipsis.
+./ltx_core/lst_style.tex:31:17:1:Command terminated with space.
+./ltx_core/lst_style.tex:32:1:10:Solo `}' found.
+./secs/1-intro/0-intro.tex:45:1:17:Number of `(' doesn't match the number of `)'!
+./ltx_core/new_cmds.tex:7:31:1:Command terminated with space.
+./ltx_core/new_cmds.tex:8:36:1:Command terminated with space.
+./ltx_core/new_cmds.tex:13:27:37:You should avoid spaces after parenthesis.
+./ltx_core/new_cmds.tex:19:35:1:Command terminated with space.
+./ltx_core/lst_style.tex:12:19:11:You should use \ldots to achieve an ellipsis.
+./ltx_core/lst_style.tex:13:23:9:`}' expected, found `)'.
+./ltx_core/lst_style.tex:20:19:11:You should use \ldots to achieve an ellipsis.
+./ltx_core/lst_style.tex:31:17:1:Command terminated with space.
+./ltx_core/lst_style.tex:32:1:10:Solo `}' found.
+./secs/1-intro/0-intro.tex:32:1:17:Number of `(' doesn't match the number of `)'!
