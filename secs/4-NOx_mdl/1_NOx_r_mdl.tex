@@ -56,9 +56,10 @@ directly using control volume (Figure~\ref{fig::ctrl_vol}). The model derivation
                         \label{eqn::ads_avg}
                 \end{multline}
         \item Finally, using (\ref{eqn::nox_avg}), $\sigma(t+t_s)$ and $\sigma(t)$ can be eliminated from
-                (\ref{eqn::ads_avg}) to get a dynamic model for the $NO_x$-reduction process that explicitly depends
-                on the measured inputs and states alone. Using the discrete-time notation, where $k$ is the index of the 
-                sampling period, we get the dynamic model (\ref{eqn::disc_NOx}).
+                (\ref{eqn::ads_avg}) to get a dynamic model for the $NO_x$-reduction process that explicitly depends on
+                the measured inputs and states alone. Using the discrete-time notation, where $k$ is the index of the
+                sampling period, we get the dynamic model (\ref{eqn::disc_NOx}). Every unit change in index $k$
+                corresponds to a jump in time by $t_s$ seconds.
                 \begin{align}
                         \text{Let }\quad \eta(k) = u_1(k-1) - x_1(k)
                 \end{align}
