@@ -1,0 +1,71 @@
+\section{Limitations}
+
+While the proposed framework advances the state of the art in non-intrusive SCR-ASC aging diagnostics, several
+limitations stem from the modelling assumptions and the nature of the available data.
+
+\begin{enumerate}
+    \item \textbf{Reduced reaction set and lumped ASC dynamics:}
+    The model retains only three of the many reactions occurring in the SCR-ASC system: the standard SCR reaction,
+    ammonia adsorption/desorption, and ammonia oxidation. The fast and slow SCR reactions, NO oxidation, and other
+    side reactions are neglected. Furthermore, the ammonia oxidation dynamics on the SCR and ASC catalysts are lumped
+    into a single reaction with $100\%$ nitrogen selectivity, an assumption valid only above approximately
+    $225\,^{\circ}\text{C}$. This lumping introduces errors in the estimated rate constants and limits the model's
+    fidelity at lower temperatures or under conditions where the omitted reactions become significant.
+
+    \item \textbf{Polynomial approximation of Arrhenius temperature dependence:}
+    Temperature-dependent rate constants and the surface concentration of viable voids are approximated by
+    second-order Chebyshev polynomials fitted over a bounded temperature range. As a result, the parameter estimates
+    are tied to the specific temperature window of the data used for estimation and vary across test conditions (e.g.,
+    RMC versus Hot-FTP). The model cannot be extrapolated beyond the fitted temperature range, and a single set of
+    parameter estimates does not generalize across widely different thermal operating profiles.
+
+    \item \textbf{Finite residence-times with in the sampling interval assumption:}
+    The model derivation assumes an integer number of residence times within
+    each sampling interval. When these conditions are not met exactly, the
+    resulting discrepancy is absorbed into the model structure error. The
+    average adsorbed ammonia concentration $\sigma(k)$ is itself an
+    approximation of the true intra-sample surface dynamics, and errors in this
+    approximation propagate into the $NO_x$ reduction prediction. This
+    assumption breaks down when the exhaust flow rate is significantly slow.
+
+    \item \textbf{Dependence on catalyst saturation data:}
+    The aging detection framework relies on the saturated-catalyst model, which requires that a sufficient number of
+    samples near catalyst saturation be present in the data. In real-world truck operation, fewer than $10\%$ of
+    samples typically satisfy this condition. Drive segments that lack sufficient near-saturation data cannot be used
+    for aging detection, limiting the duty cycles over which the detector is operational. The minimum sample
+    requirement ($N_{sat}^{min}$) imposes a practical constraint on how quickly a detection decision can be made.
+
+    \item \textbf{$NO_x$ sensor cross-sensitivity:}
+    Commercial $NO_x$ sensors are cross-sensitive to tailpipe ammonia, introducing a non-negative directional bias into
+    the tailpipe $NO_x$ measurement. Although the bounding relationship $\eta_{sat}(k) \geq \eta_y(k)$ is preserved
+    under this bias, the cross-sensitivity reduces the separation between aged and degreened parameter estimates,
+    thereby weakening the detector's discriminative power. The cross-sensitivity is treated as an unknown bounded
+    disturbance rather than being explicitly corrected, since tailpipe ammonia measurements are unavailable on
+    production trucks.
+
+    \item \textbf{Asymptotic statistical assumptions:}
+    The Wald-test detector relies on asymptotic properties of the maximum likelihood estimator: namely, that the MLE
+    is normally distributed and attains the Cram\'{e}r-Rao lower bound for large sample sizes. For short drive
+    segments or limited near-saturation data, these asymptotic conditions may not be satisfied, and the theoretical
+    $\chi^2$ distribution of the test statistic may not hold. In such cases, the false-alarm and detection
+    probabilities deviate from their analytical values.
+
+    \item \textbf{Absence of ground-truth aging levels:}
+    Validation on truck data is limited by the absence of ground-truth information on the actual degree of catalyst
+    aging for individual trucks. Only the mileage difference between data collection periods serves as an indirect
+    proxy for aging severity. Consequently, the detector's quantitative performance, particularly the relationship
+    between the non-centrality parameter $\lambda$ and the true aging level, cannot be precisely calibrated from the
+    available data.
+
+    \item \textbf{Threshold selection with limited data:}
+    The Wald-test threshold for truck data was selected empirically to balance detection and false-alarm rates on the
+    available (limited) data set rather than through the Neyman-Pearson criterion, which requires sufficient data to
+    characterize the test-statistic distributions under both hypotheses. A larger and more diverse data set would be
+    needed to establish statistically rigorous thresholds for deployment.
+
+    \item \textbf{Unsaturated model detector limitations on real-world data:}
+    The unsaturated catalyst parameters-based detector, while effective on repeatable test-cell cycles, does not
+    generalize reliably to truck data. The backward difference in its regression amplifies sensor noise, and the higher
+    parameter count (nine versus three) demands stronger persistence of excitation. Its apparent success on test-cell
+    data is partly an artifact of the uniform cross-sensitivity error profile across repeatable drive cycles.
+\end{enumerate}
