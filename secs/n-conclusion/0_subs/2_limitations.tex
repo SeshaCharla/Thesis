@@ -1,7 +1,7 @@
 \section{Limitations}
 
 While the proposed framework advances the state of the art in non-intrusive SCR-ASC aging diagnostics, several
-limitations stem from the modelling assumptions and the nature of the available data.
+limitations stem from the modelling assumptions and the nature of the available data:
 
 \begin{enumerate}
     \item \textbf{Reduced reaction set and lumped ASC dynamics:}
@@ -19,7 +19,7 @@ limitations stem from the modelling assumptions and the nature of the available 
     RMC versus Hot-FTP). The model cannot be extrapolated beyond the fitted temperature range, and a single set of
     parameter estimates does not generalize across widely different thermal operating profiles.
 
-    \item \textbf{Finite residence-times with in the sampling interval assumption:}
+    \item \textbf{Finite residence-times within the sampling interval assumption regarding residence time:}
     The model derivation assumes an integer number of residence times within
     each sampling interval. When these conditions are not met exactly, the
     resulting discrepancy is absorbed into the model structure error. The
@@ -44,7 +44,7 @@ limitations stem from the modelling assumptions and the nature of the available 
     production trucks.
 
     \item \textbf{Asymptotic statistical assumptions:}
-    The Wald-test detector relies on asymptotic properties of the maximum likelihood estimator: namely, that the MLE
+    The Wald-test detector relies on asymptotic properties of the maximum likelihood estimator, namely, that the MLE
     is normally distributed and attains the Cram\'{e}r-Rao lower bound for large sample sizes. For short drive
     segments or limited near-saturation data, these asymptotic conditions may not be satisfied, and the theoretical
     $\chi^2$ distribution of the test statistic may not hold. In such cases, the false-alarm and detection
@@ -64,7 +64,7 @@ limitations stem from the modelling assumptions and the nature of the available 
     needed to establish statistically rigorous thresholds for deployment.
 
     \item \textbf{Unsaturated model detector limitations on real-world data:}
-    The unsaturated catalyst parameters-based detector, while effective on repeatable test-cell cycles, does not
+    The unsaturated-catalyst-parameters-based detector, while effective on repeatable test-cell cycles, does not
     generalize reliably to truck data. The backward difference in its regression amplifies sensor noise, and the higher
     parameter count (nine versus three) demands stronger persistence of excitation. Its apparent success on test-cell
     data is partly an artifact of the uniform cross-sensitivity error profile across repeatable drive cycles.
